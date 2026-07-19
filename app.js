@@ -22,11 +22,108 @@ const canvas = document.getElementById("networkCanvas");
 const ctx = canvas.getContext("2d");
 const tooltip = document.getElementById("tooltip");
 const detailPanel = document.getElementById("detailPanel");
-const stage = document.querySelector(".visual-stage");
 
 const nodeImages = new Map();
 const IMAGE_FOLDER = "./缩放后/";
 const imageCacheReady = { count: 0, total: 0 };
+
+function initPanelCollapse() {
+  const panels = document.querySelectorAll(".panel");
+  const savedStates = JSON.parse(sessionStorage.getItem("panelStates") || "{}");
+
+  panels.forEach((panel) => {
+    const panelId = panel.dataset.panel;
+    const savedExpanded = savedStates[panelId];
+    if (savedExpanded !== undefined) {
+      panel.dataset.expanded = savedExpanded ? "true" : "false";
+    }
+    updatePanelToggle(panel);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("panel-toggle")) {
+      const panel = e.target.closest(".panel");
+      const isExpanded = panel.dataset.expanded === "true";
+      panel.dataset.expanded = isExpanded ? "false" : "true";
+      updatePanelToggle(panel);
+
+      const states = {};
+      panels.forEach((p) => {
+        states[p.dataset.panel] = p.dataset.expanded === "true";
+      });
+      sessionStorage.setItem("panelStates", JSON.stringify(states));
+    }
+  });
+}
+
+function updatePanelToggle(panel) {
+  const toggle = panel.querySelector(".panel-toggle");
+  toggle.textContent = panel.dataset.expanded === "true" ? "[-]" : "[+]";
+}
+
+function initPanelDragging() {
+  const panels = document.querySelectorAll(".panel");
+  const savedPositions = JSON.parse(sessionStorage.getItem("panelPositions") || "{}");
+
+  panels.forEach((panel) => {
+    const panelId = panel.dataset.panel;
+    const savedPos = savedPositions[panelId];
+
+    if (savedPos) {
+      panel.style.left = savedPos.left + "px";
+      panel.style.top = savedPos.top + "px";
+      panel.style.right = "auto";
+      panel.style.bottom = "auto";
+    }
+
+    const header = panel.querySelector(".panel-header");
+    let isDragging = false;
+    let startX, startY, startLeft, startTop;
+
+    header.addEventListener("mousedown", (e) => {
+      if (e.target.classList.contains("panel-toggle")) return;
+      if (e.button !== 0) return;
+
+      isDragging = true;
+      panel.style.zIndex = "100";
+      header.style.cursor = "grabbing";
+
+      startX = e.clientX;
+      startY = e.clientY;
+      startLeft = panel.offsetLeft;
+      startTop = panel.offsetTop;
+
+      e.preventDefault();
+    });
+
+    document.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+
+      panel.style.left = Math.max(0, startLeft + dx) + "px";
+      panel.style.top = Math.max(0, startTop + dy) + "px";
+    });
+
+    document.addEventListener("mouseup", () => {
+      if (!isDragging) return;
+
+      isDragging = false;
+      panel.style.zIndex = "2";
+      header.style.cursor = "grab";
+
+      const positions = JSON.parse(sessionStorage.getItem("panelPositions") || "{}");
+      positions[panel.dataset.panel] = {
+        left: panel.offsetLeft,
+        top: panel.offsetTop,
+      };
+      sessionStorage.setItem("panelPositions", JSON.stringify(positions));
+    });
+
+    header.style.cursor = "grab";
+  });
+}
 
 function buildImageFilenameIndex() {
   const { nodes } = data;
@@ -49,24 +146,30 @@ function preloadNodeImages() {
 
   imageCacheReady.total = nameToId.size;
 
+  const specialImageMap = {
+    "39": "财神_16.png",
+    "51": "财神_17.png",
+  };
+
   nameToId.forEach((nodeIds, nodeName) => {
-    const img = new Image();
-    img.crossOrigin = "anonymous";
+    nodeIds.forEach((nodeId) => {
+      const node = nodeById.get(nodeId);
+      const specialFile = specialImageMap[nodeId];
+      const filename = specialFile || `${nodeName}_${node.jmaCount}.png`;
 
-    img.onload = () => {
-      nodeIds.forEach((id) => {
-        if (!nodeImages.has(id)) {
-          nodeImages.set(id, img);
-        }
-      });
-      imageCacheReady.count++;
-    };
+      const img = new Image();
 
-    img.onerror = () => {
-      imageCacheReady.count++;
-    };
+      img.onload = () => {
+        nodeImages.set(nodeId, img);
+        imageCacheReady.count++;
+      };
 
-    img.src = `${IMAGE_FOLDER}${nodeName}.png`;
+      img.onerror = () => {
+        imageCacheReady.count++;
+      };
+
+      img.src = `${IMAGE_FOLDER}${encodeURIComponent(filename)}`;
+    });
   });
 }
 
@@ -105,7 +208,7 @@ function initializePositions() {
     const center = clusterCenters.get(department);
     bucket.forEach((node, index) => {
       const angle = (index / Math.max(bucket.length, 1)) * Math.PI * 2;
-      const localRadius = 30 + Math.sqrt(index) * 13;
+      const localRadius = 50 + Math.sqrt(index) * 18;
       node.x = centerX + center.x + Math.cos(angle) * localRadius;
       node.y = centerY + center.y + Math.sin(angle) * localRadius;
       node.vx = 0;
@@ -115,7 +218,7 @@ function initializePositions() {
   });
 }
 
-function getClusterCenters(radius = Math.min(state.width, state.height) * 0.28 || 360) {
+function getClusterCenters(radius = Math.min(state.width, state.height) * 0.36 || 480) {
   const centers = new Map();
   departmentOrder.forEach((department, index) => {
     const angle = -Math.PI / 2 + (index / departmentOrder.length) * Math.PI * 2;
@@ -132,6 +235,7 @@ function getVisibleNodes() {
   return nodes.filter((node) => {
     if (!state.selectedDepartments.has(node.department)) return false;
     if (node.jmaCount < state.minJma) return false;
+    if (node.name.includes("其他")) return false;
     if (!query) return true;
     return [node.name, node.department, node.position, node.secondaryPosition, node.service, node.source]
       .join(" ")
@@ -153,9 +257,8 @@ function getVisibleGraph() {
 }
 
 function resizeCanvas() {
-  const rect = stage.getBoundingClientRect();
-  state.width = Math.max(320, rect.width);
-  state.height = Math.max(420, rect.height);
+  state.width = Math.max(320, window.innerWidth);
+  state.height = Math.max(420, window.innerHeight);
   state.pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
   canvas.width = Math.floor(state.width * state.pixelRatio);
   canvas.height = Math.floor(state.height * state.pixelRatio);
@@ -190,8 +293,8 @@ function tick() {
     const dx = b.x - a.x;
     const dy = b.y - a.y;
     const distance = Math.max(1, Math.hypot(dx, dy));
-    const desired = edge.type === "business" ? 86 : edge.type === "supply" ? 112 : 136;
-    const force = (distance - desired) * 0.0028 * state.alpha;
+    const desired = edge.type === "business" ? 280 : edge.type === "supply" ? 360 : 440;
+    const force = (distance - desired) * 0.002 * state.alpha;
     const fx = (dx / distance) * force;
     const fy = (dy / distance) * force;
     a.vx += fx;
@@ -207,7 +310,7 @@ function tick() {
       const dx = b.x - a.x || 0.01;
       const dy = b.y - a.y || 0.01;
       const distanceSq = Math.max(100, dx * dx + dy * dy);
-      const force = Math.min(0.9, 460 / distanceSq) * state.alpha;
+      const force = Math.min(0.9, 1200 / distanceSq) * state.alpha;
       const distance = Math.sqrt(distanceSq);
       const fx = (dx / distance) * force;
       const fy = (dy / distance) * force;
@@ -276,9 +379,8 @@ function drawEdges(visibleEdges, highlightedIds) {
     ctx.save();
     ctx.globalAlpha = dim ? 0.09 : 0.5;
     ctx.strokeStyle = relationColors[edge.type] || "#566";
-    ctx.lineWidth = edge.type === "business" ? 1.3 : 1.6;
-    if (edge.style === "dash") ctx.setLineDash([9, 7]);
-    if (edge.style === "dot") ctx.setLineDash([2, 7]);
+    ctx.lineWidth = 0.4;
+    ctx.setLineDash([]);
     ctx.lineCap = "round";
 
     if (a === b) {
@@ -287,13 +389,13 @@ function drawEdges(visibleEdges, highlightedIds) {
       ctx.arc(a.x + size + 5, a.y - size - 5, 15, 0.3, Math.PI * 1.8);
       ctx.stroke();
     } else {
-      drawSmoothSpline(a, b, edge.type);
+      drawSmoothLine(a, b, edge.type);
     }
     ctx.restore();
   });
 }
 
-function drawSmoothSpline(a, b, edgeType) {
+function drawSmoothLine(a, b, edgeType) {
   const dx = b.x - a.x;
   const dy = b.y - a.y;
   const distance = Math.max(1, Math.hypot(dx, dy));
@@ -312,7 +414,6 @@ function drawSmoothSpline(a, b, edgeType) {
   const cy1 = midY + ny * distance * curveFactor * tension;
 
   const t1 = 0.28;
-  const t2 = 0.72;
 
   const cp1x = a.x + (cx1 - a.x) * t1 * 2;
   const cp1y = a.y + (cy1 - a.y) * t1 * 2;
@@ -323,6 +424,12 @@ function drawSmoothSpline(a, b, edgeType) {
   ctx.moveTo(a.x, a.y);
   ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, b.x, b.y);
   ctx.stroke();
+}
+
+function shouldShowLabel(node, isHovered, isSelected) {
+  if (isHovered || isSelected) return true;
+  if (node.radius > 14) return true;
+  return false;
 }
 
 function drawNodes(visibleNodes, highlightedIds) {
@@ -341,35 +448,36 @@ function drawNodes(visibleNodes, highlightedIds) {
 
       ctx.beginPath();
       ctx.rect(node.x - size, node.y - size, size * 2, size * 2);
-      ctx.clip();
+      ctx.fillStyle = node.color;
+      ctx.fill();
 
       if (img && img.complete && img.naturalWidth > 0) {
+        ctx.globalCompositeOperation = "multiply";
         ctx.drawImage(img, node.x - size, node.y - size, size * 2, size * 2);
-      } else {
-        ctx.fillStyle = node.color;
-        ctx.fillRect(node.x - size, node.y - size, size * 2, size * 2);
+        ctx.globalCompositeOperation = "source-over";
       }
 
       ctx.restore();
 
       ctx.save();
       ctx.globalAlpha = dim ? 0.25 : 1;
-      ctx.strokeStyle = isSelected ? "#111719" : "rgba(31, 37, 40, 0.42)";
-      ctx.lineWidth = isSelected ? 3.4 : isHovered ? 2.6 : 1.2;
+      ctx.strokeStyle = "#000000";
+      ctx.lineWidth = 0.5;
       ctx.strokeRect(node.x - size, node.y - size, size * 2, size * 2);
       ctx.restore();
 
-      if (state.transform.scale > 0.72 || isHovered || isSelected) {
+      if (shouldShowLabel(node, isHovered, isSelected)) {
+        const labelText = (isHovered || isSelected) ? node.name : node.name.slice(0, 2);
         ctx.save();
         ctx.globalAlpha = dim ? 0.25 : 1;
-        ctx.font = `300 11px system-ui, sans-serif`;
+        ctx.font = `300 ${node.radius > 12 ? 12 : 10}px system-ui, sans-serif`;
         ctx.textAlign = "center";
         ctx.textBaseline = "top";
         ctx.lineWidth = 3;
         ctx.strokeStyle = "rgba(255, 255, 255, 0.86)";
-        ctx.strokeText(node.name, node.x, node.y + size + 5);
+        ctx.strokeText(labelText, node.x, node.y + size + 5);
         ctx.fillStyle = "#1f2528";
-        ctx.fillText(node.name, node.x, node.y + size + 5);
+        ctx.fillText(labelText, node.x, node.y + size + 5);
         ctx.restore();
       }
     });
@@ -425,10 +533,11 @@ function renderControls() {
   legend.innerHTML = departmentOrder
     .map(
       (department) => `
-        <span class="legend-pill">
+        <div class="legend-item">
           <span class="swatch" style="background:${data.meta.departments[department]}"></span>
-          ${department}
-        </span>
+          <span class="legend-label">${department}</span>
+          <span class="legend-count">${countsByDepartment[department] || 0}</span>
+        </div>
       `
     )
     .join("");
@@ -588,8 +697,8 @@ function updateTooltip(node, point) {
   }
   tooltip.innerHTML = `
     <strong>${node.name}</strong>
-    <div>${node.department}</div>
-    <div>${node.position}</div>
+    <div>${node.department} · ${node.position || "无职位"}</div>
+    ${node.jmaCount ? `<div>甲马数量: ${node.jmaCount}</div>` : ""}
   `;
   tooltip.hidden = false;
   moveTooltip(point);
@@ -675,6 +784,8 @@ function animate() {
 renderControls();
 bindControls();
 bindCanvas();
+initPanelCollapse();
+initPanelDragging();
 preloadNodeImages();
 initializePositions();
 resizeCanvas();

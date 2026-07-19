@@ -3,75 +3,127 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>神话服务公司多层网络</title>
+    <title>MYTHIC SERVICE COMPANY — ARCHIVE TERMINAL</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="app-shell">
-      <aside class="control-panel" aria-label="筛选控制">
-        <section class="brand-block">
-          <p class="eyebrow">Mythic Service Company</p>
-          <h1>神话服务公司多层网络</h1>
-          <div class="stat-grid">
-            <div>
-              <strong id="visibleNodeCount">140</strong>
-              <span>可见节点</span>
-            </div>
-            <div>
-              <strong id="visibleEdgeCount">376</strong>
-              <span>可见关系</span>
-            </div>
+    <canvas id="networkCanvas"></canvas>
+
+    <header class="panel panel-title" data-panel="title" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h1 class="panel-heading">MYTHIC SERVICE COMPANY</h1>
+      </div>
+      <div class="panel-subheading">神界有限公司 — NETWORK ARCHIVE</div>
+      <div class="panel-content">
+        <div class="stat-grid">
+          <div class="stat-cell">
+            <div class="stat-label">VISIBLE NODES</div>
+            <div class="stat-value" id="visibleNodeCount">140</div>
           </div>
-        </section>
-
-        <section class="panel-section">
-          <label class="field-label" for="searchInput">搜索神祇</label>
-          <input id="searchInput" class="text-input" type="search" placeholder="输入姓名、职位或服务内容" />
-        </section>
-
-        <section class="panel-section">
-          <div class="section-head">
-            <h2>部门筛选</h2>
-            <button id="toggleDepartments" class="text-button" type="button">清空</button>
+          <div class="stat-cell">
+            <div class="stat-label">VISIBLE EDGES</div>
+            <div class="stat-value" id="visibleEdgeCount">376</div>
           </div>
-          <div id="departmentFilters" class="check-list"></div>
-        </section>
-
-        <section class="panel-section">
-          <h2>关系层</h2>
-          <div id="relationFilters" class="check-list relation-list"></div>
-        </section>
-
-        <section class="panel-section">
-          <div class="section-head">
-            <h2>布局</h2>
-            <label class="switch">
-              <input id="clusterToggle" type="checkbox" checked />
-              <span>按部门聚类</span>
-            </label>
-          </div>
-          <label class="field-label" for="jmaSlider">甲马数量下限 <span id="jmaValue">0</span></label>
-          <input id="jmaSlider" class="range-input" type="range" min="0" max="0" value="0" />
-          <div class="button-row">
-            <button id="resetView" class="icon-button" type="button" title="重置视图" aria-label="重置视图">↺</button>
-            <button id="fitView" class="icon-button" type="button" title="适配画布" aria-label="适配画布">⌖</button>
-            <button id="exportPng" class="icon-button" type="button" title="导出图片" aria-label="导出图片">⇩</button>
-          </div>
-        </section>
-      </aside>
-
-      <section class="visual-stage" aria-label="网络图">
-        <div class="toolbar">
-          <div class="legend" id="legend"></div>
-          <div class="hint">滚轮缩放，拖动画布平移，拖动节点重排</div>
         </div>
-        <canvas id="networkCanvas"></canvas>
-        <div id="tooltip" class="tooltip" hidden></div>
-        <aside id="detailPanel" class="detail-panel">
-          <p class="empty-state">选择一个神祇查看部门、职位、服务与连接关系。</p>
-        </aside>
-      </section>
-    </main>
+      </div>
+    </header>
+
+    <section class="panel panel-search" data-panel="search" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">QUERY INTERFACE</h2>
+      </div>
+      <div class="panel-content">
+        <div class="field-row">
+          <label class="field-label" for="searchInput">SEARCH ENTITY</label>
+          <input id="searchInput" class="text-input" type="search" placeholder="ENTER NAME, POSITION OR SERVICE" />
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-departments" data-panel="departments" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">DEPARTMENT FILTERS</h2>
+      </div>
+      <div class="panel-content">
+        <div class="button-row-inline">
+          <button id="toggleDepartments" class="text-button" type="button">[CLEAR ALL]</button>
+        </div>
+        <div id="departmentFilters" class="check-list"></div>
+      </div>
+    </section>
+
+    <section class="panel panel-relations" data-panel="relations" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">RELATION LAYERS</h2>
+      </div>
+      <div class="panel-content">
+        <div id="relationFilters" class="check-list relation-list"></div>
+      </div>
+    </section>
+
+    <section class="panel panel-layout" data-panel="layout" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">DISPLAY CONTROLS</h2>
+      </div>
+      <div class="panel-content">
+        <div class="field-row">
+          <label class="switch">
+            <input id="clusterToggle" type="checkbox" checked />
+            <span>CLUSTER BY DEPARTMENT</span>
+          </label>
+        </div>
+        <div class="field-row">
+          <label class="field-label" for="jmaSlider">JMA COUNT MINIMUM: <span id="jmaValue">0</span></label>
+          <input id="jmaSlider" class="range-input" type="range" min="0" max="0" value="0" />
+        </div>
+        <div class="button-row">
+          <button id="resetView" class="icon-button" type="button" title="RESET VIEW">[↺]</button>
+          <button id="fitView" class="icon-button" type="button" title="FIT TO SCREEN">[⌖]</button>
+          <button id="exportPng" class="icon-button" type="button" title="EXPORT PNG">[↓]</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-legend" data-panel="legend" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">DEPARTMENT INDEX</h2>
+      </div>
+      <div class="panel-content">
+        <div id="legend"></div>
+      </div>
+    </section>
+
+    <section class="panel panel-hint" data-panel="hint" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">OPERATION GUIDE</h2>
+      </div>
+      <div class="panel-content">
+        <div class="guide-grid">
+          <span class="guide-key">SCROLL</span><span class="guide-desc">ZOOM</span>
+          <span class="guide-key">DRAG CANVAS</span><span class="guide-desc">PAN VIEW</span>
+          <span class="guide-key">DRAG NODE</span><span class="guide-desc">REPOSITION</span>
+        </div>
+      </div>
+    </section>
+
+    <aside id="detailPanel" class="panel panel-detail" data-panel="detail" data-expanded="true">
+      <div class="panel-header">
+        <span class="panel-toggle">[-]</span>
+        <h2 class="panel-heading">ENTITY DETAILS</h2>
+      </div>
+      <div class="panel-content">
+        <p class="empty-state">// SELECT AN ENTITY TO VIEW ARCHIVE RECORDS</p>
+      </div>
+    </aside>
+
+    <div id="tooltip" class="tooltip" hidden></div>
 
     <script src="./network-data.js"></script>
     <script src="./app.js"></script>

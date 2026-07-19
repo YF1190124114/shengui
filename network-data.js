@@ -5,12 +5,12 @@ window.NETWORK_DATA = {
     "nodeCount": 140,
     "edgeCount": 376,
     "departments": {
-      "自然环境管理部": "#10A484",
+      "自然环境管理部": "#ADB97A",
       "民生生活服务部": "#EEBAC7",
-      "社会秩序管理部": "#62BBC3",
-      "健康生育服务部": "#F2E6D0",
-      "风险危机处理部": "#F03373",
-      "地方文化运营部": "#CE4123",
+      "社会秩序管理部": "#B3C7D2",
+      "健康生育服务部": "#A8ACDA",
+      "风险危机处理部": "#585287",
+      "地方文化运营部": "#DB7C3F",
       "财富事业发展部": "#FCDC89"
     },
     "relationTypes": {
@@ -78,7 +78,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 27
     },
     {
@@ -90,7 +90,7 @@ window.NETWORK_DATA = {
       "position": "驱邪安全专员",
       "secondaryPosition": "居住安全顾问",
       "service": "负责灾害、危险、不确定事件应对",
-      "color": "#F03373",
+      "color": "#585287",
       "jmaCount": 2
     },
     {
@@ -102,7 +102,7 @@ window.NETWORK_DATA = {
       "position": "仪式文化运营专员",
       "secondaryPosition": "地方记忆维护员，农业生态顾问",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 3
     },
     {
@@ -150,7 +150,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "居住安全顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 4
     },
     {
@@ -186,7 +186,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "灾害应对专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -210,7 +210,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "商业信用顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -258,7 +258,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 3
     },
     {
@@ -270,7 +270,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "厄运处理顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 7
     },
     {
@@ -282,7 +282,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "社区精神运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -306,7 +306,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "社区精神运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 6
     },
     {
@@ -318,7 +318,7 @@ window.NETWORK_DATA = {
       "position": "社区精神运营专员",
       "secondaryPosition": "驱邪安全专员",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 3
     },
     {
@@ -330,7 +330,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "仪式文化运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -342,7 +342,7 @@ window.NETWORK_DATA = {
       "position": "社区精神运营专员",
       "secondaryPosition": "无",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 19
     },
     {
@@ -354,7 +354,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "财富增长顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 11
     },
     {
@@ -426,7 +426,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "疾病治疗专员，家庭运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -438,7 +438,7 @@ window.NETWORK_DATA = {
       "position": "生死档案管理员",
       "secondaryPosition": "无",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 28
     },
     {
@@ -450,7 +450,7 @@ window.NETWORK_DATA = {
       "position": "生死档案管理员",
       "secondaryPosition": "无",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 9
     },
     {
@@ -498,7 +498,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "生死档案管理员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 29
     },
     {
@@ -534,7 +534,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "财富增长顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 2
     },
     {
@@ -546,7 +546,7 @@ window.NETWORK_DATA = {
       "position": "疾病治疗专员",
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 6
     },
     {
@@ -582,7 +582,7 @@ window.NETWORK_DATA = {
       "position": "身体保护顾问",
       "secondaryPosition": "农业生态顾问",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 2
     },
     {
@@ -606,7 +606,7 @@ window.NETWORK_DATA = {
       "position": "疾病治疗专员",
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 2
     },
     {
@@ -618,7 +618,7 @@ window.NETWORK_DATA = {
       "position": "疾病治疗专员",
       "secondaryPosition": "山川水域管理专员",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 10
     },
     {
@@ -678,7 +678,7 @@ window.NETWORK_DATA = {
       "position": "司法仲裁专员",
       "secondaryPosition": "仪式文化运营专员",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 2
     },
     {
@@ -702,7 +702,7 @@ window.NETWORK_DATA = {
       "position": "生育保障顾问",
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 2
     },
     {
@@ -714,7 +714,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "疾病治疗专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 2
     },
     {
@@ -738,7 +738,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "家庭运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 11
     },
     {
@@ -750,7 +750,7 @@ window.NETWORK_DATA = {
       "position": "社区精神运营专员",
       "secondaryPosition": "无",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 1
     },
     {
@@ -810,7 +810,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -834,7 +834,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 1
     },
     {
@@ -858,7 +858,7 @@ window.NETWORK_DATA = {
       "position": "司法仲裁专员",
       "secondaryPosition": "财富增长顾问",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 2
     },
     {
@@ -870,7 +870,7 @@ window.NETWORK_DATA = {
       "position": "司法仲裁专员",
       "secondaryPosition": "无",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 2
     },
     {
@@ -966,7 +966,7 @@ window.NETWORK_DATA = {
       "position": "驱邪安全专员",
       "secondaryPosition": "灾害应对专员",
       "service": "负责灾害、危险、不确定事件应对",
-      "color": "#F03373",
+      "color": "#585287",
       "jmaCount": 32
     },
     {
@@ -990,7 +990,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 8
     },
     {
@@ -1038,7 +1038,7 @@ window.NETWORK_DATA = {
       "position": "地方记忆维护员",
       "secondaryPosition": "居住安全顾问，家庭运营专员",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 1
     },
     {
@@ -1050,7 +1050,7 @@ window.NETWORK_DATA = {
       "position": "仪式文化运营专员",
       "secondaryPosition": "司法仲裁专员",
       "service": "负责地方认同、社区记忆和精神连接",
-      "color": "#CE4123",
+      "color": "#DB7C3F",
       "jmaCount": 2
     },
     {
@@ -1062,7 +1062,7 @@ window.NETWORK_DATA = {
       "position": "司法仲裁专员",
       "secondaryPosition": "居住安全顾问",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 2
     },
     {
@@ -1086,7 +1086,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "地方行政管理员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 3
     },
     {
@@ -1098,7 +1098,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "家庭运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 2
     },
     {
@@ -1254,7 +1254,7 @@ window.NETWORK_DATA = {
       "position": "司法仲裁专员",
       "secondaryPosition": "驱邪安全专员",
       "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#62BBC3",
+      "color": "#B3C7D2",
       "jmaCount": 1
     },
     {
@@ -1278,7 +1278,7 @@ window.NETWORK_DATA = {
       "position": "厄运处理顾问",
       "secondaryPosition": "驱邪安全专员",
       "service": "负责灾害、危险、不确定事件应对",
-      "color": "#F03373",
+      "color": "#585287",
       "jmaCount": 17
     },
     {
@@ -1386,7 +1386,7 @@ window.NETWORK_DATA = {
       "position": "厄运处理顾问",
       "secondaryPosition": "无",
       "service": "负责灾害、危险、不确定事件应对",
-      "color": "#F03373",
+      "color": "#585287",
       "jmaCount": 27
     },
     {
@@ -1398,7 +1398,7 @@ window.NETWORK_DATA = {
       "position": "疾病治疗专员",
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 21
     },
     {
@@ -1422,7 +1422,7 @@ window.NETWORK_DATA = {
       "position": "生育保障顾问",
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
-      "color": "#F2E6D0",
+      "color": "#A8ACDA",
       "jmaCount": 22
     },
     {
@@ -1434,7 +1434,7 @@ window.NETWORK_DATA = {
       "position": "厄运处理顾问",
       "secondaryPosition": "灾害应对专员",
       "service": "负责灾害、危险、不确定事件应对",
-      "color": "#F03373",
+      "color": "#585287",
       "jmaCount": 15
     },
     {
@@ -1470,7 +1470,7 @@ window.NETWORK_DATA = {
       "position": "天象管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 3
     },
     {
@@ -1494,7 +1494,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 6
     },
     {
@@ -1518,7 +1518,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 4
     },
     {
@@ -1530,7 +1530,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "生死档案管理员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 5
     },
     {
@@ -1542,7 +1542,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 35
     },
     {
@@ -1554,7 +1554,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "生育保障顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 2
     },
     {
@@ -1590,7 +1590,7 @@ window.NETWORK_DATA = {
       "position": "农业生态顾问",
       "secondaryPosition": "职业发展顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 10
     },
     {
@@ -1710,7 +1710,7 @@ window.NETWORK_DATA = {
       "position": "山川水域管理专员",
       "secondaryPosition": "厄运处理顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#10A484",
+      "color": "#ADB97A",
       "jmaCount": 6
     },
     {

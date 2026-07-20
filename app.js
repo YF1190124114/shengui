@@ -21,7 +21,10 @@ const edges = data.edges
 const canvas = document.getElementById("networkCanvas");
 const ctx = canvas.getContext("2d");
 const tooltip = document.getElementById("tooltip");
-const detailPanel = document.getElementById("detailPanel");
+const dossierContainer = document.getElementById("dossierContainer");
+const dossier = document.getElementById("dossier");
+const dossierContent = document.getElementById("dossierContent");
+const folderTab = document.getElementById("folderTab");
 
 const nodeImages = new Map();
 const IMAGE_FOLDER = "./缩放后/";
@@ -641,6 +644,8 @@ function bindCanvas() {
     } else {
       state.panning = true;
       state.lastPointer = point;
+      // Click on empty space closes dossier
+      dossier.classList.remove('open');
     }
   });
 
@@ -709,35 +714,174 @@ function moveTooltip(point) {
   tooltip.style.top = `${Math.max(12, point.y + 16)}px`;
 }
 
+function getDepartmentClass(department) {
+  const deptClasses = {
+    "自然环境部": "dept-natural",
+    "民生服务部": "dept-livelihood",
+    "财富管理部": "dept-wealth",
+    "健康医疗部": "dept-health",
+    "军事国防部": "dept-military",
+    "精神信仰部": "dept-spiritual",
+    "文化教育部": "dept-culture",
+    "政务外交部": "dept-ministry",
+    "丧葬事务部": "dept-death",
+    "礼宾接待部": "dept-courtesy",
+    "天文气象部": "dept-sky",
+    "水文地理部": "dept-water",
+  };
+  return deptClasses[department] || "";
+}
+
+function generateBarcode() {
+  const bars = [];
+  for (let i = 0; i < 40; i++) {
+    const height = 15 + Math.floor(Math.random() * 20);
+    const width = 2 + (Math.random() > 0.7 ? 1 : 0);
+    bars.push(`<div class="barcode-bar" style="height:${height}px;width:${width}px"></div>`);
+  }
+  return bars.join("");
+}
+
+function getRandomStamp() {
+  const stamps = [
+    { class: "stamp-active", text: "ACTIVE" },
+    { class: "stamp-confidential", text: "CONFIDENTIAL" },
+    { class: "stamp-level-b", text: "LEVEL-B" },
+    { class: "stamp-mythic", text: "MYTHIC STAFF" },
+  ];
+  const shuffled = stamps.sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, 2);
+}
+
 function renderDetail(node) {
   const related = edges
     .filter((edge) => edge.source === node.id || edge.target === node.id)
-    .slice(0, 18);
-  detailPanel.innerHTML = `
-    <div class="detail-title">
-      <span class="swatch" style="background:${node.color}"></span>
-      <div>
-        <h2>${node.name}</h2>
-        <span>编号 ${node.number} · 甲马数量 ${node.jmaCount}</span>
+    .slice(0, 15);
+
+  const imgFilename = node.name + "_" + node.number + ".png";
+  const imgSrc = nodeImages.has(node.id)
+    ? nodeImages.get(node.id).src
+    : `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ddd' width='100' height='100'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='%23999' font-family='monospace' font-size='12'%3E${node.name.slice(0,2)}%3C/text%3E%3C/svg%3E`;
+
+  const deptClass = getDepartmentClass(node.department);
+  const stamps = getRandomStamp();
+  const barcode = generateBarcode();
+
+  const relatedHTML = related.length > 0
+    ? related.map((edge) => {
+        const isSource = edge.source === node.id;
+        const otherNode = isSource ? nodeById.get(edge.target) : nodeById.get(edge.source);
+        const otherName = isSource ? edge.targetName : edge.sourceName;
+        return `
+          <div class="related-item" data-node-id="${otherNode?.id || ''}">
+            <div class="related-bullet"></div>
+            <span class="related-name">${otherName}</span>
+          </div>
+        `;
+      }).join("")
+    : '<div class="related-item"><span class="related-name" style="color:var(--muted);font-size:12px">// NO CONNECTIONS IN CURRENT FILTER</span></div>';
+
+  folderTab.className = "folder-tab " + deptClass;
+
+  dossierContent.innerHTML = `
+    ${stamps.map(s => `<div class="dossier-stamp ${s.class}">${s.text}</div>`).join('')}
+
+    <div class="dossier-header">
+      <div class="portrait-frame">
+        <img src="${imgSrc}" alt="${node.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect fill=%27%23eee%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%27 y=%2755%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27monospace%27 font-size=%2712%27%3E${node.name.slice(0,2)}%3C/text%3E%3C/svg%3E'">
+      </div>
+      <div class="header-info">
+        <div class="entity-name">${node.name}</div>
+        <div class="entity-division">${node.department}</div>
+        <div class="entity-number">MSC-${node.number}</div>
       </div>
     </div>
-    <dl class="detail-list">
-      <div><dt>所属部门</dt><dd>${node.department}</dd></div>
-      <div><dt>入职来源</dt><dd>${node.source || "无"}</dd></div>
-      <div><dt>具体职位</dt><dd>${node.position || "无"}</dd></div>
-      <div><dt>兼任职位</dt><dd>${node.secondaryPosition || "无"}</dd></div>
-      <div><dt>服务内容</dt><dd>${node.service || "无"}</dd></div>
-    </dl>
-    <div class="connection-list">
-      ${related
-        .map((edge) => {
-          const direction = edge.source === node.id ? "指向" : "来自";
-          const other = edge.source === node.id ? edge.targetName : edge.sourceName;
-          return `<div class="connection-item"><span>${edge.label}</span><strong>${direction} ${other}</strong></div>`;
-        })
-        .join("") || '<p class="empty-state">当前筛选下暂无连接关系。</p>'}
+
+    ${node.position ? `
+    <div class="dossier-section">
+      <div class="section-header">
+        <span class="section-label">Primary Position</span>
+      </div>
+      <div class="section-content">
+        <div class="section-value">${node.position}</div>
+      </div>
+    </div>
+    ` : ''}
+
+    ${node.secondaryPosition ? `
+    <div class="dossier-section">
+      <div class="section-header">
+        <span class="section-label">Secondary Position</span>
+      </div>
+      <div class="section-content">
+        <div class="section-value small">${node.secondaryPosition}</div>
+      </div>
+    </div>
+    ` : ''}
+
+    ${node.service ? `
+    <div class="dossier-section">
+      <div class="section-header">
+        <span class="section-label">Service Domain</span>
+      </div>
+      <div class="section-content">
+        <div class="service-tags">
+          ${node.service.split(/[\/\、]/).map(s => `<span class="service-tag">${s.trim()}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+    ` : ''}
+
+    ${node.source ? `
+    <div class="dossier-section">
+      <div class="section-header">
+        <span class="section-label">Origin Record</span>
+      </div>
+      <div class="section-content">
+        <div class="section-value small">${node.source}</div>
+      </div>
+    </div>
+    ` : ''}
+
+    <div class="dossier-section">
+      <div class="section-header">
+        <span class="section-label">Related Employees (${related.length})</span>
+      </div>
+      <div class="related-list">
+        ${relatedHTML}
+      </div>
+    </div>
+
+    <div class="dossier-footer">
+      <div class="barcode">
+        ${barcode}
+      </div>
+      <div class="barcode-number">MSC-${node.number}-${node.department.slice(0,3).toUpperCase()}</div>
+      <div class="employee-id-section">
+        <div class="id-label">Employee ID</div>
+        <div class="id-value">MSC-${node.number}</div>
+      </div>
     </div>
   `;
+
+  // Add click handlers for related employees
+  dossierContent.querySelectorAll('.related-item[data-node-id]').forEach(item => {
+    item.addEventListener('click', () => {
+      const nodeId = item.dataset.nodeId;
+      if (nodeId) {
+        const targetNode = nodeById.get(nodeId);
+        if (targetNode) {
+          state.selected = targetNode;
+          renderDetail(targetNode);
+          // Center view on the node
+          state.transform.x = state.width / 2 - targetNode.x * state.transform.scale;
+          state.transform.y = state.height / 2 - targetNode.y * state.transform.scale;
+        }
+      }
+    });
+  });
+
+  dossier.classList.add('open');
 }
 
 function resetView() {

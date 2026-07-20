@@ -7,6 +7,70 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- BOOT SCREEN -->
+    <div id="bootScreen" class="boot-screen">
+      <div class="boot-content">
+        <h1 class="boot-title">MYTHIC SERVICE COMPANY</h1>
+        <p class="boot-subtitle">INITIALIZING...</p>
+        <div class="boot-progress">
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+          <span class="progress-block">■</span>
+        </div>
+        <div class="boot-log" id="bootLog">
+          <p class="log-line">Loading Mythological Database...</p>
+        </div>
+        <button id="bootEnter" class="boot-enter" style="opacity:0;pointer-events:none">[ENTER]</button>
+      </div>
+    </div>
+
+    <!-- ONBOARDING OVERLAY -->
+    <div id="onboardingOverlay" class="onboarding-overlay" style="display:none">
+      <!-- ONBOARDING MODAL -->
+      <div id="onboardingModal" class="onboarding-modal">
+        <div class="modal-body">
+          <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-page" data-page="1">
+                <img class="page-image" src="modalpage/p1.png" alt="" />
+              </div>
+              <div class="carousel-page" data-page="2">
+                <img class="page-image" src="modalpage/p2.png" alt="" />
+              </div>
+              <div class="carousel-page" data-page="3">
+                <img class="page-image" src="modalpage/p3.png" alt="" />
+              </div>
+              <div class="carousel-page" data-page="4">
+                <img class="page-image" src="modalpage/p4.png" alt="" />
+              </div>
+              <div class="carousel-page" data-page="5">
+                <img class="page-image" src="modalpage/p5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="carouselBack" class="modal-btn secondary" style="visibility:hidden">[BACK]</button>
+          <div class="footer-right">
+            <div class="footer-right-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button id="carouselNext" class="modal-btn primary">[NEXT]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD (always mounted, never unmounted) -->
     <canvas id="networkCanvas"></canvas>
 
     <header class="panel panel-title" data-panel="title" data-expanded="true">
@@ -113,19 +177,26 @@
       </div>
     </section>
 
-    <aside id="detailPanel" class="panel panel-detail" data-panel="detail" data-expanded="true">
-      <div class="panel-header">
-        <span class="panel-toggle">[-]</span>
-        <h2 class="panel-heading">ENTITY DETAILS</h2>
+    <!-- DOSSIER DRAWER - Personnel Folder -->
+    <div id="dossierContainer" class="dossier-container">
+      <div id="dossier" class="dossier">
+        <div class="folder">
+          <div class="folder-tab" id="folderTab">PERSONNEL FILE</div>
+          <div class="folder-body" id="dossierContent">
+            <div class="dossier-empty">
+              <span class="empty-bracket">[</span>
+              <span class="empty-text">SELECT AN ENTITY TO RETRIEVE ARCHIVE RECORDS</span>
+              <span class="empty-bracket">]</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="panel-content">
-        <p class="empty-state">// SELECT AN ENTITY TO VIEW ARCHIVE RECORDS</p>
-      </div>
-    </aside>
+    </div>
 
     <div id="tooltip" class="tooltip" hidden></div>
 
     <script src="./network-data.js"></script>
     <script src="./app.js"></script>
+    <script src="./onboarding.js"></script>
   </body>
 </html>

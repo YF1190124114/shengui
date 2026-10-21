@@ -777,6 +777,22 @@ function identityResponsibility(node) {
     .split(/[；;。]/)[0].replace(/[，,]$/, "") + "。";
 }
 
+// Decorative visualization of the unique ID, not a scannable barcode standard.
+function employeeIdDecoration(id) {
+  const value = String(id).padStart(4, "0");
+  const bits = Array.from(value).flatMap((character) =>
+    character.charCodeAt(0).toString(2).padStart(8, "0").split("")
+  );
+  let x = 2;
+  const bars = bits.map((bit) => {
+    const width = bit === "1" ? 2 : 1;
+    const bar = `<rect x="${x}" y="0" width="${width}" height="22" />`;
+    x += width + 1;
+    return bar;
+  }).join("");
+  return `<svg class="employee-id-code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${x + 1} 22" preserveAspectRatio="none" role="img" aria-label="${escapeHTML(`员工编号 ${id} 的装饰编码，非标准可扫描条形码`)}"><title>${escapeHTML(`MSC-${id} / 内部编号装饰编码，非标准条码`)}</title><g fill="currentColor">${bars}</g></svg>`;
+}
+
 function archiveSection(number, english, title, content) {
   return `<section class="research-section" aria-labelledby="research-section-${number}">
     <header class="research-section-heading"><span class="research-section-number">${number}</span><div><span class="research-section-english">${english}</span><h3 id="research-section-${number}">${title}</h3></div></header>
@@ -835,11 +851,23 @@ function renderDetail(node, options = {}) {
   const closeButton = '<button class="detail-close dossier-close" type="button" aria-label="关闭节点详情">[×]</button>';
   const identityHTML = `<article class="dossier-view identity-view" aria-label="员工工牌">
     <header class="detail-toolbar"><div><p class="detail-eyebrow">PERSONNEL / MSC-${node.number}</p><h2 class="detail-view-title" tabindex="-1">EMPLOYEE IDENTITY CARD</h2></div>${closeButton}</header>
-    <div class="identity-hero">
-      <div class="portrait-frame"><img src="${imgSrc}" alt="${escapeHTML(node.name)} · 甲马图像"></div>
-      <div class="identity-nameblock"><span class="identity-card-caption">${isCollection || isObject ? escapeHTML(recordKind) : "员工工牌"}</span><div class="identity-name${node.name.length > 5 ? ' identity-name-long' : ''}">${escapeHTML(node.name)}</div><div class="identity-number">MSC-${node.number}</div><div class="identity-department">${escapeHTML(node.department)}</div></div>
+    <div class="identity-card-wrap">
+      <section class="employee-identity-card" aria-label="${escapeHTML(node.name)}的员工身份证件">
+        <div class="identity-department-tab" aria-hidden="true"><svg viewBox="0 0 180 26" preserveAspectRatio="none"><path d="M1 25 L14 1 H179 V25 Z" fill="${escapeHTML(data.meta.departments[node.department] || node.color)}" stroke="currentColor" stroke-width="2" /></svg></div>
+        <div class="identity-card-topline"><span class="identity-card-number">NO.${escapeHTML(String(node.id).padStart(4, "0"))}</span><span class="identity-card-category">${isCollection || isObject ? escapeHTML(recordKind) : "员工工牌"}</span></div>
+        <div class="identity-card-body">
+          <div class="portrait-frame identity-card-photo"><img src="${imgSrc}" alt="${escapeHTML(node.name)} · 甲马证件照"></div>
+          <div class="identity-card-information">
+            <h3 class="identity-card-name${node.name.length > 5 ? ' identity-card-name-long' : ''}">${escapeHTML(node.name)}</h3>
+            <div class="identity-card-department"><span>所属部门</span><strong>${escapeHTML(node.department)}</strong></div>
+            <div class="identity-card-position"><span>${isCollection || isObject ? "档案类别" : "公司职位"}</span><strong>${escapeHTML(position)}</strong></div>
+            ${!isCollection && !isObject && node.secondaryPosition?.trim() && node.secondaryPosition.trim() !== "无" ? `<div class="identity-card-secondary"><span>兼任职位</span><span>${escapeHTML(node.secondaryPosition)}</span></div>` : ""}
+          </div>
+        </div>
+        <div class="identity-card-footer"><div class="identity-card-coding">${employeeIdDecoration(node.id)}<span class="identity-code-note">MSC-${escapeHTML(node.id)} / 内部编号装饰编码 · 非标准条码</span></div><span class="identity-card-mark">ID CARD</span></div>
+      </section>
     </div>
-    <section class="identity-position"><p class="detail-eyebrow">${isCollection || isObject ? "ARCHIVE ROLE / 档案类别" : "COMPANY POSITION / 公司职位"}</p><h3>${escapeHTML(position)}</h3></section>
+    <div class="identity-personnel-heading">PERSONNEL INFORMATION / 人员信息</div>
     <section class="identity-duties"><h3 class="identity-section-title">01 / ${isCollection || isObject ? "档案说明" : "岗位职责"}</h3><p>${escapeHTML(identityResponsibility(node))}</p></section>
     <section class="identity-connections"><div class="identity-section-heading"><h3 class="identity-section-title">02 / 业务关系</h3><span>${related.length}${related.length === allRelated.length ? "" : ` / ${allRelated.length}`}</span></div>
       <div class="identity-relation-list">${compactRelations || `<p class="identity-no-relations">${allRelated.length ? "当前筛选下暂无关联对象。" : "暂无关联对象。"}</p>`}</div>

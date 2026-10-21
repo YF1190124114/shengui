@@ -1550,16 +1550,6 @@ body.onboarding-active #tooltip {
 #dossierContent .detail-eyebrow { font-family: var(--font-mono); font-size: 9px; font-weight: 500; letter-spacing: .12em; line-height: 1.6; }
 #dossierContent .detail-view-title { font-family: var(--font-mono); font-size: 12px; line-height: 1.6; letter-spacing: .06em; margin-top: 2px; }
 #dossierContent .detail-close { background: transparent; color: inherit; border: 0; font: 16px var(--font-mono); padding: 8px; margin: 0; cursor: pointer; flex: 0 0 auto; }
-#dossierContent .identity-hero { display: grid; grid-template-columns: 132px minmax(0, 1fr); align-items: center; gap: 18px; padding: 28px 22px 24px; }
-#dossierContent .identity-hero .portrait-frame { width: 132px; height: 168px; }
-#dossierContent .identity-nameblock { min-width: 0; }
-#dossierContent .identity-card-caption { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; color: var(--muted); }
-#dossierContent .identity-name { font-family: var(--font-display); font-size: 36px; font-weight: 700; line-height: 1.16; overflow-wrap: anywhere; margin: 10px 0 18px; }
-#dossierContent .identity-name-long { font-size: 29px; }
-#dossierContent .identity-number { font: 700 12px var(--font-mono); letter-spacing: .1em; }
-#dossierContent .identity-department { font: 11px/1.7 var(--font-mono); margin-top: 6px; overflow-wrap: anywhere; }
-#dossierContent .identity-position { margin: 0 22px 24px; padding: 16px; border: var(--border); background: var(--ink); color: var(--paper); }
-#dossierContent .identity-position h3 { font-family: var(--font-display); font-size: 23px; font-weight: 700; line-height: 1.4; margin-top: 8px; overflow-wrap: anywhere; }
 #dossierContent .identity-duties { padding: 0 22px 24px; }
 #dossierContent .identity-section-title { font: 700 10px/1.6 var(--font-mono); letter-spacing: .08em; }
 #dossierContent .identity-duties > p { font: 13px/1.85 var(--font-mono); margin-top: 10px; overflow-wrap: anywhere; }
@@ -1607,21 +1597,67 @@ body.onboarding-active #tooltip {
 #dossierContent .research-view .empty-relations { padding: 10px 0; }
 #dossierContent .research-endnote { padding: 18px 22px; color: var(--muted); font: 9px var(--font-mono); letter-spacing: .1em; }
 #dossierContent .dossier-view button:focus-visible, #dossierContent .dossier-view summary:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; }
-@media (max-width: 1200px) {
-  #dossierContent .identity-hero { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; padding-left: 18px; padding-right: 18px; }
-  #dossierContent .identity-hero .portrait-frame { width: 112px; height: 146px; }
-  #dossierContent .identity-name { font-size: 30px; }
-  #dossierContent .identity-name-long { font-size: 25px; }
-}
 @media (max-width: 600px) {
-  #dossierContent .identity-hero { grid-template-columns: 104px minmax(0, 1fr); padding: 20px 16px; }
-  #dossierContent .identity-hero .portrait-frame { width: 104px; height: 132px; }
-  #dossierContent .identity-name { font-size: 30px; margin: 8px 0 12px; }
-  #dossierContent .identity-name-long { font-size: 24px; }
   #dossierContent .detail-toolbar { padding-left: 16px; padding-right: 16px; }
-  #dossierContent .identity-position { margin: 0 16px 20px; }
-  #dossierContent .identity-position h3 { font-size: 21px; }
   #dossierContent .identity-duties, #dossierContent .identity-actions { padding-left: 16px; padding-right: 16px; }
   #dossierContent .identity-section-heading, #dossierContent .identity-relation { padding-left: 16px; padding-right: 16px; }
   #dossierContent .research-masthead, #dossierContent .research-section-heading, #dossierContent .research-section-content, #dossierContent .research-endnote { padding-left: 16px; padding-right: 16px; }
+}
+
+
+/* A single physical identity document inside the unchanged details drawer. */
+#dossierContent .identity-card-wrap { padding: 34px 18px 26px; }
+#dossierContent .employee-identity-card { position: relative; padding: 12px 14px 10px; border: var(--border); background: var(--paper); box-shadow: 3px 3px 0 rgba(10,10,10,.16); }
+#dossierContent .identity-department-tab { position: absolute; top: -25px; right: -2px; width: 48%; height: 25px; color: var(--ink); }
+#dossierContent .identity-department-tab svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+#dossierContent .identity-card-topline { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 12px; }
+#dossierContent .identity-card-number { font: 700 12px/1.2 var(--font-mono); letter-spacing: -.03em; }
+#dossierContent .identity-card-category { font: 9px/1.3 var(--font-mono); color: var(--muted); }
+#dossierContent .identity-card-body { display: grid; grid-template-columns: 108px minmax(0,1fr); gap: 14px; align-items: start; }
+#dossierContent .employee-identity-card .portrait-frame { width: 108px; height: 142px; border: 1px solid var(--ink); }
+#dossierContent .employee-identity-card .portrait-frame img { object-fit: contain; }
+#dossierContent .identity-card-information { min-width: 0; }
+#dossierContent .identity-card-name { font-family: var(--font-display); font-weight: 700; font-size: 30px; line-height: 1.15; margin: -2px 0 12px; overflow-wrap: anywhere; }
+#dossierContent .identity-card-name-long { font-size: 25px; }
+#dossierContent .identity-card-department, #dossierContent .identity-card-position { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+#dossierContent .identity-card-department > span, #dossierContent .identity-card-position > span, #dossierContent .identity-card-secondary > span:first-child { font: 9px/1.4 var(--font-mono); color: var(--muted); }
+#dossierContent .identity-card-department > strong { font: 500 11px/1.55 var(--font-mono); overflow-wrap: anywhere; }
+#dossierContent .identity-card-position { margin-top: 11px; }
+#dossierContent .identity-card-position > strong { font-family: var(--font-display); font-size: 16px; font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; }
+#dossierContent .identity-card-secondary { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; margin-top: 10px; }
+#dossierContent .identity-card-secondary > span:last-child { font: 10px/1.55 var(--font-mono); overflow-wrap: anywhere; }
+#dossierContent .identity-card-footer { display: flex; justify-content: flex-end; align-items: flex-start; gap: 12px; margin-top: 16px; }
+#dossierContent .identity-card-coding { width: 174px; max-width: calc(100% - 58px); min-width: 0; }
+#dossierContent .employee-id-code { display: block; width: 100%; height: 21px; color: var(--ink); }
+#dossierContent .identity-code-note { display: block; margin-top: 4px; font: 6.5px/1.5 var(--font-mono); color: var(--muted); overflow-wrap: anywhere; }
+#dossierContent .identity-card-mark { font: 700 10px/1 var(--font-mono); letter-spacing: -.02em; white-space: nowrap; margin-top: 1px; }
+#dossierContent .identity-personnel-heading { padding: 0 22px 15px; font: 9px/1.5 var(--font-mono); letter-spacing: .08em; color: var(--muted); }
+@media (min-width: 901px) and (max-width: 1200px) {
+  #dossierContent .identity-card-wrap { padding-left: 14px; padding-right: 14px; }
+  #dossierContent .employee-identity-card { padding-left: 11px; padding-right: 11px; }
+  #dossierContent .identity-card-body { grid-template-columns: 88px minmax(0,1fr); gap: 11px; }
+  #dossierContent .employee-identity-card .portrait-frame { width: 88px; height: 124px; }
+  #dossierContent .identity-card-name { font-size: 27px; }
+  #dossierContent .identity-card-name-long { font-size: 23px; }
+  #dossierContent .identity-card-position > strong { font-size: 15px; }
+}
+@media (max-width: 600px) {
+  #dossierContent .identity-card-wrap { padding: 31px 14px 24px; }
+  #dossierContent .employee-identity-card { padding: 11px 12px 10px; }
+  #dossierContent .identity-card-body { grid-template-columns: 94px minmax(0,1fr); gap: 12px; }
+  #dossierContent .employee-identity-card .portrait-frame { width: 94px; height: 132px; }
+  #dossierContent .identity-card-name { font-size: 28px; }
+  #dossierContent .identity-card-name-long { font-size: 23px; }
+  #dossierContent .identity-card-position > strong { font-size: 15px; }
+  #dossierContent .identity-personnel-heading { padding-left: 16px; padding-right: 16px; }
+}
+@media (max-width: 350px) {
+  #dossierContent .identity-card-wrap { padding-left: 11px; padding-right: 11px; }
+  #dossierContent .employee-identity-card { padding-left: 10px; padding-right: 10px; }
+  #dossierContent .identity-card-body { grid-template-columns: 80px minmax(0,1fr); gap: 10px; }
+  #dossierContent .employee-identity-card .portrait-frame { width: 80px; height: 120px; }
+  #dossierContent .identity-card-name { font-size: 26px; }
+  #dossierContent .identity-card-name-long { font-size: 22px; }
+  #dossierContent .identity-card-department > strong { font-size: 10px; }
+  #dossierContent .identity-card-secondary > span:last-child { font-size: 9px; }
 }

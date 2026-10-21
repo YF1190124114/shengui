@@ -1,0 +1,134 @@
+{
+  "node_count": 140,
+  "edge_count": 17,
+  "jma_count_sum": 1071,
+  "department_counts": {
+    "民生生活服务部": 75,
+    "自然环境管理部": 29,
+    "风险危机处理部": 8,
+    "地方文化运营部": 7,
+    "财富事业发展部": 3,
+    "社会秩序管理部": 7,
+    "健康生育服务部": 11
+  },
+  "relation_type_counts": {
+    "business": 16,
+    "supply": 1,
+    "culture": 0
+  },
+  "evidence_type_counts": {
+    "documented": 0,
+    "inferred": 0,
+    "design_simulation": 17
+  },
+  "degree_definition": "每条边两端各计1，跨类型平行边分别计；唯一邻居数另列",
+  "degree_distribution": {
+    "0": 127,
+    "1": 4,
+    "2": 2,
+    "3": 4,
+    "4": 1,
+    "5": 2
+  },
+  "isolated_node_count": 127,
+  "cross_department_edge_count": 12,
+  "cross_department_ratio": 0.7058823529411765,
+  "cross_department_by_type": {
+    "business": {
+      "edges": 16,
+      "cross": 12
+    },
+    "supply": {
+      "edges": 1,
+      "cross": 0
+    },
+    "culture": {
+      "edges": 0,
+      "cross": 0
+    }
+  },
+  "confidence_counts": {
+    "中": 17
+  },
+  "low_confidence_edge_ids": [],
+  "function_review_status_counts": {
+    "source_supported_scope_limited": 19,
+    "needs_evidence": 115,
+    "collection_record": 6
+  },
+  "department_changes": [
+    {
+      "id": "15",
+      "name": "洱河灵帝",
+      "old": "民生生活服务部",
+      "new": "自然环境管理部"
+    },
+    {
+      "id": "26",
+      "name": "火神",
+      "old": "自然环境管理部",
+      "new": "风险危机处理部"
+    },
+    {
+      "id": "27",
+      "name": "白龙苍龙财龙",
+      "old": "财富事业发展部",
+      "new": "自然环境管理部"
+    },
+    {
+      "id": "33",
+      "name": "山神土地",
+      "old": "社会秩序管理部",
+      "new": "自然环境管理部"
+    },
+    {
+      "id": "43",
+      "name": "魁星文昌",
+      "old": "财富事业发展部",
+      "new": "地方文化运营部"
+    },
+    {
+      "id": "58",
+      "name": "大黑天神",
+      "old": "自然环境管理部",
+      "new": "风险危机处理部"
+    },
+    {
+      "id": "82",
+      "name": "罗昌阁大王",
+      "old": "民生生活服务部",
+      "new": "健康生育服务部"
+    },
+    {
+      "id": "93",
+      "name": "枭神",
+      "old": "民生生活服务部",
+      "new": "风险危机处理部"
+    },
+    {
+      "id": "95",
+      "name": "哭神",
+      "old": "民生生活服务部",
+      "new": "健康生育服务部"
+    },
+    {
+      "id": "97",
+      "name": "血湖",
+      "old": "民生生活服务部",
+      "new": "社会秩序管理部"
+    },
+    {
+      "id": "110",
+      "name": "夜游神",
+      "old": "民生生活服务部",
+      "new": "健康生育服务部"
+    },
+    {
+      "id": "122",
+      "name": "虹神",
+      "old": "民生生活服务部",
+      "new": "健康生育服务部"
+    }
+  ],
+  "human_signoff_complete": false
+}

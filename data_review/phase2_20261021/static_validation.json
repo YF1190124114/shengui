@@ -1,0 +1,23 @@
+{
+  "static_checks_passed": true,
+  "raw_records": 140,
+  "raw_name_id_order_intact": true,
+  "raw_jma_count_sum": 1071,
+  "unique_node_ids": 140,
+  "unique_edge_ids": 17,
+  "images_existing": 140,
+  "evidence_rows_match_edges": true,
+  "no_self_edges_or_dangling_references": true,
+  "no_meaningless_duplicates": true,
+  "supply_cycles": 0,
+  "csv_row_counts": {
+    "functions_review_140.csv": 140,
+    "field_review_700.csv": 700,
+    "image_mapping_140.csv": 140,
+    "manual_relation_review_checklist.csv": 23,
+    "excluded_relation_candidates.csv": 6
+  },
+  "human_review_complete": false,
+  "culture_edges": 0,
+  "manual_review_note": "17条实际新边全查清单；另6条排除候选，不将AI预检当人工签核。"
+}

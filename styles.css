@@ -1518,3 +1518,25 @@ body.onboarding-active #tooltip {
   }
 }
 
+
+
+/* Evidence explanations reuse the existing folder, type scale and paper palette. */
+.data-provenance-note { margin-top: 10px; font-size: 10px; color: var(--muted); max-width: 320px; }
+.review-status, .archive-facts, .relation-explanation { font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.review-status p + p, .archive-facts p + p, .relation-explanation p + p { margin-top: 8px; }
+.review-caption { margin-top: 8px; font-size: 11px; color: var(--muted); line-height: 1.6; }
+.dossier-close { margin-top: 8px; font-size: 10px; }
+.profile-evidence, .legacy-profile { margin-top: 12px; font-size: 11px; line-height: 1.65; }
+.profile-evidence > summary, .legacy-profile > summary { cursor: pointer; text-decoration: underline; }
+.reference-entry { margin: 10px 0; padding: 8px 0; border-top: var(--border-dashed); font-size: 11px; overflow-wrap: anywhere; }
+.reference-entry a { color: inherit; text-underline-offset: 2px; }
+.relation-entry { border-bottom: var(--border-dashed); }
+.relation-entry > summary { padding: 12px 24px; cursor: pointer; list-style-position: inside; }
+.relation-entry > summary:hover { background: #e8e3d8; }
+.relation-entry > summary:focus-visible, .profile-evidence > summary:focus-visible, .legacy-profile > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: -3px; }
+.relation-entry .related-name { display: block; margin: 5px 0; font-size: 14px; }
+.relation-kind, .relation-direction { display: block; font-size: 10px; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
+.relation-explanation { padding: 0 24px 16px; }
+.related-node-button { margin-top: 10px; font-size: 11px; text-align: left; white-space: normal; }
+.empty-relations { padding: 16px 24px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+@media (max-width: 440px) { .dossier-container { width: min(400px, 100vw); } }

@@ -1,0 +1,74 @@
+{
+  "scope": "旧正式网络基线；非重建完成结果",
+  "node_count": 140,
+  "edge_count": 376,
+  "raw_jma_count_sum": 1071,
+  "current_jma_count_sum": 1225,
+  "department_counts": {
+    "民生生活服务部": 82,
+    "自然环境管理部": 28,
+    "风险危机处理部": 5,
+    "地方文化运营部": 6,
+    "财富事业发展部": 5,
+    "社会秩序管理部": 7,
+    "健康生育服务部": 7
+  },
+  "source_counts": {
+    "功能需求诞生型": 101,
+    "自然生成型": 15,
+    "地方英雄转化型": 13,
+    "宗教体系转化型": 5,
+    "禁忌灾害管理型": 6
+  },
+  "edge_type_counts": {
+    "business": 120,
+    "supply": 127,
+    "culture": 129
+  },
+  "degree_definition": "每条边两端各计1，跨类型平行关系各计；另附不重复邻居数",
+  "degree_distribution": {
+    "2": 5,
+    "3": 2,
+    "4": 34,
+    "6": 97,
+    "9": 2
+  },
+  "isolated_nodes": 0,
+  "cross_department_edges": 238,
+  "cross_department_ratio": 0.6329787234042553,
+  "modulo_140_offsets": {
+    "business": {
+      "7": 117,
+      "135": 1,
+      "37": 1,
+      "47": 1
+    },
+    "supply": {
+      "11": 123,
+      "139": 1,
+      "92": 1,
+      "41": 1,
+      "51": 1
+    },
+    "culture": {
+      "13": 126,
+      "1": 1,
+      "94": 1,
+      "53": 1
+    }
+  },
+  "missing_node_references": [],
+  "self_edges": [],
+  "same_type_unordered_duplicate_count": 0,
+  "missing_evidence_type_count": 376,
+  "missing_confidence_count": 376,
+  "default_visible_nodes": 137,
+  "default_visible_edges": 362,
+  "missing_image_ids": [
+    "8",
+    "40",
+    "99",
+    "118",
+    "140"
+  ]
+}

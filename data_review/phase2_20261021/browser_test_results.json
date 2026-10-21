@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-21",
+  "engine": "Google Chrome headless via Chrome DevTools Protocol; real Canvas and DOM event listeners",
+  "origin": "http://127.0.0.1:8765",
+  "checks": [
+    {
+      "name": "初始加载、140记录、17关系与1071数量",
+      "status": "PASS"
+    },
+    {
+      "name": "全部140个ID图像加载成功（含7处数量修复）",
+      "status": "PASS"
+    },
+    {
+      "name": "七部门逐项筛选、全清空与全选",
+      "status": "PASS",
+      "details": {
+        "自然环境管理部": 29,
+        "民生生活服务部": 75,
+        "社会秩序管理部": 7,
+        "健康生育服务部": 11,
+        "风险危机处理部": 8,
+        "地方文化运营部": 7,
+        "财富事业发展部": 3
+      }
+    },
+    {
+      "name": "三类关系开关、零文化边与零边布局",
+      "status": "PASS"
+    },
+    {
+      "name": "集合可搜索、重名独立、ID查询、无结果与空图适配",
+      "status": "PASS"
+    },
+    {
+      "name": "甲马数量阈值基于原始逐条数量（48以上仅99与105）",
+      "status": "PASS"
+    },
+    {
+      "name": "Canvas指针点击档案、展开理由与出处、供应方向和依赖",
+      "status": "PASS"
+    },
+    {
+      "name": "关联档案跳转、关系列表随图层过滤同步",
+      "status": "PASS"
+    },
+    {
+      "name": "140份档案逐项渲染、原始信息与集合不赋神职",
+      "status": "PASS"
+    },
+    {
+      "name": "集合与待核查档案明确区分、旧值可追溯",
+      "status": "PASS"
+    },
+    {
+      "name": "Canvas与图例线型一致、真实供应边箭头；零文化层用临时绘图夹具验证点线",
+      "status": "PASS",
+      "details": {
+        "calls": [
+          [],
+          [
+            7,
+            4
+          ],
+          [],
+          [
+            1,
+            4
+          ]
+        ],
+        "fills": 1,
+        "styles": [
+          [],
+          [
+            7,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "name": "稀疏网络坐标有限、滚轮缩放、适配及重置",
+      "status": "PASS"
+    },
+    {
+      "name": "真实指针拖动节点与空画布平移",
+      "status": "PASS"
+    },
+    {
+      "name": "导出PNG可下载且文件头有效",
+      "status": "PASS"
+    },
+    {
+      "name": "390px窄窗口档案不超出屏幕",
+      "status": "PASS",
+      "details": {
+        "left": 0,
+        "right": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "全新会话启动、5页引导与进入新版网络",
+      "status": "PASS"
+    },
+    {
+      "name": "运行中无JavaScript异常或本地数据/图像HTTP错误",
+      "status": "PASS"
+    }
+  ],
+  "jsErrors": [],
+  "localHttpErrors": [],
+  "imagesLoaded": 140,
+  "notes": [
+    "点线通过仅绘图的临时culture夹具测试，正式culture边仍为0。",
+    "人工研究者签核与浏览器功能测试为不同工作。",
+    "窄屏只验证档案新增内容的边界，不声称对原面板重做响应式设计。"
+  ],
+  "tested_project_root": "/Users/guoxiaoguang/Desktop/shengui",
+  "runs": "暂存版及安装到真实项目目录后均执行全部17组检查，结果通过"
+}

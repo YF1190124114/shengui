@@ -1,0 +1,797 @@
+{
+  "audit_date": "2026-10-21",
+  "branch": "working",
+  "head": "27bddafd5adbb35abe16d0a269a6f1dca021d674",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 8196,
+      "sha256": "1b525044a78f1f9262bc5778f2c720ff31278d14f37fbc2ff16b220910e1f1e5"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3952,
+      "sha256": "c01e9535105d15deea16dde847fcbc9d5fdf6cbb4f0d4e329b34f8532038411c"
+    },
+    {
+      "path": "app.js",
+      "bytes": 29912,
+      "sha256": "60d5da051a09acf9f64d1d949063cc39a468549b607892f745402defb7f59fda"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8068,
+      "sha256": "1473a6d69a5eae82b546a4f77c043050b42dc82a43b1a0733f322a6be3ad7150"
+    },
+    {
+      "path": "modalpage/p1.png",
+      "bytes": 1008228,
+      "sha256": "44c387cf67e35bb14e681e4326d04347ba61fe7e4e259c900f8b0068e82c4ddb"
+    },
+    {
+      "path": "modalpage/p2.png",
+      "bytes": 266115,
+      "sha256": "dcfb0b93f49d97686108b39ae3b7fb94ef424e96f67b0d5231ca3cbe0d91a674"
+    },
+    {
+      "path": "modalpage/p3.png",
+      "bytes": 1842874,
+      "sha256": "43a926f834bbfee9a65cd2a37447bdbba92663161068814e619dba85d79b6f2d"
+    },
+    {
+      "path": "modalpage/p4.png",
+      "bytes": 811091,
+      "sha256": "a731c25b47620e6e8fdf376db1a824aba753aa501c08991e79a50b2107076350"
+    },
+    {
+      "path": "modalpage/p5.png",
+      "bytes": 117411,
+      "sha256": "026822f0f0acab27d3634bd4318d05d2708579784de421601f812569a66c0ee2"
+    },
+    {
+      "path": "network-data.js",
+      "bytes": 143244,
+      "sha256": "6d1237a0cc4ce25b0fe905362438d20aeed6bb066e508bee9ef56fe73cffa258"
+    },
+    {
+      "path": "onboarding.js",
+      "bytes": 5066,
+      "sha256": "3233523c6129d745a15639ba53c8a86e22d791f2ec9fec3f71cd9b7d0e439bea"
+    },
+    {
+      "path": "research_data/先填数据 39b5957a5465803a91a5f06899f1ed27.csv",
+      "bytes": 5928,
+      "sha256": "174ef9d11ad6f1998d99d0ea5625b412b20a28e5a5e7c88c2398f9a7d767c3fc"
+    },
+    {
+      "path": "research_data/公司概览(1).xlsx",
+      "bytes": 11224,
+      "sha256": "8ec1275fbd7e7cbcf8fe3a63084b7818a07eaebf3fcb25baedf588922c7e7874"
+    },
+    {
+      "path": "research_data/新公司花名册.csv",
+      "bytes": 25230,
+      "sha256": "cdceb140e1f3148b1944c95deae64194f2278e42644f2a2acb14b02817c504f6"
+    },
+    {
+      "path": "research_data.zip",
+      "bytes": 17403,
+      "sha256": "fa90084513601678dc682d9ec80616579818ea7c24c9d6579293385c7a761d49"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 25904,
+      "sha256": "f4bdf95225b637cca6e8d74c2454105b8d0b5ec6a119b4a61f199a399d4596be"
+    },
+    {
+      "path": "缩放后/.DS_Store",
+      "bytes": 14340,
+      "sha256": "389f7679f38dc65660bb0e7774922ce2dc1070b534d3b87c8eec858d362911f5"
+    },
+    {
+      "path": "缩放后/三位姑娘_3.png",
+      "bytes": 16147,
+      "sha256": "9a090ff292642f2e6d62a767a68aaef9c12763aec7c1efc9f8643ca1b42898f6"
+    },
+    {
+      "path": "缩放后/三崇大帝_4.png",
+      "bytes": 6902,
+      "sha256": "dc52af7997d5ba7e151985e0b6821375fadb9e226d0977131793cedd03107d7a"
+    },
+    {
+      "path": "缩放后/三木大王_3.png",
+      "bytes": 1117,
+      "sha256": "844bc03ca031fd2bf22da4e4fae178e09d167eec1cbb1754a6c3d5a98e69a0c4"
+    },
+    {
+      "path": "缩放后/东山安民富境灵帝_1.png",
+      "bytes": 6537,
+      "sha256": "6d81e6dbfbcd74935919d89c66145410ccc8ef3a19b40e492ba526755e6704df"
+    },
+    {
+      "path": "缩放后/东海灵源_1.png",
+      "bytes": 7759,
+      "sha256": "e5446d8584acbf919b0c4f332e836b1273d5b28703c0c9964664e1b5e1342896"
+    },
+    {
+      "path": "缩放后/丧葬诸神鬼_32.png",
+      "bytes": 18553,
+      "sha256": "e4e83519593d2ae4fd1c2000b307cea070a0d9324088cf5ccb9828b8cabd0f14"
+    },
+    {
+      "path": "缩放后/九坛神_1.png",
+      "bytes": 21201,
+      "sha256": "962a99f6bed0c7d1e8755a11f2a89b99db46f99d8ea60067733c55c8c624a035"
+    },
+    {
+      "path": "缩放后/二郎景帝_3.png",
+      "bytes": 18419,
+      "sha256": "c583adde1437217c968ce77817abfc497d2dc4a0c6d132e3b021f45d0f6d76f7"
+    },
+    {
+      "path": "缩放后/五官本主_2.png",
+      "bytes": 13213,
+      "sha256": "4fe398d7f7dbd05a0d557f19ed7c0a62fa815fd8553e644ca94aaa8902c79223"
+    },
+    {
+      "path": "缩放后/五谷六畜_28.png",
+      "bytes": 1019,
+      "sha256": "093b3f0425bf1bf9a873f19100e7984babdbb2840f6c95eb2b0fe2d6740100aa"
+    },
+    {
+      "path": "缩放后/五鬼_15.png",
+      "bytes": 16343,
+      "sha256": "b9142e5591f5090b901c4c6bcff2d84efd2265f5f6bab35748314af14f08b2a4"
+    },
+    {
+      "path": "缩放后/井神_2.png",
+      "bytes": 6922,
+      "sha256": "9574c1d0b98c72e15bc33ab05b5b831bdbed376c0bef4232339087009297eb74"
+    },
+    {
+      "path": "缩放后/仙家老太_1.png",
+      "bytes": 19021,
+      "sha256": "f1be50aef543b7b7c681da19673478476035c163846fb1656b7175c81ff9a023"
+    },
+    {
+      "path": "缩放后/众神_5.png",
+      "bytes": 16750,
+      "sha256": "62f5ba3e402bff021201dd97002ee2d381d8323877d7925f6ac1e7d78fc164a3"
+    },
+    {
+      "path": "缩放后/六贼神_2.png",
+      "bytes": 24888,
+      "sha256": "de70dc2b5255a915707e50d332833eef5e8b9c237a3ff611a037044585428734"
+    },
+    {
+      "path": "缩放后/关科_56.png",
+      "bytes": 21440,
+      "sha256": "979c2384c9b5bca30b37b026ac287ad18a1a7e05adeeff1db148fdea79e3a955"
+    },
+    {
+      "path": "缩放后/其他_11.png",
+      "bytes": 979,
+      "sha256": "1fef4e746cf17a6f41cdaa676538ce1eff148c284495862c4d33d3321d1cac21"
+    },
+    {
+      "path": "缩放后/其他_48.png",
+      "bytes": 16633,
+      "sha256": "04e2f7a0fc56960aedff53ecfec5bc3961821a2dac1722f1226e1eaa53954423"
+    },
+    {
+      "path": "缩放后/其他_5.png",
+      "bytes": 17076,
+      "sha256": "40dd6648339bdef13b7dad0a227175a13c74508449d3f1816ba5f756854c479c"
+    },
+    {
+      "path": "缩放后/刀兵_32.png",
+      "bytes": 21310,
+      "sha256": "d7e4b086ff87300d3e82b53df2c884cb3dc09b785ed78ba2bc90c323da9b9f16"
+    },
+    {
+      "path": "缩放后/利市招财_10.png",
+      "bytes": 6871,
+      "sha256": "b826607f9993339af60a80e0794f353b4cde122f3eb712ed9b7b3fdab8c46036"
+    },
+    {
+      "path": "缩放后/功曹_5.png",
+      "bytes": 16206,
+      "sha256": "7ab7eb45a71f68ae99149a79a08512204c6edc78982c6f431ac5230db10ec75c"
+    },
+    {
+      "path": "缩放后/北方天王_2.png",
+      "bytes": 17821,
+      "sha256": "459a05df396ee02952bd14483ceff88923ad6024882da50562bbfdb26e61cf0e"
+    },
+    {
+      "path": "缩放后/匡圣皇帝_3.png",
+      "bytes": 16881,
+      "sha256": "df7a4d87a34904c4187f2f6dc3c2a3033bce7d7118c62f6de48223ad2aef933e"
+    },
+    {
+      "path": "缩放后/匹公匹母_2.png",
+      "bytes": 14772,
+      "sha256": "2f9680ecf4bef8e06c0eae6968d646d3d723396c2639324651a0d52a30d271e9"
+    },
+    {
+      "path": "缩放后/后宫娘娘_21.png",
+      "bytes": 18827,
+      "sha256": "83440c5cadb1b092bd033b7c0ba5eb3269bf11aede0cbb0b44ac76c1e0170017"
+    },
+    {
+      "path": "缩放后/周公桃花_2.png",
+      "bytes": 18957,
+      "sha256": "4f78cd48f49da79b7b4a06326352cf6bc6940572dd7bb7b4eab996b71c06ea7e"
+    },
+    {
+      "path": "缩放后/品甸大王_3.png",
+      "bytes": 17567,
+      "sha256": "78f7d36266c6e95899ddf61d40bedcb4d100a6908842181f5877b459b7057dd4"
+    },
+    {
+      "path": "缩放后/哭神_5.png",
+      "bytes": 14974,
+      "sha256": "103bc1e5bea48ab4443dd0ea42591c59b04dc0057ad8fd6346c9d6a1d401d443"
+    },
+    {
+      "path": "缩放后/喜神_27.png",
+      "bytes": 19234,
+      "sha256": "d39791cf90407dc5f70eced0f8684417eb0cba1b6003d69a3e7dd126d629b52e"
+    },
+    {
+      "path": "缩放后/国光皇帝_1.png",
+      "bytes": 16158,
+      "sha256": "0428e41cebcfa3376bac19ad05cb50629cd4076269c99dcc93c55dbc6fb051e8"
+    },
+    {
+      "path": "缩放后/圈神粪神_14.png",
+      "bytes": 1006,
+      "sha256": "3c8a05be032e8f60af85609bc77d29a53d686da0db2fa84c397473c3c4aa3ba9"
+    },
+    {
+      "path": "缩放后/土皇神_1.png",
+      "bytes": 18755,
+      "sha256": "f227b2623dead0c7cfd21a2bc99a0348d1b10843c263cc9193d29ebcb1e15c25"
+    },
+    {
+      "path": "缩放后/土科_12.png",
+      "bytes": 1234,
+      "sha256": "13960318c3b864f89f433e33604aafc1b5b8e8eac4314d90d690fbd60cc96d65"
+    },
+    {
+      "path": "缩放后/地藏王_2.png",
+      "bytes": 14315,
+      "sha256": "fc3fb802bb05e910d680b39cde89d8e8bed5f695bc8a823fd468f2d57608e940"
+    },
+    {
+      "path": "缩放后/城隍_9.png",
+      "bytes": 20224,
+      "sha256": "a27ca10bdefe8bab8b55f1bc3b8ce2def10ab19817847a7f5792590aeaf16def"
+    },
+    {
+      "path": "缩放后/城隍土主_2.png",
+      "bytes": 20792,
+      "sha256": "d5a49d4bd0ff1580c51b148df4de0156c0ff5c28a3c0903c581252257386ea90"
+    },
+    {
+      "path": "缩放后/夜游神_5.png",
+      "bytes": 14338,
+      "sha256": "656b887af3097a9a14b9f0ecc210f7d92a672badf4687f6b62bd28f23d474a4c"
+    },
+    {
+      "path": "缩放后/大圣建国皇帝_1.png",
+      "bytes": 19366,
+      "sha256": "941eeced7f1b39c48323091c61aed0a4ac4aa04fb6ff5a444bbdeba4c1dbbf53"
+    },
+    {
+      "path": "缩放后/大庄天王_1.png",
+      "bytes": 18365,
+      "sha256": "cb68ca9867c02c403e757d3cf18d2c4b22befedb41394495b791209c51f38c8d"
+    },
+    {
+      "path": "缩放后/大爷之神_8.png",
+      "bytes": 19538,
+      "sha256": "8baaf22cbb3dcd007524c032c9c4305a7dfbe1c420d82ec086b698b15935b874"
+    },
+    {
+      "path": "缩放后/大黑天神_11.png",
+      "bytes": 16844,
+      "sha256": "ddbb7856606d1d6eab068893c7bb63e7715e61b9dd8914d0d0d29c15e9b89194"
+    },
+    {
+      "path": "缩放后/天地日月_27.png",
+      "bytes": 6931,
+      "sha256": "7872a1dfdfe51bc831457dbc86ccf97c2bda1114347eb64e612a6bf47ad25f5b"
+    },
+    {
+      "path": "缩放后/天子景帝_1.png",
+      "bytes": 20286,
+      "sha256": "cb29a5ee7d5635acc9c8e5f4fb2b901dc2df16ea1c7da8ec24a6c3e1f9918869"
+    },
+    {
+      "path": "缩放后/天狗之神_8.png",
+      "bytes": 17018,
+      "sha256": "dd1f0b5501d71ab9dc32803e29dd36c65dfa42e2bfaa942a981e009d7bae9813"
+    },
+    {
+      "path": "缩放后/太岁_17.png",
+      "bytes": 16069,
+      "sha256": "4bdafb31362f6dd133217f42cf3ffce21e7f0190e829b1f6018b065d4117bb4c"
+    },
+    {
+      "path": "缩放后/太阳之神_1.png",
+      "bytes": 7641,
+      "sha256": "9a62a148cec1c75d494678a3a00793effe46a0797bdb3fb1f277c5cff7bb50b3"
+    },
+    {
+      "path": "缩放后/姑奶之神_2.png",
+      "bytes": 18107,
+      "sha256": "5ae41afb3e5fdbee21a00c9b0838a90e34ee45e71588f6d34c6703c6c82a3c50"
+    },
+    {
+      "path": "缩放后/家宅祀揭地神_2.png",
+      "bytes": 1051,
+      "sha256": "f750103cd3f05327b1c741d9872091246736fdbd034e1b81ca583db394567b17"
+    },
+    {
+      "path": "缩放后/家神_8.png",
+      "bytes": 6834,
+      "sha256": "cab70621d20f070507c0d1116cab2824726ee2c9c674653447560429b51afdca"
+    },
+    {
+      "path": "缩放后/将军洞之神_1.png",
+      "bytes": 18077,
+      "sha256": "7bb34ebd045942075a26e60736578f88cf5f4c2824a4387025bf0247ceea8568"
+    },
+    {
+      "path": "缩放后/小人子_5.png",
+      "bytes": 16203,
+      "sha256": "d57729b8f0514a9ce402a132cc35b4763232753e8c107dfafa71858a76678b97"
+    },
+    {
+      "path": "缩放后/小黄龙_3.png",
+      "bytes": 6826,
+      "sha256": "1bc37203f6df21caffe39a333795d781bff511428c635dc3c155dbd55430e5b6"
+    },
+    {
+      "path": "缩放后/山神_3.png",
+      "bytes": 1108,
+      "sha256": "f2a2ed93fd9341ee8b79c8b7eb39f4302af42709e25bb124db1e9da233e66444"
+    },
+    {
+      "path": "缩放后/山神土地_28.png",
+      "bytes": 18924,
+      "sha256": "217e4f7db54551fd151ac075250ef730f03ba43d3614bc74e8cf252ad0a439d0"
+    },
+    {
+      "path": "缩放后/岩神_5.png",
+      "bytes": 1052,
+      "sha256": "9018ccd012f9fd03f510e9154e9baeae20b4f7d7fe77af1a5701d6043c45d27a"
+    },
+    {
+      "path": "缩放后/平安大吉_22.png",
+      "bytes": 6485,
+      "sha256": "fd016a5cfcb9b966279c10cb8503c98830b29b755b7c6a911b7fd720b8af852c"
+    },
+    {
+      "path": "缩放后/床公床母_7.png",
+      "bytes": 18867,
+      "sha256": "6a32ce5391cd4d52df2e5a371a26df3d00786ed2b8c27ce6ed30a1734ffd0bd3"
+    },
+    {
+      "path": "缩放后/庙神_27.png",
+      "bytes": 1026,
+      "sha256": "99d36ce4bfbb9522c2f552adf28fb49da76622ad5e69b994fa79587bdf4effe8"
+    },
+    {
+      "path": "缩放后/张鲁二班_19.png",
+      "bytes": 1058,
+      "sha256": "878579061a49c7e5a93b797abb5fc0b5c584804e1c2ce26caa64001a6a2beb46"
+    },
+    {
+      "path": "缩放后/弥址三姐_2.png",
+      "bytes": 14793,
+      "sha256": "5f1d17bcf02403732a4415d69ece7c33012e0b62debc520a406926fcea6bf62c"
+    },
+    {
+      "path": "缩放后/得道龙王之神_1.png",
+      "bytes": 6819,
+      "sha256": "520143fab2d34a0f889f225cfcccf65d88788bab68b0c4ea7dd24a0a6a72a8f2"
+    },
+    {
+      "path": "缩放后/惠康皇帝_1.png",
+      "bytes": 17455,
+      "sha256": "d107160ad61dab053f177542fc9f40ab7ce0a18156f58b994767a0f04d9f856e"
+    },
+    {
+      "path": "缩放后/掌兵太子_2.png",
+      "bytes": 17956,
+      "sha256": "d37797f72c2ab4027cc5b79f97bf6d0171318c10e39d3cf705deebd3185ca1f6"
+    },
+    {
+      "path": "缩放后/提巴_1.png",
+      "bytes": 19292,
+      "sha256": "d2799b36c8e1c64c123ed7118d335f9a0fc51460f24cdd04b935d3aebc2d2084"
+    },
+    {
+      "path": "缩放后/提笔先师_4.png",
+      "bytes": 17885,
+      "sha256": "8216d4e6e7122b5a63d3b9ceb6d41d0b5505e4012fc7f5c58c642f788b589101"
+    },
+    {
+      "path": "缩放后/放羊哥_2.png",
+      "bytes": 951,
+      "sha256": "efda6ccd7ffad12141b0adcf0125cd75ab8b04e335cf2d9fdbd80624615d44e1"
+    },
+    {
+      "path": "缩放后/景庄皇帝_2.png",
+      "bytes": 18947,
+      "sha256": "f7c58b2164e6fbac0f836c1e97dd1b590d7cfbed6e257f97bb06da90692b995f"
+    },
+    {
+      "path": "缩放后/替身_8.png",
+      "bytes": 17115,
+      "sha256": "5c345171d38576294d0223b249ef9bd33d0c7c47125c38e3a47376817a0e494c"
+    },
+    {
+      "path": "缩放后/本主_19.png",
+      "bytes": 7337,
+      "sha256": "d1020d53755b9aa32dfc5b890a6f328fcf7c1e1f0a8f7fa39821fcf700a4cc1c"
+    },
+    {
+      "path": "缩放后/本命星君_12.png",
+      "bytes": 18831,
+      "sha256": "84bce8da2a21ccf1dd317458eff5ce656310da39d3f74a243f93b88ebdb93822"
+    },
+    {
+      "path": "缩放后/朱雀玄武_6.png",
+      "bytes": 18957,
+      "sha256": "32b414af55ebc8c53195197f2904d908b82094862d68ee4a0d16dcdb5289fcdf"
+    },
+    {
+      "path": "缩放后/杨四将军_1.png",
+      "bytes": 19305,
+      "sha256": "d56160a25842fbecde82399a116b84bae8897e086798afc02a8048adf3469c67"
+    },
+    {
+      "path": "缩放后/枭神_7.png",
+      "bytes": 18519,
+      "sha256": "21e29670be8199bb6f295b6d65b5b73193fe500ae492d1d3d33664d020e9d1d7"
+    },
+    {
+      "path": "缩放后/柏洁夫人_7.png",
+      "bytes": 7300,
+      "sha256": "48d42c18b90e505c86b9ec3e9dc2705b309f60e9b5e7e8013d6f628d78f71b25"
+    },
+    {
+      "path": "缩放后/柳英姑娘_3.png",
+      "bytes": 13445,
+      "sha256": "de6892771681cc99284ec78a7bb08ffd33c9693f9bef1d85c862a692a45535ea"
+    },
+    {
+      "path": "缩放后/树神_10.png",
+      "bytes": 904,
+      "sha256": "348fd35ab16d5e2dec4979cbbfd1b224fe265c36ec700311967098ba0c29bce9"
+    },
+    {
+      "path": "缩放后/桥路二神_26.png",
+      "bytes": 1089,
+      "sha256": "0c1e8ee757fa2f5d14e6e3a5578c0cbddff6b1840b29199276c1a0223cec2a85"
+    },
+    {
+      "path": "缩放后/武侯神君_1.png",
+      "bytes": 20317,
+      "sha256": "293d64c157d3d314d8b118c249c9d0fb90f567a304a889987af2877aa33ff48e"
+    },
+    {
+      "path": "缩放后/武宜皇帝_3.png",
+      "bytes": 13910,
+      "sha256": "469d0051b8288e2ac49820ae3e7a0f4bcf7e4fafcd1f719e5783d96bfd43d3e9"
+    },
+    {
+      "path": "缩放后/水神_5.png",
+      "bytes": 1124,
+      "sha256": "d2691c013b32911d75709774f4300e93e15004fd59c246c64e1d1460d4af32cd"
+    },
+    {
+      "path": "缩放后/水草大王_6.png",
+      "bytes": 1179,
+      "sha256": "da9238a1b3f5ac08a4706f3f3441978e21c9a9c555ed371411dd56660c31f522"
+    },
+    {
+      "path": "缩放后/洱河灵帝_1.png",
+      "bytes": 7665,
+      "sha256": "b4917faf327e98083749beb655504638bdda1d1db1217f0dcfad9011096a402f"
+    },
+    {
+      "path": "缩放后/清官本主_2.png",
+      "bytes": 19429,
+      "sha256": "7a5d46ab7c7b8e7710bc1b1a3c544245fae58cc5b2b113e98adad2abd3022685"
+    },
+    {
+      "path": "缩放后/火塘神_1.png",
+      "bytes": 7197,
+      "sha256": "28b4892c2ac9c20ef1d2a2907d69d0fe5a54f7db97af7d54f72e1ea87689ef34"
+    },
+    {
+      "path": "缩放后/火神_11.png",
+      "bytes": 7247,
+      "sha256": "947a74db0212513c19de9cebb170ba274312ac5ccd77ad10a9a7fb83dc9b2ead"
+    },
+    {
+      "path": "缩放后/独角五郎_4.png",
+      "bytes": 19747,
+      "sha256": "ba4d48e4ef48cbca4b45ec1c10f4182bb6cdb4941db45260ed3ce8ac6df4d27d"
+    },
+    {
+      "path": "缩放后/猎神_1.png",
+      "bytes": 7560,
+      "sha256": "d1a950fb3b39a9c2f81d91046a9dd31856dbec803f75930d41bfa84c23a49c9b"
+    },
+    {
+      "path": "缩放后/猎神_9.png",
+      "bytes": 1045,
+      "sha256": "bbaea01e2535b556d53df036f5678cfbd787610adaf1ea1231c9a04bc350ce16"
+    },
+    {
+      "path": "缩放后/玉皇上帝_2.png",
+      "bytes": 17199,
+      "sha256": "f72282a2a5ef4bf34b294d8da8fc6ac32d3320088260ce23157f677aebc49d29"
+    },
+    {
+      "path": "缩放后/田公地母_1.png",
+      "bytes": 7344,
+      "sha256": "f07f2abc20615d4125f1595e162ff618b6cb843ff5c310102b459a639bb4ccd1"
+    },
+    {
+      "path": "缩放后/病符_22.png",
+      "bytes": 19924,
+      "sha256": "574b78dff63dcdd4ab81c9d064b9b3aac356386222130e191fe56c323a74855a"
+    },
+    {
+      "path": "缩放后/痘哥_2.png",
+      "bytes": 14696,
+      "sha256": "7256522a9f0c2edf9ec3071322aefb7d34b6d139419f609140775b1174de79fe"
+    },
+    {
+      "path": "缩放后/白莺太子_2.png",
+      "bytes": 19451,
+      "sha256": "361d7e614325c5f1caa28593943134e7f8aa2c90826de37c368a3c23f559a0a0"
+    },
+    {
+      "path": "缩放后/白马将军_3.png",
+      "bytes": 14291,
+      "sha256": "b29d5dd088d5c03a6df299a3c7a740883f9aa2d4897184e6d9611c4c7d51725a"
+    },
+    {
+      "path": "缩放后/白龙苍龙财龙_5.png",
+      "bytes": 7480,
+      "sha256": "85d65ac4d1f2e51493d32d053189e6ef1c054619ac3b7064b05c5f831f7cf1a8"
+    },
+    {
+      "path": "缩放后/石头本主_3.png",
+      "bytes": 6807,
+      "sha256": "382c75f684d63202436efb4b5d18668dcc3d7e6c2120e245fbd435aeefc62125"
+    },
+    {
+      "path": "缩放后/神灵鬼魂_33.png",
+      "bytes": 18542,
+      "sha256": "e0a21cbcef7bab83c41c61da59b71062a3225e0bb031f573136f641c2901c52e"
+    },
+    {
+      "path": "缩放后/神牛大老爷_1.png",
+      "bytes": 7647,
+      "sha256": "8588e6d1b45bb9434905e38d3bd17fb91a2d58f072b124e98e33abe1e4ab6239"
+    },
+    {
+      "path": "缩放后/祭木神_6.png",
+      "bytes": 1049,
+      "sha256": "c527553b0c2391ace15355b1c87642d44f403084eaf97a226f4494f6f1031e60"
+    },
+    {
+      "path": "缩放后/福民景帝_1.png",
+      "bytes": 12641,
+      "sha256": "4db4f5d7a0dffaf05d03c0121d34598ff7da21f423a1c660a64a37901e0aa4ff"
+    },
+    {
+      "path": "缩放后/红山本主_7.png",
+      "bytes": 7767,
+      "sha256": "13a3df0ac3b61f87026dd594a72ee6f32f5b547c8af53115cc2c66006b178688"
+    },
+    {
+      "path": "缩放后/罗昌阁大王_1.png",
+      "bytes": 17212,
+      "sha256": "e039bff3751d912b0462d5e9320bf4f311c18d081a8a2fec974bc138d3185957"
+    },
+    {
+      "path": "缩放后/羊玺王_2.png",
+      "bytes": 1045,
+      "sha256": "97e19cea13cbe5a69707e5711dfcb2a6c1d61e3113168ff9df6a4b31d614383a"
+    },
+    {
+      "path": "缩放后/老太之神_1.png",
+      "bytes": 16223,
+      "sha256": "540d94660185c766d81d74ef83f911b4034aa8f5e86f706ed3261ed5118850f6"
+    },
+    {
+      "path": "缩放后/草甲_4.png",
+      "bytes": 18895,
+      "sha256": "cea29665ea311434bcafdf9794e8aecfc4c0f194eb55ca10808edfe26500ef86"
+    },
+    {
+      "path": "缩放后/虚空过往之神_6.png",
+      "bytes": 18058,
+      "sha256": "772269b6fd517ffdb186a9f3342a1e1d3721746eae8bcae1c97785eb371cb31e"
+    },
+    {
+      "path": "缩放后/虫王_3.png",
+      "bytes": 863,
+      "sha256": "e85d9a51ffa82688f48ce4003093bd1d98a2096e6d30a792da3b8b13818f028d"
+    },
+    {
+      "path": "缩放后/虹神_2.png",
+      "bytes": 21888,
+      "sha256": "a68dfe8a45442fda801588c45995fd3b61d1f1ec388a46e30766234374615e88"
+    },
+    {
+      "path": "缩放后/蛊_11.png",
+      "bytes": 18488,
+      "sha256": "f2def5c5dadc3f4c40898497ce827b67162bc20e4e83feb2b5d59140b1dc13b4"
+    },
+    {
+      "path": "缩放后/血湖_3.png",
+      "bytes": 20090,
+      "sha256": "21946f2b6dba07935c5a1250a5099617311bbf5bd3daa66a31dfec422ce0cdff"
+    },
+    {
+      "path": "缩放后/血神之神_8.png",
+      "bytes": 17604,
+      "sha256": "deba3890b72176302dc33fbc206c2ae67520dbf02b221808ab8c31f2e95a51fe"
+    },
+    {
+      "path": "缩放后/西山皇帝_6.png",
+      "bytes": 7096,
+      "sha256": "5e98773403be444625927ad2aa7cd677e0cb9c0cc5fa95d6af5267d2c6b0dc9c"
+    },
+    {
+      "path": "缩放后/西方景帝_1.png",
+      "bytes": 16399,
+      "sha256": "ebc96468d3b875227e47ce88a707ed0e1740d093edb3cfd030059c65b4b5ce17"
+    },
+    {
+      "path": "缩放后/观音_6.png",
+      "bytes": 19198,
+      "sha256": "9d9483eae10267daac50a1d1e0dfd36159e56e9225c2df5806891c50bd88eb87"
+    },
+    {
+      "path": "缩放后/观音老祖_2.png",
+      "bytes": 19755,
+      "sha256": "c112d6678f66f755e73a1e5c22b88b5df8cbeef69c3f2898e65ad2a6a0ffd5f0"
+    },
+    {
+      "path": "缩放后/解冤结_27.png",
+      "bytes": 19755,
+      "sha256": "79b55f0a282848d9c525d50270793d1aeaa6c51069713a5adf3dda461b91786a"
+    },
+    {
+      "path": "缩放后/财神_16.png",
+      "bytes": 18889,
+      "sha256": "358cd037473a2f0261bb06904f6cb3dad8176acca2e3570e634d944d85737b90"
+    },
+    {
+      "path": "缩放后/财神_17.png",
+      "bytes": 18889,
+      "sha256": "358cd037473a2f0261bb06904f6cb3dad8176acca2e3570e634d944d85737b90"
+    },
+    {
+      "path": "缩放后/赤子三爷_1.png",
+      "bytes": 7467,
+      "sha256": "b028266f93723787c38a2147a51cbe22e7a4c6e0e950b2c8553419095e741f08"
+    },
+    {
+      "path": "缩放后/送圣马子_2.png",
+      "bytes": 7170,
+      "sha256": "78383ae2591179adc9bfbda29b7919e20b7532bd37809025523829edcdfd042c"
+    },
+    {
+      "path": "缩放后/送灶神_18.png",
+      "bytes": 17709,
+      "sha256": "c1960acbe9842c1e7f17c848fba217d843ad637fa9526a0a55c461bcaf18b31f"
+    },
+    {
+      "path": "缩放后/送生娘娘_10.png",
+      "bytes": 18919,
+      "sha256": "c23f789d3f168e024998b24d493bee903aefa250431522290bac0af6d0e66685"
+    },
+    {
+      "path": "缩放后/都司王相公_2.png",
+      "bytes": 18532,
+      "sha256": "28fb1639429f3c68a169a42b025495a730a34b6d88ac6c1c02328f3eeb6daf99"
+    },
+    {
+      "path": "缩放后/醋神_1.png",
+      "bytes": 1048,
+      "sha256": "0f04b717ad3ed311ea5e68576df366ed03bd1365d3d3037b159645534aa188a4"
+    },
+    {
+      "path": "缩放后/金花银花_1.png",
+      "bytes": 17851,
+      "sha256": "852f5c9965daf1d1774877b71f490229a300f1f6a52a9bca5a0dff33d567ae0a"
+    },
+    {
+      "path": "缩放后/铁柱三郎_1.png",
+      "bytes": 7172,
+      "sha256": "99e187dfb2d44515ccb6d0347257c66251f4509b6549e36756380f00004b4b5e"
+    },
+    {
+      "path": "缩放后/阴阳太岁_1.png",
+      "bytes": 16413,
+      "sha256": "6659d622d4ca88b2f4f925d8bf71202b9c9d601d06fa1e4e0f74e5b32ba9963d"
+    },
+    {
+      "path": "缩放后/阿娝老太_5.png",
+      "bytes": 19915,
+      "sha256": "733177d1d0a28ee0f059f90f94c23be0d7cd831aa64dae8661b36cabfd4755ff"
+    },
+    {
+      "path": "缩放后/雪山太子_4.png",
+      "bytes": 7262,
+      "sha256": "d37d8947370d96a2ff56e8d1bce963d4c856f95b9e75ad5230e1e3775df57429"
+    },
+    {
+      "path": "缩放后/雷神_6.png",
+      "bytes": 949,
+      "sha256": "2544876ecc2f37ef0fde2239770621dd0e4a2353f7f55b33cc419763d135c3f7"
+    },
+    {
+      "path": "缩放后/青山祖公祖太_3.png",
+      "bytes": 18253,
+      "sha256": "447180408fa04ecd863d4725c5e22446ece638283c9d6b34db4b88bbc1f2295d"
+    },
+    {
+      "path": "缩放后/青山老祖_2.png",
+      "bytes": 18672,
+      "sha256": "7ba43e6f0def76c24131061e22185cc4673a7720e9d60a927d6d57619cb350b3"
+    },
+    {
+      "path": "缩放后/青故娘娘_2.png",
+      "bytes": 20200,
+      "sha256": "94517cef9d3993ea1b048d2bca82c9d9027cee1a07caf3bc54c53d41053f2b66"
+    },
+    {
+      "path": "缩放后/青龙白虎_29.png",
+      "bytes": 19405,
+      "sha256": "a06d5a3a684f196cb2d24b55283ee03bf9e789bc3edbc2d68b451ed0e8a37ff3"
+    },
+    {
+      "path": "缩放后/风神_4.png",
+      "bytes": 873,
+      "sha256": "fa03c3bf6e8b85c4967d10287ff16f9d05f9218388bcfddcc8a903d8bd3a6316"
+    },
+    {
+      "path": "缩放后/马三爷_3.png",
+      "bytes": 7371,
+      "sha256": "a11dce6e80500e77432a1d475e9ed534bec27e376ea922ad5d3c694ebd155028"
+    },
+    {
+      "path": "缩放后/魁星文昌_6.png",
+      "bytes": 18301,
+      "sha256": "16ee29ceaf645eb94feffe9579b9957525614459fdb7d9fb646bc73c7dbdadc6"
+    },
+    {
+      "path": "缩放后/鸡羊之神_2.png",
+      "bytes": 1077,
+      "sha256": "31cf8ed03b6a084a99a3695954d8179828e734e947a4ddede8213d2d61cdf7bf"
+    },
+    {
+      "path": "缩放后/龙神_35.png",
+      "bytes": 1100,
+      "sha256": "cbe687544689f4495409fbf24fd6054952645ac12e5b54f5dbbe5d81d6049890"
+    }
+  ]
+}

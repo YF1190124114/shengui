@@ -1,0 +1,37 @@
+{
+  "scope": "第一阶段静态审计，不是浏览器回归或神职全面核定",
+  "input_hashes_unchanged": true,
+  "branch": "working",
+  "raw_rows": 140,
+  "roster_rows": 140,
+  "node_rows": 140,
+  "name_order_mapping_matches": 140,
+  "field_proposal_rows": 707,
+  "livelihood_screening_rows": 82,
+  "legacy_review_rows": 376,
+  "legacy_spotcheck_rows": 20,
+  "example_relations": 10,
+  "example_types": {
+    "business": 6,
+    "supply": 3,
+    "culture": 1
+  },
+  "example_evidence_types": {
+    "design_simulation": 9,
+    "inferred": 1
+  },
+  "low_confidence_example_count": 2,
+  "legacy_degree_sum": 752,
+  "backup_hashes_verified": true,
+  "formal_files_modified": false,
+  "browser_interaction_tested": false,
+  "bulk_rebuild_performed": false,
+  "git_commit_created": false,
+  "remote_push_performed": false,
+  "delivery_unrelated_git_status": [
+    " M .DS_Store",
+    "?? research_data.zip"
+  ],
+  "delivery_note": "本任务未改动或清理上述工作区项；审计输入清单已包含其哈希。审计目录未暂存或提交。",
+  "exported_csv_row_counts_rechecked": true
+}

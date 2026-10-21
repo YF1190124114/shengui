@@ -1,0 +1,112 @@
+[
+  {
+    "id": "R0",
+    "title": "中国木版年画集成·云南甲马卷（研究者目录摘录）",
+    "author": "原书编者本阶段未核定",
+    "publication": "原书全文及版权页未提供，不补写出版年、页码或引文",
+    "url": "",
+    "location": "先填数据 39b5957a5465803a91a5f06899f1ed27.csv，数据行1–140",
+    "scope": "名称、原目录类别、页码组、数量、顺序；不含神职或关系证据",
+    "accessStatus": "只核验用户提供CSV，不等于核验原书",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R1",
+    "title": "甲马与大理白族的水神信仰",
+    "author": "李晓珏",
+    "publication": "页面声明原载《西南边疆民族研究》第二十三辑；转载2018-06-18。原刊出版年、出版社、原刊页码未核验",
+    "url": "https://www.sohu.com/a/236461521_501399",
+    "location": "第二节：出行、祈福仪式；祈雨、禳灾仪式；庙会、本主会及井神祭祀",
+    "scope": "大理白族水神甲马；不能无条件泛化全云南或每一地方图像",
+    "accessStatus": "2026-10-21再次读取正文；未核对原刊或仓库全部地方图像",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R2",
+    "title": "Bai Woodblocks from Yunnan",
+    "author": "David Leffman",
+    "publication": "作者网站；页面显示24 Apr，年份本阶段不确定",
+    "url": "https://www.davidleffman.com/blog-1-1/bai-woodblocks-from-yunnan",
+    "location": "首幅图说明（文昌、桥路二神、山神土地）；Marshal Zhao段",
+    "scope": "云南所见甲马，不证明本仓库同名条目的图像或仪式完全一致",
+    "accessStatus": "2026-10-21再次读取正文；作者观察资料，非全面地方神谱",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R3",
+    "title": "返老还童的云南甲马：他们让传统甲马文化回归日常生活",
+    "author": "网页已读部分未确认署名",
+    "publication": "昆明信息港，来源开屏新闻，2026-06-17",
+    "url": "https://www.kunming.cn/news/c/2026-06-17/14052389.shtml",
+    "location": "与之结缘小节：门神守宅、灶神护火段",
+    "scope": "当代访谈报道；只作为灶神相关辅助线索",
+    "accessStatus": "正文已读取",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R4",
+    "title": "专访｜《甲马》作者默音：点燃甲马纸，成为短暂的时间旅行者",
+    "author": "本阶段未核定记者署名",
+    "publication": "新浪转载澎湃新闻，2018-02-13",
+    "url": "https://news.sina.com.cn/o/2018-02-13/doc-ifyrkzqr2971057.shtml",
+    "location": "甲马师傅张瑞龙口述转引段",
+    "scope": "转述口述与小说讨论必须区分，不采用小说设定为民俗证据",
+    "accessStatus": "全文已读取",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R5",
+    "title": "洱海拾遗：穿越千年的飞马",
+    "author": "未核定",
+    "publication": "今日民族网站",
+    "url": "https://www.jrmznet.org.cn/cnPc/gyjy/3846.html",
+    "location": "仅搜索摘要",
+    "scope": "检索线索，未验证",
+    "accessStatus": "正文两次打开超时；不作建边证据",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R6",
+    "title": "这个美国人为何爱收藏纸马？",
+    "author": "纪习尚",
+    "publication": "北京晚报来源，中新社东西问客户端转载，2025-01-24",
+    "url": "https://m.newsduan.com/static/content/WT/2025-01-24/1332283096862691705.html",
+    "location": "东四牌楼购买纸马小节",
+    "scope": "北京纸马，仅跨地区对照线索，不用作云南条目确证",
+    "accessStatus": "全文已读取",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R7",
+    "title": "甲马上的本主们（《南乡三十六村·大理心得记》网络转录）",
+    "author": "页面标冯骥才；本阶段未核对纸本",
+    "publication": "网络转录版本；原书版本、出版日期和纸本页码未核验",
+    "url": "https://doosho.com/cn/811/30/1",
+    "location": "“与物质生活相关的甲马”及灾难神举例段；可用夜游神、虹神、哭神、罗昌阁大王检索定位",
+    "scope": "文章明确列出若干民俗诉求。转录存在异常空格，原书版本待核；不能确证140条地方图像、神格同一性或疗效。",
+    "accessStatus": "完整正文已读取；纸本未核",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R8",
+    "title": "论云南大理神话图像中被“柔化”的恐怖感",
+    "author": "李珣",
+    "publication": "艺术人类学美学民俗学授权转载，2025-10-05；作者简介为复旦大学在读博士生，随笔，非已核验期刊论文",
+    "url": "https://m.sohu.com/a/941219626_121856459/",
+    "location": "第二节“日常恐惧的具象化及其在仪式中的消解”；哭神、血湖主者、枭神、大黑天神段及作者收集图说明",
+    "scope": "作者对大理图像及仪式的研究解释，图像采自大理古城绿桃村；仓库条目地方图像仍有对应局限。",
+    "accessStatus": "正文已读；作者供稿说明已核读",
+    "accessDate": "2026-10-21"
+  },
+  {
+    "id": "R9",
+    "title": "地藏菩薩本願經 卷上（T0412_001）",
+    "author": "题唐实叉难陀译；CBETA编校",
+    "publication": "大正新脩大藏经第13册No.412；CBETA网页版本记录2026-08",
+    "url": "https://cbetaonline.dila.edu.tw/zh-tw/mobile/T0412_001",
+    "location": "分身集会品第二，T13n0412 0779c02–13（网页行号）；其余范围不作逐条引文",
+    "scope": "一般汉传佛教经典，仅用于反查地藏农业岗位缺乏依据；不证明云南该甲马的具体地方用途。",
+    "accessStatus": "检索索引返回可读经文段落和版本记录；直接打开返回动态界面，未完成当前正文页核验；只作对照线索",
+    "accessDate": "2026-10-21"
+  }
+]

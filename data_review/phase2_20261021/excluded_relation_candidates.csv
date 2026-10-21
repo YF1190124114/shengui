@@ -1,0 +1,7 @@
+﻿source_id,target_id,type,decision,reason,evidence_ids
+2,125,culture,excluded,R1有神职类型联系，但原刊版本和本仓库地方图像映射仍未完成。按已批准规则留候选，不入正式文化层。,R1
+125,2,supply,rejected,井水枯竭后的扩大祈雨不等于井水依赖某一龙神供给；具体水文补给路径也未核。,R1
+132,29,supply,needs_evidence,利市招财与来源所述利市仙官的具体神职映射未核，不能为了构建运输商业链而采用。,R2
+39,51,culture,rejected,同名财神、目录类别和数量不同；缺少同神或地方变体直接证据。,R0
+8,118,culture,rejected,同名猎神不能自动合并或断为地方变体，本主会与生产生活语境需要分别调查。,R0
+42,55,culture,needs_evidence,观音与观音老祖的名称相似不足以建立文化演变或同一神格关系。,R0

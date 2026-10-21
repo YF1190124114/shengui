@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21",
+  "phase": "phase2",
+  "branch": "working",
+  "head_unchanged": true,
+  "main_ref_unchanged": true,
+  "commit_created": false,
+  "remote_push": false,
+  "published": false,
+  "static_validation": {
+    "static_checks_passed": true,
+    "raw_records": 140,
+    "raw_name_id_order_intact": true,
+    "raw_jma_count_sum": 1071,
+    "unique_node_ids": 140,
+    "unique_edge_ids": 17,
+    "images_existing": 140,
+    "evidence_rows_match_edges": true,
+    "no_self_edges_or_dangling_references": true,
+    "no_meaningless_duplicates": true,
+    "supply_cycles": 0,
+    "csv_row_counts": {
+      "functions_review_140.csv": 140,
+      "field_review_700.csv": 700,
+      "image_mapping_140.csv": 140,
+      "manual_relation_review_checklist.csv": 23,
+      "excluded_relation_candidates.csv": 6
+    },
+    "human_review_complete": false,
+    "culture_edges": 0,
+    "manual_review_note": "17条实际新边全查清单；另6条排除候选，不将AI预检当人工签核。"
+  },
+  "browser_checks_passed": 17,
+  "browser_js_errors": [],
+  "browser_local_http_errors": [],
+  "human_signoff_complete": false,
+  "manual_checklist": "全部17条正式新关系与6条排除候选；没有把排除候选计入网络，也未冒称完成人工复核。",
+  "formal_files": [
+    "network-data.js",
+    "app.js",
+    "styles.css",
+    "index.html",
+    "README.md"
+  ],
+  "source_csv_hashes": {
+    "research_data/先填数据 39b5957a5465803a91a5f06899f1ed27.csv": "174ef9d11ad6f1998d99d0ea5625b412b20a28e5a5e7c88c2398f9a7d767c3fc",
+    "research_data/新公司花名册.csv": "cdceb140e1f3148b1944c95deae64194f2278e42644f2a2acb14b02817c504f6"
+  },
+  "candidate_file_hashes": {
+    "network-data.js": "15a0746796d722382d1c88613aef65193e20066b2569bd85325521ae85af3936",
+    "app.js": "596da377b5178dc54d0d36a0b54ff2bd28028e72b80781e58c0d54f44a613e12",
+    "styles.css": "738d810002ff632f3e7a2a2badce8dd4c6b0a2ad6c314502d4efa2162c835a69",
+    "index.html": "8fde7329b420b06e867609532f3c565c9148edec1d396588418e7b8aae05b051",
+    "README.md": "f772893268fd4750168edcff15b9a2d69fcd522cb421018a4ac967fffc06fa8b"
+  },
+  "stage_test_location": "/private/tmp/shengui_phase2_20261021",
+  "delivery_test_location": "/Users/guoxiaoguang/Desktop/shengui",
+  "installed_browser_retest_passed": true,
+  "installed_browser_checks_passed": 17,
+  "installed_files_sha256": {
+    "network-data.js": "15a0746796d722382d1c88613aef65193e20066b2569bd85325521ae85af3936",
+    "app.js": "596da377b5178dc54d0d36a0b54ff2bd28028e72b80781e58c0d54f44a613e12",
+    "styles.css": "738d810002ff632f3e7a2a2badce8dd4c6b0a2ad6c314502d4efa2162c835a69",
+    "index.html": "8fde7329b420b06e867609532f3c565c9148edec1d396588418e7b8aae05b051",
+    "README.md": "f772893268fd4750168edcff15b9a2d69fcd522cb421018a4ac967fffc06fa8b"
+  },
+  "unrelated_worktree_items": [
+    ".DS_Store（任务未修改或清理）"
+  ]
+}

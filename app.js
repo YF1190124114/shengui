@@ -138,41 +138,16 @@ function buildImageFilenameIndex() {
 }
 
 function preloadNodeImages() {
-  const nameToId = new Map();
+  imageCacheReady.total = nodes.length;
   nodes.forEach((node) => {
-    const baseName = node.name;
-    if (!nameToId.has(baseName)) {
-      nameToId.set(baseName, []);
-    }
-    nameToId.get(baseName).push(node.id);
-  });
-
-  imageCacheReady.total = nameToId.size;
-
-  const specialImageMap = {
-    "39": "财神_16.png",
-    "51": "财神_17.png",
-  };
-
-  nameToId.forEach((nodeIds, nodeName) => {
-    nodeIds.forEach((nodeId) => {
-      const node = nodeById.get(nodeId);
-      const specialFile = specialImageMap[nodeId];
-      const filename = specialFile || `${nodeName}_${node.jmaCount}.png`;
-
-      const img = new Image();
-
-      img.onload = () => {
-        nodeImages.set(nodeId, img);
-        imageCacheReady.count++;
-      };
-
-      img.onerror = () => {
-        imageCacheReady.count++;
-      };
-
-      img.src = `${IMAGE_FOLDER}${encodeURIComponent(filename)}`;
-    });
+    const img = new Image();
+    img.onload = () => {
+      nodeImages.set(node.id, img);
+      imageCacheReady.count++;
+    };
+    img.onerror = () => { imageCacheReady.count++; };
+    // The ID-specific image mapping is independent of jmaCount.
+    img.src = `${IMAGE_FOLDER}${encodeURIComponent(node.imageFile || `${node.name}_${node.jmaCount}.png`)}`;
   });
 }
 
@@ -238,9 +213,8 @@ function getVisibleNodes() {
   return nodes.filter((node) => {
     if (!state.selectedDepartments.has(node.department)) return false;
     if (node.jmaCount < state.minJma) return false;
-    if (node.name.includes("其他")) return false;
     if (!query) return true;
-    return [node.name, node.department, node.position, node.secondaryPosition, node.service, node.source]
+    return [node.id, `MSC-${node.number}`, node.name, node.department, node.position, node.secondaryPosition, node.service, node.source, node.traditionalFunction, node.rawRecord?.category, data.meta.recordKinds?.[node.recordKind]]
       .join(" ")
       .toLowerCase()
       .includes(query);
@@ -383,7 +357,7 @@ function drawEdges(visibleEdges, highlightedIds) {
     ctx.globalAlpha = dim ? 0.09 : 0.5;
     ctx.strokeStyle = relationColors[edge.type] || "#566";
     ctx.lineWidth = 0.4;
-    ctx.setLineDash([]);
+    ctx.setLineDash(lineDashForStyle(edge.style || data.meta.relationTypes[edge.type]?.style));
     ctx.lineCap = "round";
 
     if (a === b) {
@@ -396,6 +370,10 @@ function drawEdges(visibleEdges, highlightedIds) {
     }
     ctx.restore();
   });
+}
+
+function lineDashForStyle(style) {
+  return style === "dash" ? [7, 4] : style === "dot" ? [1, 4] : [];
 }
 
 function drawSmoothLine(a, b, edgeType) {
@@ -427,6 +405,25 @@ function drawSmoothLine(a, b, edgeType) {
   ctx.moveTo(a.x, a.y);
   ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, b.x, b.y);
   ctx.stroke();
+  if (edgeType === "supply") {
+    // Position the arrow on the visible curve, away from either node image.
+    const t = 0.66, u = 1 - t;
+    const x = u*u*u*a.x + 3*u*u*t*cp1x + 3*u*t*t*cp2x + t*t*t*b.x;
+    const y = u*u*u*a.y + 3*u*u*t*cp1y + 3*u*t*t*cp2y + t*t*t*b.y;
+    const tx = 3*u*u*(cp1x-a.x) + 6*u*t*(cp2x-cp1x) + 3*t*t*(b.x-cp2x);
+    const ty = 3*u*u*(cp1y-a.y) + 6*u*t*(cp2y-cp1y) + 3*t*t*(b.y-cp2y);
+    const angle = Math.atan2(ty, tx), size = 7;
+    ctx.save();
+    ctx.setLineDash([]);
+    ctx.fillStyle = ctx.strokeStyle;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x-size*Math.cos(angle-0.45), y-size*Math.sin(angle-0.45));
+    ctx.lineTo(x-size*Math.cos(angle+0.45), y-size*Math.sin(angle+0.45));
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+  }
 }
 
 function shouldShowLabel(node, isHovered, isSelected) {
@@ -465,7 +462,8 @@ function drawNodes(visibleNodes, highlightedIds) {
       ctx.save();
       ctx.globalAlpha = dim ? 0.25 : 1;
       ctx.strokeStyle = "#000000";
-      ctx.lineWidth = 0.5;
+      ctx.lineWidth = node.recordKind === "collection" ? 1.2 : 0.5;
+      ctx.setLineDash(node.recordKind === "collection" ? [3, 2] : []);
       ctx.strokeRect(node.x - size, node.y - size, size * 2, size * 2);
       ctx.restore();
 
@@ -490,7 +488,7 @@ function getHighlightedIds() {
   const active = state.hovered || state.selected;
   if (!active) return null;
   const ids = new Set([active.id]);
-  edges.forEach((edge) => {
+  getVisibleGraph().visibleEdges.forEach((edge) => {
     if (edge.source === active.id) ids.add(edge.target);
     if (edge.target === active.id) ids.add(edge.source);
   });
@@ -517,6 +515,9 @@ function renderControls() {
     departmentContainer.append(row);
   });
 
+  const note = document.getElementById("dataProvenanceNote");
+  if (note) note.textContent = "140条目录记录 · 关系为设计推演 · 虚框为集合记录";
+
   const relationContainer = document.getElementById("relationFilters");
   relationContainer.innerHTML = "";
   relationOrder.forEach((type) => {
@@ -526,7 +527,7 @@ function renderControls() {
     row.innerHTML = `
       <input type="checkbox" checked data-relation="${type}">
       <span class="relation-sample ${meta.style}"></span>
-      <span class="row-label">${meta.label}</span>
+      <span class="row-label">${meta.label}${type === "supply" ? " →" : ""}</span>
       <span class="row-count">${edges.filter((edge) => edge.type === type).length}</span>
     `;
     relationContainer.append(row);
@@ -557,6 +558,7 @@ function bindControls() {
     if (!department) return;
     if (event.target.checked) state.selectedDepartments.add(department);
     else state.selectedDepartments.delete(department);
+    refreshSelectedDetail();
     state.alpha = 1;
   });
 
@@ -565,6 +567,7 @@ function bindControls() {
     if (!relation) return;
     if (event.target.checked) state.selectedRelations.add(relation);
     else state.selectedRelations.delete(relation);
+    refreshSelectedDetail();
     state.alpha = 1;
   });
 
@@ -575,11 +578,13 @@ function bindControls() {
       input.checked = !allSelected;
     });
     document.getElementById("toggleDepartments").textContent = allSelected ? "全选" : "清空";
+    refreshSelectedDetail();
     state.alpha = 1;
   });
 
   document.getElementById("searchInput").addEventListener("input", (event) => {
     state.search = event.target.value;
+    refreshSelectedDetail();
     state.alpha = 1;
   });
 
@@ -590,6 +595,7 @@ function bindControls() {
 
   document.getElementById("jmaSlider").addEventListener("input", (event) => {
     state.minJma = Number(event.target.value);
+    refreshSelectedDetail();
     document.getElementById("jmaValue").textContent = state.minJma;
     state.alpha = 1;
   });
@@ -701,8 +707,9 @@ function updateTooltip(node, point) {
     return;
   }
   tooltip.innerHTML = `
-    <strong>${node.name}</strong>
-    <div>${node.department} · ${node.position || "无职位"}</div>
+    <strong>${escapeHTML(node.name)} · #${node.id}</strong>
+    <div>${escapeHTML(data.meta.recordKinds?.[node.recordKind] || "目录记录")} · ${escapeHTML(node.department)}</div>
+    <div>${node.reviewStatus === "needs_evidence" ? "职能待核查" : node.recordKind === "collection" ? "不指派单一神职" : "资料有范围限制 · 公司岗位为设计"}</div>
     ${node.jmaCount ? `<div>甲马数量: ${node.jmaCount}</div>` : ""}
   `;
   tooltip.hidden = false;
@@ -715,21 +722,7 @@ function moveTooltip(point) {
 }
 
 function getDepartmentClass(department) {
-  const deptClasses = {
-    "自然环境部": "dept-natural",
-    "民生服务部": "dept-livelihood",
-    "财富管理部": "dept-wealth",
-    "健康医疗部": "dept-health",
-    "军事国防部": "dept-military",
-    "精神信仰部": "dept-spiritual",
-    "文化教育部": "dept-culture",
-    "政务外交部": "dept-ministry",
-    "丧葬事务部": "dept-death",
-    "礼宾接待部": "dept-courtesy",
-    "天文气象部": "dept-sky",
-    "水文地理部": "dept-water",
-  };
-  return deptClasses[department] || "";
+  return ({"自然环境管理部":"dept-natural", "民生生活服务部":"dept-livelihood", "财富事业发展部":"dept-wealth", "健康生育服务部":"dept-health", "社会秩序管理部":"dept-ministry", "地方文化运营部":"dept-culture", "风险危机处理部":"dept-military"})[department] || "";
 }
 
 function generateBarcode() {
@@ -753,134 +746,84 @@ function getRandomStamp() {
   return shuffled.slice(0, 2);
 }
 
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"}[c]));
+}
+
+function referenceHTML(ids) {
+  return (ids || []).map((id) => {
+    const ref = data.meta.references?.[id];
+    if (!ref) return `<p>来源 ${escapeHTML(id)}：未提供</p>`;
+    const href = /^https:\/\//.test(ref.url || "") ? ref.url : "";
+    const title = href ? `<a href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(ref.title)}</a>` : escapeHTML(ref.title);
+    return `<div class="reference-entry"><div>${escapeHTML(id)} · ${title}</div><div>${escapeHTML(ref.author)}</div><div>${escapeHTML(ref.publication)}</div><div>定位：${escapeHTML(ref.location)}</div><div>范围：${escapeHTML(ref.scope)}</div></div>`;
+  }).join("");
+}
+
+function refreshSelectedDetail() {
+  if (state.selected && dossier.classList.contains("open")) renderDetail(state.selected);
+}
+
 function renderDetail(node) {
-  const related = edges
-    .filter((edge) => edge.source === node.id || edge.target === node.id)
-    .slice(0, 15);
+  const graph = getVisibleGraph();
+  const allRelated = edges.filter((edge) => edge.source === node.id || edge.target === node.id);
+  const related = graph.visibleEdges.filter((edge) => edge.source === node.id || edge.target === node.id);
+  const isCollection = node.recordKind === "collection";
+  const isObject = node.recordKind === "ritual_object";
+  const supported = node.reviewStatus === "source_supported_scope_limited";
+  const recordKind = data.meta.recordKinds?.[node.recordKind] || "目录记录";
+  const status = isCollection ? "集合记录 · 不指派单一神职" : supported ? "有职能资料线索 · 地方版本待核" : "具体职能不确定 · 待核查";
+  const imgSrc = `${IMAGE_FOLDER}${encodeURIComponent(node.imageFile || `${node.name}_${node.jmaCount}.png`)}`;
+  const relatedHTML = related.length ? related.map((edge) => {
+    const otherId = edge.source === node.id ? edge.target : edge.source;
+    const other = nodeById.get(otherId);
+    const typeLabel = data.meta.relationTypes[edge.type]?.label || edge.type;
+    const evidenceLabels = {documented:"文献支持", inferred:"资料支持的解释性推断", design_simulation:"设计推演"};
+    const direction = edge.type === "supply" ? `${edge.sourceName} #${edge.source} → ${edge.targetName} #${edge.target}` : `${edge.sourceName} #${edge.source} ↔ ${edge.targetName} #${edge.target}`;
+    return `<details class="relation-entry" data-edge-id="${escapeHTML(edge.id)}">
+      <summary><span class="relation-kind">${escapeHTML(typeLabel)} · ${evidenceLabels[edge.evidenceType] || "证据待核"}</span><span class="related-name">${escapeHTML(edge.label)}</span><span class="relation-direction">${escapeHTML(direction)}</span></summary>
+      <div class="relation-explanation">
+        <p><strong>场景：</strong>${escapeHTML(edge.scenario)}</p>
+        <p><strong>建立理由：</strong>${escapeHTML(edge.reason)}</p>
+        <p>${escapeHTML(edge.sourceName)}：${escapeHTML(edge.sourceRole)}<br>${escapeHTML(edge.targetName)}：${escapeHTML(edge.targetRole)}</p>
+        ${edge.type === "supply" ? `<p><strong>上游提供：</strong>${escapeHTML(edge.upstreamProvides)}</p><p><strong>下游负责：</strong>${escapeHTML(edge.downstreamResponsibility)}</p><p><strong>输入依赖：</strong>${escapeHTML(edge.dependencyReason)}</p>` : ""}
+        <p>可信度：${escapeHTML(edge.confidence || "未确定")} · 待研究者签核</p>
+        <p>${edge.evidenceType === "design_simulation" ? "这是根据职能线索建立的公司隐喻，不是历史上神明协作的记载。" : "文化或资料联系须按下方出处与范围理解，不能自动解释为历史演化。"}</p>
+        <p>${escapeHTML(edge.limitations)}</p>
+        <div class="evidence-references">${referenceHTML(edge.evidenceIds)}</div>
+        <button class="text-button related-node-button" data-node-id="${escapeHTML(otherId)}" type="button">查看 ${escapeHTML(other.name)} #${escapeHTML(otherId)} 档案 →</button>
+      </div>
+    </details>`;
+  }).join("") : `<div class="empty-relations">${allRelated.length ? "当前筛选下无可见关系。可恢复部门、关系层或搜索条件后查看。" : "尚无符合证据与场景门槛的关系，保留孤立记录。"}</div>`;
 
-  const imgFilename = node.name + "_" + node.number + ".png";
-  const imgSrc = nodeImages.has(node.id)
-    ? nodeImages.get(node.id).src
-    : `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ddd' width='100' height='100'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='%23999' font-family='monospace' font-size='12'%3E${node.name.slice(0,2)}%3C/text%3E%3C/svg%3E`;
-
-  const deptClass = getDepartmentClass(node.department);
-  const stamps = getRandomStamp();
-  const barcode = generateBarcode();
-
-  const relatedHTML = related.length > 0
-    ? related.map((edge) => {
-        const isSource = edge.source === node.id;
-        const otherNode = isSource ? nodeById.get(edge.target) : nodeById.get(edge.source);
-        const otherName = isSource ? edge.targetName : edge.sourceName;
-        return `
-          <div class="related-item" data-node-id="${otherNode?.id || ''}">
-            <div class="related-bullet"></div>
-            <span class="related-name">${otherName}</span>
-          </div>
-        `;
-      }).join("")
-    : '<div class="related-item"><span class="related-name" style="color:var(--muted);font-size:12px">// NO CONNECTIONS IN CURRENT FILTER</span></div>';
-
-  folderTab.className = "folder-tab " + deptClass;
-
+  folderTab.className = "folder-tab " + getDepartmentClass(node.department);
   dossierContent.innerHTML = `
-    ${stamps.map(s => `<div class="dossier-stamp ${s.class}">${s.text}</div>`).join('')}
-
     <div class="dossier-header">
-      <div class="portrait-frame">
-        <img src="${imgSrc}" alt="${node.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect fill=%27%23eee%27 width=%27100%27 height=%27100%27/%3E%3Ctext x=%2750%27 y=%2755%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27monospace%27 font-size=%2712%27%3E${node.name.slice(0,2)}%3C/text%3E%3C/svg%3E'">
-      </div>
-      <div class="header-info">
-        <div class="entity-name">${node.name}</div>
-        <div class="entity-division">${node.department}</div>
-        <div class="entity-number">MSC-${node.number}</div>
-      </div>
+      <div class="portrait-frame"><img src="${imgSrc}" alt="${escapeHTML(node.name)} · 原目录甲马图像"></div>
+      <div class="header-info"><div class="entity-name">${escapeHTML(node.name)}</div><div class="entity-division">${escapeHTML(node.department)}</div><div class="entity-number">MSC-${node.number} · ${escapeHTML(recordKind)}</div><button class="text-button dossier-close" type="button">[关闭档案]</button></div>
     </div>
-
-    ${node.position ? `
-    <div class="dossier-section">
-      <div class="section-header">
-        <span class="section-label">Primary Position</span>
-      </div>
-      <div class="section-content">
-        <div class="section-value">${node.position}</div>
-      </div>
-    </div>
-    ` : ''}
-
-    ${node.secondaryPosition ? `
-    <div class="dossier-section">
-      <div class="section-header">
-        <span class="section-label">Secondary Position</span>
-      </div>
-      <div class="section-content">
-        <div class="section-value small">${node.secondaryPosition}</div>
-      </div>
-    </div>
-    ` : ''}
-
-    ${node.service ? `
-    <div class="dossier-section">
-      <div class="section-header">
-        <span class="section-label">Service Domain</span>
-      </div>
-      <div class="section-content">
-        <div class="service-tags">
-          ${node.service.split(/[\/\、]/).map(s => `<span class="service-tag">${s.trim()}</span>`).join('')}
-        </div>
-      </div>
-    </div>
-    ` : ''}
-
-    ${node.source ? `
-    <div class="dossier-section">
-      <div class="section-header">
-        <span class="section-label">Origin Record</span>
-      </div>
-      <div class="section-content">
-        <div class="section-value small">${node.source}</div>
-      </div>
-    </div>
-    ` : ''}
-
-    <div class="dossier-section">
-      <div class="section-header">
-        <span class="section-label">Related Employees (${related.length})</span>
-      </div>
-      <div class="related-list">
-        ${relatedHTML}
-      </div>
-    </div>
-
-    <div class="dossier-footer">
-      <div class="barcode">
-        ${barcode}
-      </div>
-      <div class="barcode-number">MSC-${node.number}-${node.department.slice(0,3).toUpperCase()}</div>
-      <div class="employee-id-section">
-        <div class="id-label">Employee ID</div>
-        <div class="id-value">MSC-${node.number}</div>
-      </div>
-    </div>
-  `;
-
-  // Add click handlers for related employees
-  dossierContent.querySelectorAll('.related-item[data-node-id]').forEach(item => {
-    item.addEventListener('click', () => {
-      const nodeId = item.dataset.nodeId;
-      if (nodeId) {
-        const targetNode = nodeById.get(nodeId);
-        if (targetNode) {
-          state.selected = targetNode;
-          renderDetail(targetNode);
-          // Center view on the node
-          state.transform.x = state.width / 2 - targetNode.x * state.transform.scale;
-          state.transform.y = state.height / 2 - targetNode.y * state.transform.scale;
-        }
-      }
-    });
-  });
-
+    <div class="dossier-section"><div class="section-header"><span class="section-label">Archive Status / 核查状态</span></div><div class="section-content review-status"><p>${escapeHTML(status)}</p><p>${escapeHTML(node.reviewNote)}</p><p>${graph.visibleIds.has(node.id) ? "本档案在当前筛选内" : "本档案在当前筛选外；记录仍可访问"}</p></div></div>
+    <div class="dossier-section"><div class="section-header"><span class="section-label">Traditional Function / 传统神职线索</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.traditionalFunction || "不确定，待核查")}</div>${node.evidenceIds?.length ? `<details class="profile-evidence"><summary>资料来源与适用范围</summary>${referenceHTML(node.evidenceIds)}</details>` : ""}</div></div>
+    ${!isCollection && !isObject ? `<div class="dossier-section"><div class="section-header"><span class="section-label">Company Position / 公司职位（设计）</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.position || "未设定")}</div><p class="review-caption">${supported ? "基于职能线索的设计岗位，不是传统称谓。" : "保留旧版AI职位，尚未核实对应神职。"}</p>${node.secondaryPosition ? `<p class="review-caption">旧兼任（待核查）：${escapeHTML(node.secondaryPosition)}</p>` : ""}<p class="review-caption">部门为企业隐喻分类${node.departmentBasis === "legacy_design_pending_review" ? "，沿用旧分类待核" : "，依据当前职能线索设计"}。</p></div></div>` : ""}
+    <div class="dossier-section"><div class="section-header"><span class="section-label">Service / ${supported ? "有来源的服务说明" : isCollection ? "集合目录说明" : "旧服务字段（待核查）"}</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.service)}</div>${!supported && !isCollection ? '<p class="review-caption">旧字段不是已核实的民俗事实。</p>' : ""}</div></div>
+    <div class="dossier-section"><div class="section-header"><span class="section-label">Original Record / 原始目录</span></div><div class="section-content archive-facts"><p>记录ID：${node.id} · 原顺序：${node.rawRecord?.order ?? node.number}</p><p>目录类别：${escapeHTML(node.rawRecord?.category)}</p><p>原页码组：${escapeHTML(node.rawRecord?.pageGroup)}（非精确引文页码）</p><p>甲马数量：${node.jmaCount}</p><p>入职来源：${isCollection || isObject ? "不认定单一神格起源" : escapeHTML(node.source)}${!isCollection && !isObject ? "（旧AI分类，历史依据待核查）" : ""}</p>${node.imageReviewStatus === "legacy_mapping_pending_book_check" ? '<p>图像沿用旧版ID关联，具体书图对应待核；图片后缀不是原数量。</p>' : ""}<details class="legacy-profile"><summary>旧花名册原值（未核实，保留溯源）</summary>${Object.entries(node.originalProfile || {}).map(([key,value]) => `<p>${escapeHTML(({department:"部门",source:"入职来源",position:"职位",secondaryPosition:"兼任",service:"服务",jmaCount:"旧网页数量"})[key] || key)}：${escapeHTML(value)}</p>`).join("")}</details></div></div>
+    <div class="dossier-section"><div class="section-header"><span class="section-label">Relations / 当前可见 ${related.length} · 全部 ${allRelated.length}</span></div><div class="related-list">${relatedHTML}</div></div>
+    <div class="dossier-footer"><div class="employee-id-section"><div class="id-label">CATALOG RECORD / AI ASSISTED REVIEW</div><div class="id-value">MSC-${node.number} · 待研究者签核</div></div></div>`;
+  dossierContent.querySelector('.dossier-close').addEventListener('click', () => { dossier.classList.remove('open'); });
+  dossierContent.querySelector('.portrait-frame img').addEventListener('error', (event) => {
+    event.target.replaceWith(Object.assign(document.createElement('span'), {textContent: "图像暂不可用"}));
+  }, {once:true});
+  dossierContent.querySelectorAll('.related-node-button').forEach((item) => item.addEventListener('click', () => {
+    const target = nodeById.get(item.dataset.nodeId);
+    if (!target) return;
+    state.selected = target;
+    renderDetail(target);
+    state.transform.x = state.width / 2 - target.x * state.transform.scale;
+    state.transform.y = state.height / 2 - target.y * state.transform.scale;
+  }));
+  dossierContent.scrollTop = 0;
+  state.hovered = null;
+  tooltip.hidden = true;
   dossier.classList.add('open');
 }
 

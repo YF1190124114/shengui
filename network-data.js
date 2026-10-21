@@ -1,9 +1,9 @@
 window.NETWORK_DATA = {
   "meta": {
     "title": "神话服务公司多层网络",
-    "sourceFile": "/Users/guoxiaoguang/Desktop/神公司网.xlsx",
+    "sourceFile": "research_data/先填数据 39b5957a5465803a91a5f06899f1ed27.csv",
     "nodeCount": 140,
-    "edgeCount": 376,
+    "edgeCount": 17,
     "departments": {
       "自然环境管理部": "#ADB97A",
       "民生生活服务部": "#EEBAC7",
@@ -19,11 +19,11 @@ window.NETWORK_DATA = {
         "style": "solid"
       },
       "supply": {
-        "label": "服务供应关联",
+        "label": "服务上下游关联",
         "style": "dash"
       },
       "culture": {
-        "label": "文化演变关联",
+        "label": "文化关联",
         "style": "dot"
       }
     },
@@ -42,7 +42,132 @@ window.NETWORK_DATA = {
         "118"
       ]
     },
-    "missingReferences": []
+    "missingReferences": [],
+    "dataVersion": "phase2-20261021",
+    "rawJmaCountTotal": 1071,
+    "recordCount": 140,
+    "collectionCount": 6,
+    "evidencePolicy": "公司协作与流程均为设计推演；文化关系须完成端点映射核对。本版文化边为0。",
+    "reviewStatus": "local_revision_pending_researcher_signoff",
+    "aiDisclosure": "AI辅助文件对照、资料检索、解释与关系场景设计；未代替研究者田野核查或签核。",
+    "references": {
+      "R0": {
+        "id": "R0",
+        "title": "中国木版年画集成·云南甲马卷（研究者目录摘录）",
+        "author": "原书编者本阶段未核定",
+        "publication": "原书全文及版权页未提供，不补写出版年、页码或引文",
+        "url": "",
+        "location": "先填数据 39b5957a5465803a91a5f06899f1ed27.csv，数据行1–140",
+        "scope": "名称、原目录类别、页码组、数量、顺序；不含神职或关系证据",
+        "accessStatus": "只核验用户提供CSV，不等于核验原书",
+        "accessDate": "2026-10-21"
+      },
+      "R1": {
+        "id": "R1",
+        "title": "甲马与大理白族的水神信仰",
+        "author": "李晓珏",
+        "publication": "页面声明原载《西南边疆民族研究》第二十三辑；转载2018-06-18。原刊出版年、出版社、原刊页码未核验",
+        "url": "https://www.sohu.com/a/236461521_501399",
+        "location": "第二节：出行、祈福仪式；祈雨、禳灾仪式；庙会、本主会及井神祭祀",
+        "scope": "大理白族水神甲马；不能无条件泛化全云南或每一地方图像",
+        "accessStatus": "2026-10-21再次读取正文；未核对原刊或仓库全部地方图像",
+        "accessDate": "2026-10-21"
+      },
+      "R2": {
+        "id": "R2",
+        "title": "Bai Woodblocks from Yunnan",
+        "author": "David Leffman",
+        "publication": "作者网站；页面显示24 Apr，年份本阶段不确定",
+        "url": "https://www.davidleffman.com/blog-1-1/bai-woodblocks-from-yunnan",
+        "location": "首幅图说明（文昌、桥路二神、山神土地）；Marshal Zhao段",
+        "scope": "云南所见甲马，不证明本仓库同名条目的图像或仪式完全一致",
+        "accessStatus": "2026-10-21再次读取正文；作者观察资料，非全面地方神谱",
+        "accessDate": "2026-10-21"
+      },
+      "R3": {
+        "id": "R3",
+        "title": "返老还童的云南甲马：他们让传统甲马文化回归日常生活",
+        "author": "网页已读部分未确认署名",
+        "publication": "昆明信息港，来源开屏新闻，2026-06-17",
+        "url": "https://www.kunming.cn/news/c/2026-06-17/14052389.shtml",
+        "location": "与之结缘小节：门神守宅、灶神护火段",
+        "scope": "当代访谈报道；只作为灶神相关辅助线索",
+        "accessStatus": "正文已读取",
+        "accessDate": "2026-10-21"
+      },
+      "R4": {
+        "id": "R4",
+        "title": "专访｜《甲马》作者默音：点燃甲马纸，成为短暂的时间旅行者",
+        "author": "本阶段未核定记者署名",
+        "publication": "新浪转载澎湃新闻，2018-02-13",
+        "url": "https://news.sina.com.cn/o/2018-02-13/doc-ifyrkzqr2971057.shtml",
+        "location": "甲马师傅张瑞龙口述转引段",
+        "scope": "转述口述与小说讨论必须区分，不采用小说设定为民俗证据",
+        "accessStatus": "全文已读取",
+        "accessDate": "2026-10-21"
+      },
+      "R5": {
+        "id": "R5",
+        "title": "洱海拾遗：穿越千年的飞马",
+        "author": "未核定",
+        "publication": "今日民族网站",
+        "url": "https://www.jrmznet.org.cn/cnPc/gyjy/3846.html",
+        "location": "仅搜索摘要",
+        "scope": "检索线索，未验证",
+        "accessStatus": "正文两次打开超时；不作建边证据",
+        "accessDate": "2026-10-21"
+      },
+      "R6": {
+        "id": "R6",
+        "title": "这个美国人为何爱收藏纸马？",
+        "author": "纪习尚",
+        "publication": "北京晚报来源，中新社东西问客户端转载，2025-01-24",
+        "url": "https://m.newsduan.com/static/content/WT/2025-01-24/1332283096862691705.html",
+        "location": "东四牌楼购买纸马小节",
+        "scope": "北京纸马，仅跨地区对照线索，不用作云南条目确证",
+        "accessStatus": "全文已读取",
+        "accessDate": "2026-10-21"
+      },
+      "R7": {
+        "id": "R7",
+        "title": "甲马上的本主们（《南乡三十六村·大理心得记》网络转录）",
+        "author": "页面标冯骥才；本阶段未核对纸本",
+        "publication": "网络转录版本；原书版本、出版日期和纸本页码未核验",
+        "url": "https://doosho.com/cn/811/30/1",
+        "location": "“与物质生活相关的甲马”及灾难神举例段；可用夜游神、虹神、哭神、罗昌阁大王检索定位",
+        "scope": "文章明确列出若干民俗诉求。转录存在异常空格，原书版本待核；不能确证140条地方图像、神格同一性或疗效。",
+        "accessStatus": "完整正文已读取；纸本未核",
+        "accessDate": "2026-10-21"
+      },
+      "R8": {
+        "id": "R8",
+        "title": "论云南大理神话图像中被“柔化”的恐怖感",
+        "author": "李珣",
+        "publication": "艺术人类学美学民俗学授权转载，2025-10-05；作者简介为复旦大学在读博士生，随笔，非已核验期刊论文",
+        "url": "https://m.sohu.com/a/941219626_121856459/",
+        "location": "第二节“日常恐惧的具象化及其在仪式中的消解”；哭神、血湖主者、枭神、大黑天神段及作者收集图说明",
+        "scope": "作者对大理图像及仪式的研究解释，图像采自大理古城绿桃村；仓库条目地方图像仍有对应局限。",
+        "accessStatus": "正文已读；作者供稿说明已核读",
+        "accessDate": "2026-10-21"
+      },
+      "R9": {
+        "id": "R9",
+        "title": "地藏菩薩本願經 卷上（T0412_001）",
+        "author": "题唐实叉难陀译；CBETA编校",
+        "publication": "大正新脩大藏经第13册No.412；CBETA网页版本记录2026-08",
+        "url": "https://cbetaonline.dila.edu.tw/zh-tw/mobile/T0412_001",
+        "location": "分身集会品第二，T13n0412 0779c02–13（网页行号）；其余范围不作逐条引文",
+        "scope": "一般汉传佛教经典，仅用于反查地藏农业岗位缺乏依据；不证明云南该甲马的具体地方用途。",
+        "accessStatus": "检索索引返回可读经文段落和版本记录；直接打开返回动态界面，未完成当前正文页核验；只作对照线索",
+        "accessDate": "2026-10-21"
+      }
+    },
+    "recordKinds": {
+      "collection": "集合记录",
+      "ritual_object": "仪式用品记录",
+      "composite": "复合目录记录",
+      "catalog_record": "目录记录"
+    }
   },
   "nodes": [
     {
@@ -51,11 +176,43 @@ window.NETWORK_DATA = {
       "name": "送灶神",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "家庭运营专员",
+      "position": "灶火与岁末仪式联络员",
       "secondaryPosition": "生活资源管理员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "service": "岁末送灶、家庭灶火相关祈愿；具体地方仪式待原书核对。",
       "color": "#EEBAC7",
-      "jmaCount": 18
+      "jmaCount": 18,
+      "rawRecordId": "1",
+      "rawRecord": {
+        "order": 1,
+        "csvRow": 2,
+        "name": "送灶神",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "18"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "生活资源管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 18
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "送灶神_18.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "岁末送灶及灶火相关祈愿",
+      "evidenceIds": [
+        "R3",
+        "R4"
+      ],
+      "reviewNote": "送灶甲马为仪式题材，岗位为设计名称，不是神明现实办公记录。"
     },
     {
       "id": "2",
@@ -63,11 +220,42 @@ window.NETWORK_DATA = {
       "name": "井神",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "生活资源管理员",
+      "position": "井水使用事务联络员",
       "secondaryPosition": "仪式文化运营专员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "service": "与开井、岁末封井和新年用井相关的祈愿；不等于保证现实水质。",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "2",
+      "rawRecord": {
+        "order": 2,
+        "csvRow": 3,
+        "name": "井神",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "仪式文化运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "井神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "井水使用与井祭祈愿",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "资料为大理白族区域说明，原书该条具体地方版本仍待核。"
     },
     {
       "id": "3",
@@ -79,7 +267,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 27
+      "jmaCount": 27,
+      "rawRecordId": "3",
+      "rawRecord": {
+        "order": 3,
+        "csvRow": 4,
+        "name": "天地日月",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "27"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 27
+      },
+      "recordKind": "composite",
+      "imageFile": "天地日月_27.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "4",
@@ -91,7 +308,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责灾害、危险、不确定事件应对",
       "color": "#585287",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "4",
+      "rawRecord": {
+        "order": 4,
+        "csvRow": 5,
+        "name": "掌兵太子",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "风险危机处理部",
+        "source": "地方英雄转化型",
+        "position": "驱邪安全专员",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责灾害、危险、不确定事件应对",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "掌兵太子_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "5",
@@ -103,7 +349,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方记忆维护员，农业生态顾问",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "5",
+      "rawRecord": {
+        "order": 5,
+        "csvRow": 6,
+        "name": "白马将军",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "仪式文化运营专员",
+        "secondaryPosition": "地方记忆维护员，农业生态顾问",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "白马将军_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "6",
@@ -115,7 +390,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "社区精神运营专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "6",
+      "rawRecord": {
+        "order": 6,
+        "csvRow": 7,
+        "name": "老太之神",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "社区精神运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "老太之神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "7",
@@ -127,7 +431,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 7
+      "jmaCount": 7,
+      "rawRecordId": "7",
+      "rawRecord": {
+        "order": 7,
+        "csvRow": 8,
+        "name": "柏洁夫人",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "7"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 7
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "柏洁夫人_7.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "8",
@@ -139,7 +472,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 10
+      "jmaCount": 1,
+      "rawRecordId": "8",
+      "rawRecord": {
+        "order": 8,
+        "csvRow": 9,
+        "name": "猎神",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 10
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "猎神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "猎神同名于118但原目录本主会、数量1；不可与生产生活记录118合并，人物身份未定。"
     },
     {
       "id": "9",
@@ -151,7 +513,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "9",
+      "rawRecord": {
+        "order": 9,
+        "csvRow": 10,
+        "name": "雪山太子",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "地方英雄转化型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "雪山太子_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "10",
@@ -163,7 +554,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "天象管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "10",
+      "rawRecord": {
+        "order": 10,
+        "csvRow": 11,
+        "name": "赤子三爷",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "天象管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "赤子三爷_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "11",
@@ -175,7 +595,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "11",
+      "rawRecord": {
+        "order": 11,
+        "csvRow": 12,
+        "name": "马三爷",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "马三爷_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "12",
@@ -187,7 +636,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "12",
+      "rawRecord": {
+        "order": 12,
+        "csvRow": 13,
+        "name": "东山安民富境灵帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "东山安民富境灵帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "13",
@@ -199,7 +677,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "农业生态顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "13",
+      "rawRecord": {
+        "order": 13,
+        "csvRow": 14,
+        "name": "三崇大帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "农业生态顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "三崇大帝_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "14",
@@ -211,19 +718,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "商业信用顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "14",
+      "rawRecord": {
+        "order": 14,
+        "csvRow": 15,
+        "name": "得道龙王之神",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "商业信用顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "得道龙王之神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "15",
       "number": 15,
       "name": "洱河灵帝",
-      "department": "民生生活服务部",
+      "department": "自然环境管理部",
       "source": "功能需求诞生型",
-      "position": "生活资源管理员",
+      "position": "洱河水域文化联络员",
       "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 1
+      "service": "洱河水域守护与地方本主祭祀相关诉求；本条图像与段赤城的具体对应待核。",
+      "color": "#ADB97A",
+      "jmaCount": 1,
+      "rawRecordId": "15",
+      "rawRecord": {
+        "order": 15,
+        "csvRow": 16,
+        "name": "洱河灵帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "洱河灵帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "洱河水神与本主信仰线索",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "论文出现同名洱河灵帝；不据此自动确认原目录图像的历史人物身份。"
     },
     {
       "id": "16",
@@ -235,7 +802,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "16",
+      "rawRecord": {
+        "order": 16,
+        "csvRow": 17,
+        "name": "东海灵源",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "东海灵源_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "17",
@@ -247,7 +843,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生育保障顾问，居住安全顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "17",
+      "rawRecord": {
+        "order": 17,
+        "csvRow": 18,
+        "name": "神牛大老爷",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "生育保障顾问，居住安全顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "神牛大老爷_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "18",
@@ -259,7 +884,38 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "18",
+      "rawRecord": {
+        "order": 18,
+        "csvRow": 19,
+        "name": "小黄龙",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "天象管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "小黄龙_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "R1列小黄龙为龙神图像类型，未明确本条地方职掌；不沿名称推成天气管理。"
     },
     {
       "id": "19",
@@ -271,7 +927,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "厄运处理顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 7
+      "jmaCount": 7,
+      "rawRecordId": "19",
+      "rawRecord": {
+        "order": 19,
+        "csvRow": 20,
+        "name": "红山本主",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "7"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "地方英雄转化型",
+        "position": "天象管理专员",
+        "secondaryPosition": "厄运处理顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 7
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "红山本主_7.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "20",
@@ -283,7 +968,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "社区精神运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "20",
+      "rawRecord": {
+        "order": 20,
+        "csvRow": 21,
+        "name": "田公地母",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "社区精神运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "composite",
+      "imageFile": "田公地母_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "21",
@@ -295,7 +1009,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "21",
+      "rawRecord": {
+        "order": 21,
+        "csvRow": 22,
+        "name": "铁柱三郎",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "铁柱三郎_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "22",
@@ -307,7 +1050,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "社区精神运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "22",
+      "rawRecord": {
+        "order": 22,
+        "csvRow": 23,
+        "name": "西山皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "天象管理专员",
+        "secondaryPosition": "社区精神运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "西山皇帝_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "23",
@@ -319,7 +1091,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "驱邪安全专员",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "23",
+      "rawRecord": {
+        "order": 23,
+        "csvRow": 24,
+        "name": "石头本主",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "社区精神运营专员",
+        "secondaryPosition": "驱邪安全专员",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "石头本主_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "24",
@@ -331,7 +1132,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "仪式文化运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "24",
+      "rawRecord": {
+        "order": 24,
+        "csvRow": 25,
+        "name": "太阳之神",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "天象管理专员",
+        "secondaryPosition": "仪式文化运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "太阳之神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "25",
@@ -343,31 +1173,122 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 19
+      "jmaCount": 19,
+      "rawRecordId": "25",
+      "rawRecord": {
+        "order": 25,
+        "csvRow": 26,
+        "name": "本主",
+        "category": "节庆活动本主会",
+        "pageGroup": "024094",
+        "jmaCount": "19"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "社区精神运营专员",
+        "secondaryPosition": "无",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 19
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "本主_19.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "26",
       "number": 26,
       "name": "火神",
-      "department": "自然环境管理部",
+      "department": "风险危机处理部",
       "source": "功能需求诞生型",
-      "position": "天象管理专员",
+      "position": "火灾风险祈愿联络员",
       "secondaryPosition": "财富增长顾问",
-      "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#ADB97A",
-      "jmaCount": 11
+      "service": "火灾风险相关的民俗禳解诉求；不是现代消防或灾害预测能力。",
+      "color": "#585287",
+      "jmaCount": 11,
+      "rawRecordId": "26",
+      "rawRecord": {
+        "order": 26,
+        "csvRow": 27,
+        "name": "火神",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "11"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "天象管理专员",
+        "secondaryPosition": "财富增长顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 11
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "火神_11.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "火灾风险相关的禳解诉求",
+      "evidenceIds": [
+        "R7"
+      ],
+      "reviewNote": "网络书籍转录待纸本核对；不能把致灾或禳解神直接改写成现实消防人员。"
     },
     {
       "id": "27",
       "number": 27,
       "name": "白龙苍龙财龙",
-      "department": "财富事业发展部",
+      "department": "自然环境管理部",
       "source": "自然生成型",
-      "position": "职业发展顾问",
+      "position": "龙神图像与水域事务联络员",
       "secondaryPosition": "厄运处理顾问",
-      "service": "负责财富、事业、商业发展相关需求",
-      "color": "#FCDC89",
-      "jmaCount": 5
+      "service": "白龙、苍龙、财龙在水神研究中作为龙神形态出现；不将“财龙”单独推成职业发展神。",
+      "color": "#ADB97A",
+      "jmaCount": 5,
+      "rawRecordId": "27",
+      "rawRecord": {
+        "order": 27,
+        "csvRow": 28,
+        "name": "白龙苍龙财龙",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "财富事业发展部",
+        "source": "自然生成型",
+        "position": "职业发展顾问",
+        "secondaryPosition": "厄运处理顾问",
+        "service": "负责财富、事业、商业发展相关需求",
+        "jmaCount": 5
+      },
+      "recordKind": "composite",
+      "imageFile": "白龙苍龙财龙_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "水神甲马的龙神图像类型线索",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "这是复合目录标题。仅核定研究中的类型语境，不断言三者同一神格或具体地方职掌。"
     },
     {
       "id": "28",
@@ -379,7 +1300,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "28",
+      "rawRecord": {
+        "order": 28,
+        "csvRow": 29,
+        "name": "送圣马子",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "送圣马子_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "29",
@@ -391,7 +1341,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生活资源管理员",
       "service": "负责财富、事业、商业发展相关需求",
       "color": "#FCDC89",
-      "jmaCount": 10
+      "jmaCount": 10,
+      "rawRecordId": "29",
+      "rawRecord": {
+        "order": 29,
+        "csvRow": 30,
+        "name": "利市招财",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "10"
+      },
+      "originalProfile": {
+        "department": "财富事业发展部",
+        "source": "功能需求诞生型",
+        "position": "职业发展顾问",
+        "secondaryPosition": "生活资源管理员",
+        "service": "负责财富、事业、商业发展相关需求",
+        "jmaCount": 10
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "利市招财_10.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "30",
@@ -403,7 +1382,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "商业信用顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 8
+      "jmaCount": 8,
+      "rawRecordId": "30",
+      "rawRecord": {
+        "order": 30,
+        "csvRow": 31,
+        "name": "家神",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "8"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "商业信用顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 8
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "家神_8.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "31",
@@ -415,7 +1423,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 22
+      "jmaCount": 22,
+      "rawRecordId": "31",
+      "rawRecord": {
+        "order": 31,
+        "csvRow": 32,
+        "name": "平安大吉",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "22"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 22
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "平安大吉_22.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "32",
@@ -427,19 +1464,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "疾病治疗专员，家庭运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "32",
+      "rawRecord": {
+        "order": 32,
+        "csvRow": 33,
+        "name": "火塘神",
+        "category": "节庆活动春节",
+        "pageGroup": "024094",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "疾病治疗专员，家庭运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "火塘神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "旧岗位为山川水域管理，与火塘题材关联缺少证据。现保留原值；火塘文化一般材料不能代替本条地方说明。"
     },
     {
       "id": "33",
       "number": 33,
       "name": "山神土地",
-      "department": "社会秩序管理部",
+      "department": "自然环境管理部",
       "source": "自然生成型",
-      "position": "生死档案管理员",
+      "position": "山地与地方空间联络员",
       "secondaryPosition": "无",
-      "service": "负责地方治理、规则、生死秩序维护",
-      "color": "#B3C7D2",
-      "jmaCount": 28
+      "service": "山地、地方空间相关的守护祈愿；旧生死档案岗位无直接依据。",
+      "color": "#ADB97A",
+      "jmaCount": 28,
+      "rawRecordId": "33",
+      "rawRecord": {
+        "order": 33,
+        "csvRow": 34,
+        "name": "山神土地",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "28"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "自然生成型",
+        "position": "生死档案管理员",
+        "secondaryPosition": "无",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 28
+      },
+      "recordKind": "composite",
+      "imageFile": "山神土地_28.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "山地与地方空间的守护祈愿",
+      "evidenceIds": [
+        "R2"
+      ],
+      "reviewNote": "作者对同名甲马有解释；公司归部为设计，仍需核对原书地方版本。"
     },
     {
       "id": "34",
@@ -451,7 +1548,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 9
+      "jmaCount": 9,
+      "rawRecordId": "34",
+      "rawRecord": {
+        "order": 34,
+        "csvRow": 35,
+        "name": "城隍",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "9"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "功能需求诞生型",
+        "position": "生死档案管理员",
+        "secondaryPosition": "无",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 9
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "城隍_9.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "35",
@@ -463,7 +1589,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "35",
+      "rawRecord": {
+        "order": 35,
+        "csvRow": 36,
+        "name": "土皇神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "土皇神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "36",
@@ -475,7 +1630,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "天象管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "36",
+      "rawRecord": {
+        "order": 36,
+        "csvRow": 37,
+        "name": "朱雀玄武",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "天象管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 6
+      },
+      "recordKind": "composite",
+      "imageFile": "朱雀玄武_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "37",
@@ -487,7 +1671,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "37",
+      "rawRecord": {
+        "order": 37,
+        "csvRow": 38,
+        "name": "草甲",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "草甲_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "38",
@@ -499,7 +1712,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生死档案管理员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 29
+      "jmaCount": 29,
+      "rawRecordId": "38",
+      "rawRecord": {
+        "order": 38,
+        "csvRow": 39,
+        "name": "青龙白虎",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "29"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "生死档案管理员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 29
+      },
+      "recordKind": "composite",
+      "imageFile": "青龙白虎_29.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "39",
@@ -511,7 +1753,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "家庭运营专员",
       "service": "负责财富、事业、商业发展相关需求",
       "color": "#FCDC89",
-      "jmaCount": 16
+      "jmaCount": 14,
+      "rawRecordId": "39",
+      "rawRecord": {
+        "order": 39,
+        "csvRow": 40,
+        "name": "财神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "14"
+      },
+      "originalProfile": {
+        "department": "财富事业发展部",
+        "source": "功能需求诞生型",
+        "position": "职业发展顾问",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责财富、事业、商业发展相关需求",
+        "jmaCount": 16
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "财神_16.png",
+      "imageReviewStatus": "legacy_mapping_pending_book_check",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "财神同名于51，原儒释道目录、数量14；不凭通用财神资料确认具体赵公明或其他神格。"
     },
     {
       "id": "40",
@@ -519,11 +1790,42 @@ window.NETWORK_DATA = {
       "name": "其他",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "家庭运营专员",
-      "secondaryPosition": "地方记忆维护员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“祈祥禳灾儒释道”中的集合记录，保留5幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 64
+      "jmaCount": 5,
+      "rawRecordId": "40",
+      "rawRecord": {
+        "order": 40,
+        "csvRow": 41,
+        "name": "其他",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "地方记忆维护员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 64
+      },
+      "recordKind": "collection",
+      "imageFile": "其他_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     },
     {
       "id": "41",
@@ -535,7 +1837,38 @@ window.NETWORK_DATA = {
       "secondaryPosition": "财富增长顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "41",
+      "rawRecord": {
+        "order": 41,
+        "csvRow": 42,
+        "name": "地藏王",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "财富增长顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "地藏王_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [
+        "R9"
+      ],
+      "reviewNote": "原农业岗位、财富兼任无条目证据。R9仅支持一般佛教度脱语境，未核定云南本条具体用途，保留原值并显著标待核。 经典仅作对照，不作地方职能确证。"
     },
     {
       "id": "42",
@@ -547,19 +1880,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "42",
+      "rawRecord": {
+        "order": 42,
+        "csvRow": 43,
+        "name": "观音",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "宗教体系转化型",
+        "position": "疾病治疗专员",
+        "secondaryPosition": "无",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "观音_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "43",
       "number": 43,
       "name": "魁星文昌",
-      "department": "财富事业发展部",
+      "department": "地方文化运营部",
       "source": "宗教体系转化型",
-      "position": "财富增长顾问",
+      "position": "文教祈愿联络员",
       "secondaryPosition": "身体保护顾问",
-      "service": "负责财富、事业、商业发展相关需求",
-      "color": "#FCDC89",
-      "jmaCount": 6
+      "service": "文昌部分与文学、求学愿望有关；魁星部分及复合图像地方用途仍待核。",
+      "color": "#DB7C3F",
+      "jmaCount": 6,
+      "rawRecordId": "43",
+      "rawRecord": {
+        "order": 43,
+        "csvRow": 44,
+        "name": "魁星文昌",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "财富事业发展部",
+        "source": "宗教体系转化型",
+        "position": "财富增长顾问",
+        "secondaryPosition": "身体保护顾问",
+        "service": "负责财富、事业、商业发展相关需求",
+        "jmaCount": 6
+      },
+      "recordKind": "composite",
+      "imageFile": "魁星文昌_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "文昌部分有文学与求学祈愿线索",
+      "evidenceIds": [
+        "R2"
+      ],
+      "reviewNote": "只对文昌部分有直接来源，不能推成全复合条目均已核实。文化部门容纳文教是七部门内的设计选择。"
     },
     {
       "id": "44",
@@ -571,7 +1964,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方记忆维护员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "44",
+      "rawRecord": {
+        "order": 44,
+        "csvRow": 45,
+        "name": "提笔先师",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "095166",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "地方记忆维护员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "提笔先师_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "旧居住安全岗位没有证据；不能凭“提笔”即认定为文昌或行业祖师。"
     },
     {
       "id": "45",
@@ -583,7 +2005,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "农业生态顾问",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "45",
+      "rawRecord": {
+        "order": 45,
+        "csvRow": 46,
+        "name": "青故娘娘",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "功能需求诞生型",
+        "position": "身体保护顾问",
+        "secondaryPosition": "农业生态顾问",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "青故娘娘_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "46",
@@ -595,7 +2046,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "山川水域管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 7
+      "jmaCount": 7,
+      "rawRecordId": "46",
+      "rawRecord": {
+        "order": 46,
+        "csvRow": 47,
+        "name": "床公床母",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "7"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "山川水域管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 7
+      },
+      "recordKind": "composite",
+      "imageFile": "床公床母_7.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "47",
@@ -607,7 +2087,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "47",
+      "rawRecord": {
+        "order": 47,
+        "csvRow": 48,
+        "name": "痘哥",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "功能需求诞生型",
+        "position": "疾病治疗专员",
+        "secondaryPosition": "无",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "痘哥_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "48",
@@ -619,7 +2128,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "山川水域管理专员",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 10
+      "jmaCount": 10,
+      "rawRecordId": "48",
+      "rawRecord": {
+        "order": 48,
+        "csvRow": 49,
+        "name": "送生娘娘",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "10"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "功能需求诞生型",
+        "position": "疾病治疗专员",
+        "secondaryPosition": "山川水域管理专员",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 10
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "送生娘娘_10.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "旧疾病岗位与婚仪目录存在需查问题；不能只由送生字面或北京纸马资料覆盖云南条目。"
     },
     {
       "id": "49",
@@ -631,7 +2169,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "山川水域管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "49",
+      "rawRecord": {
+        "order": 49,
+        "csvRow": 50,
+        "name": "周公桃花",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "山川水域管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "composite",
+      "imageFile": "周公桃花_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "50",
@@ -643,7 +2210,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "商业信用顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 27
+      "jmaCount": 27,
+      "rawRecordId": "50",
+      "rawRecord": {
+        "order": 50,
+        "csvRow": 51,
+        "name": "喜神",
+        "category": "节庆活动婚仪",
+        "pageGroup": "095166",
+        "jmaCount": "27"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "商业信用顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 27
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "喜神_27.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "51",
@@ -655,7 +2251,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "天象管理专员",
       "service": "负责财富、事业、商业发展相关需求",
       "color": "#FCDC89",
-      "jmaCount": 16
+      "jmaCount": 2,
+      "rawRecordId": "51",
+      "rawRecord": {
+        "order": 51,
+        "csvRow": 52,
+        "name": "财神",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "财富事业发展部",
+        "source": "功能需求诞生型",
+        "position": "职业发展顾问",
+        "secondaryPosition": "天象管理专员",
+        "service": "负责财富、事业、商业发展相关需求",
+        "jmaCount": 16
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "财神_17.png",
+      "imageReviewStatus": "legacy_mapping_pending_book_check",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "财神同名于39，原本主会目录、数量2；不自动继承39的神格身份与职能。"
     },
     {
       "id": "52",
@@ -667,7 +2292,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "52",
+      "rawRecord": {
+        "order": 52,
+        "csvRow": 53,
+        "name": "二郎景帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "二郎景帝_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "53",
@@ -679,7 +2333,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "仪式文化运营专员",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "53",
+      "rawRecord": {
+        "order": 53,
+        "csvRow": 54,
+        "name": "城隍土主",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "功能需求诞生型",
+        "position": "司法仲裁专员",
+        "secondaryPosition": "仪式文化运营专员",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 2
+      },
+      "recordKind": "composite",
+      "imageFile": "城隍土主_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "54",
@@ -691,7 +2374,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "54",
+      "rawRecord": {
+        "order": 54,
+        "csvRow": 55,
+        "name": "玉皇上帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "宗教体系转化型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "玉皇上帝_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "55",
@@ -703,7 +2415,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "55",
+      "rawRecord": {
+        "order": 55,
+        "csvRow": 56,
+        "name": "观音老祖",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "地方英雄转化型",
+        "position": "生育保障顾问",
+        "secondaryPosition": "无",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "观音老祖_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "地方英雄转化来源未证；不能将观音老祖自动合并为观音。"
     },
     {
       "id": "56",
@@ -715,7 +2456,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "疾病治疗专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "56",
+      "rawRecord": {
+        "order": 56,
+        "csvRow": 57,
+        "name": "北方天王",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "宗教体系转化型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "疾病治疗专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "北方天王_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "57",
@@ -727,19 +2497,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "57",
+      "rawRecord": {
+        "order": 57,
+        "csvRow": 58,
+        "name": "西方景帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "西方景帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "58",
       "number": 58,
       "name": "大黑天神",
-      "department": "自然环境管理部",
+      "department": "风险危机处理部",
       "source": "功能需求诞生型",
-      "position": "山川水域管理专员",
+      "position": "地方护佑传说联络员",
       "secondaryPosition": "家庭运营专员",
-      "service": "负责人与自然关系、天气、水域、山川等相关事务",
-      "color": "#ADB97A",
-      "jmaCount": 11
+      "service": "大理地方护佑与吞瘟疫符咒的本主传说相关；不作为预防疾病的现实承诺。",
+      "color": "#585287",
+      "jmaCount": 11,
+      "rawRecordId": "58",
+      "rawRecord": {
+        "order": 58,
+        "csvRow": 59,
+        "name": "大黑天神",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "11"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 11
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "大黑天神_11.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "地方护佑、吞瘟疫符咒的本主传说线索",
+      "evidenceIds": [
+        "R8"
+      ],
+      "reviewNote": "来源为作者研究随笔及图像观察；本仓库地方版本待核，不建佛教大黑天到本主的演化边。"
     },
     {
       "id": "59",
@@ -751,7 +2581,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "59",
+      "rawRecord": {
+        "order": 59,
+        "csvRow": 60,
+        "name": "杨四将军",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "社区精神运营专员",
+        "secondaryPosition": "无",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "杨四将军_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "60",
@@ -763,7 +2622,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "60",
+      "rawRecord": {
+        "order": 60,
+        "csvRow": 61,
+        "name": "独角五郎",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "独角五郎_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "61",
@@ -775,7 +2663,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "61",
+      "rawRecord": {
+        "order": 61,
+        "csvRow": 62,
+        "name": "九坛神",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "九坛神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "62",
@@ -787,7 +2704,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "身体保护顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "62",
+      "rawRecord": {
+        "order": 62,
+        "csvRow": 63,
+        "name": "武侯神君",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "身体保护顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "武侯神君_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "63",
@@ -799,7 +2745,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 8
+      "jmaCount": 8,
+      "rawRecordId": "63",
+      "rawRecord": {
+        "order": 63,
+        "csvRow": 64,
+        "name": "大爷之神",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "8"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 8
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "大爷之神_8.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "64",
@@ -811,7 +2786,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "64",
+      "rawRecord": {
+        "order": 64,
+        "csvRow": 65,
+        "name": "大庄天王",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "宗教体系转化型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "大庄天王_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "65",
@@ -823,7 +2827,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方记忆维护员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "65",
+      "rawRecord": {
+        "order": 65,
+        "csvRow": 66,
+        "name": "品甸大王",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方记忆维护员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "品甸大王_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "66",
@@ -835,7 +2868,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "66",
+      "rawRecord": {
+        "order": 66,
+        "csvRow": 67,
+        "name": "天子景帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "天象管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "天子景帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "67",
@@ -847,7 +2909,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方行政管理员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "67",
+      "rawRecord": {
+        "order": 67,
+        "csvRow": 68,
+        "name": "惠康皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方行政管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "惠康皇帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "68",
@@ -859,7 +2950,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "财富增长顾问",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "68",
+      "rawRecord": {
+        "order": 68,
+        "csvRow": 69,
+        "name": "五官本主",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "地方英雄转化型",
+        "position": "司法仲裁专员",
+        "secondaryPosition": "财富增长顾问",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "五官本主_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "69",
@@ -871,7 +2991,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "69",
+      "rawRecord": {
+        "order": 69,
+        "csvRow": 70,
+        "name": "清官本主",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "地方英雄转化型",
+        "position": "司法仲裁专员",
+        "secondaryPosition": "无",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "清官本主_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "70",
@@ -883,7 +3032,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方记忆维护员，司法仲裁专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "70",
+      "rawRecord": {
+        "order": 70,
+        "csvRow": 71,
+        "name": "匡圣皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方记忆维护员，司法仲裁专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "匡圣皇帝_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "71",
@@ -895,7 +3073,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "财富增长顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "71",
+      "rawRecord": {
+        "order": 71,
+        "csvRow": 72,
+        "name": "国光皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "财富增长顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "国光皇帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "72",
@@ -907,7 +3114,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生育保障顾问，财富增长顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "72",
+      "rawRecord": {
+        "order": 72,
+        "csvRow": 73,
+        "name": "福民景帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "生育保障顾问，财富增长顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "福民景帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "73",
@@ -919,7 +3155,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "73",
+      "rawRecord": {
+        "order": 73,
+        "csvRow": 74,
+        "name": "武宜皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "武宜皇帝_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "74",
@@ -931,7 +3196,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "74",
+      "rawRecord": {
+        "order": 74,
+        "csvRow": 75,
+        "name": "景庄皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "景庄皇帝_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "75",
@@ -943,7 +3237,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "75",
+      "rawRecord": {
+        "order": 75,
+        "csvRow": 76,
+        "name": "大圣建国皇帝",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "大圣建国皇帝_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "76",
@@ -955,7 +3278,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方行政管理员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "76",
+      "rawRecord": {
+        "order": 76,
+        "csvRow": 77,
+        "name": "金花银花",
+        "category": "节庆活动本主会",
+        "pageGroup": "095166",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方行政管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "composite",
+      "imageFile": "金花银花_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "77",
@@ -967,7 +3319,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责灾害、危险、不确定事件应对",
       "color": "#585287",
-      "jmaCount": 32
+      "jmaCount": 32,
+      "rawRecordId": "77",
+      "rawRecord": {
+        "order": 77,
+        "csvRow": 78,
+        "name": "刀兵",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "32"
+      },
+      "originalProfile": {
+        "department": "风险危机处理部",
+        "source": "功能需求诞生型",
+        "position": "驱邪安全专员",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责灾害、危险、不确定事件应对",
+        "jmaCount": 32
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "刀兵_32.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "78",
@@ -975,11 +3356,42 @@ window.NETWORK_DATA = {
       "name": "众神",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
-      "secondaryPosition": "厄运处理顾问",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“祈祥禳灾儒释道”中的集合记录，保留5幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "78",
+      "rawRecord": {
+        "order": 78,
+        "csvRow": 79,
+        "name": "众神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "厄运处理顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "collection",
+      "imageFile": "众神_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     },
     {
       "id": "79",
@@ -991,7 +3403,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 8
+      "jmaCount": 8,
+      "rawRecordId": "79",
+      "rawRecord": {
+        "order": 79,
+        "csvRow": 80,
+        "name": "天狗之神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "8"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "天象管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 8
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "天狗之神_8.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "80",
@@ -1003,7 +3444,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "80",
+      "rawRecord": {
+        "order": 80,
+        "csvRow": 81,
+        "name": "弥址三姐",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "弥址三姐_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "81",
@@ -1015,19 +3485,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生活资源管理员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "81",
+      "rawRecord": {
+        "order": 81,
+        "csvRow": 82,
+        "name": "提巴",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "生活资源管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "提巴_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "82",
       "number": 82,
       "name": "罗昌阁大王",
-      "department": "民生生活服务部",
+      "department": "健康生育服务部",
       "source": "功能需求诞生型",
-      "position": "家庭运营专员",
+      "position": "眼部健康祈愿联络员",
       "secondaryPosition": "生活资源管理员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 1
+      "service": "眼疾相关的民间祈愿与禳解诉求；不表达现代医学治疗效果。",
+      "color": "#A8ACDA",
+      "jmaCount": 1,
+      "rawRecordId": "82",
+      "rawRecord": {
+        "order": 82,
+        "csvRow": 83,
+        "name": "罗昌阁大王",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "生活资源管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "罗昌阁大王_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "眼疾相关的禳解诉求",
+      "evidenceIds": [
+        "R7"
+      ],
+      "reviewNote": "作者转录中有同名条目与眼疾的联系；原书页码和地方仪式待核。"
     },
     {
       "id": "83",
@@ -1039,7 +3569,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问，家庭运营专员",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "83",
+      "rawRecord": {
+        "order": 83,
+        "csvRow": 84,
+        "name": "将军洞之神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "地方记忆维护员",
+        "secondaryPosition": "居住安全顾问，家庭运营专员",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "将军洞之神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "84",
@@ -1051,7 +3610,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "司法仲裁专员",
       "service": "负责地方认同、社区记忆和精神连接",
       "color": "#DB7C3F",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "84",
+      "rawRecord": {
+        "order": 84,
+        "csvRow": 85,
+        "name": "白莺太子",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "地方文化运营部",
+        "source": "地方英雄转化型",
+        "position": "仪式文化运营专员",
+        "secondaryPosition": "司法仲裁专员",
+        "service": "负责地方认同、社区记忆和精神连接",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "白莺太子_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "85",
@@ -1063,7 +3651,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "85",
+      "rawRecord": {
+        "order": 85,
+        "csvRow": 86,
+        "name": "都司王相公",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "功能需求诞生型",
+        "position": "司法仲裁专员",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "都司王相公_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "86",
@@ -1075,7 +3692,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "家庭运营专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "86",
+      "rawRecord": {
+        "order": 86,
+        "csvRow": 87,
+        "name": "三位姑娘",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "三位姑娘_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "87",
@@ -1087,7 +3733,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "地方行政管理员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "87",
+      "rawRecord": {
+        "order": 87,
+        "csvRow": 88,
+        "name": "青山祖公祖太",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "天象管理专员",
+        "secondaryPosition": "地方行政管理员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 3
+      },
+      "recordKind": "composite",
+      "imageFile": "青山祖公祖太_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "88",
@@ -1099,7 +3774,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "家庭运营专员",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "88",
+      "rawRecord": {
+        "order": 88,
+        "csvRow": 89,
+        "name": "青山老祖",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "地方英雄转化型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "青山老祖_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "89",
@@ -1111,7 +3815,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "89",
+      "rawRecord": {
+        "order": 89,
+        "csvRow": 90,
+        "name": "姑奶之神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "姑奶之神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "90",
@@ -1123,7 +3856,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "90",
+      "rawRecord": {
+        "order": 90,
+        "csvRow": 91,
+        "name": "阿娝老太",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "阿娝老太_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "91",
@@ -1135,7 +3897,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "91",
+      "rawRecord": {
+        "order": 91,
+        "csvRow": 92,
+        "name": "仙家老太",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "仙家老太_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "92",
@@ -1147,19 +3938,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "92",
+      "rawRecord": {
+        "order": 92,
+        "csvRow": 93,
+        "name": "虚空过往之神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "虚空过往之神_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "93",
       "number": 93,
       "name": "枭神",
-      "department": "民生生活服务部",
+      "department": "风险危机处理部",
       "source": "功能需求诞生型",
-      "position": "生活资源管理员",
+      "position": "家庭伦理风险叙事联络员",
       "secondaryPosition": "地方行政管理员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 7
+      "service": "与不孝及亲子伤害恐惧相关的民俗禳解语境；不是负责地方行政的神职。",
+      "color": "#585287",
+      "jmaCount": 7,
+      "rawRecordId": "93",
+      "rawRecord": {
+        "order": 93,
+        "csvRow": 94,
+        "name": "枭神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "7"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方行政管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 7
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "枭神_7.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "不孝、亲子伤害相关的负面神灵观念",
+      "evidenceIds": [
+        "R8"
+      ],
+      "reviewNote": "负面神灵不能改写成主动提供福利的善神；具体仪式尚待原书复核。"
     },
     {
       "id": "94",
@@ -1171,19 +4022,80 @@ window.NETWORK_DATA = {
       "secondaryPosition": "天象管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "94",
+      "rawRecord": {
+        "order": 94,
+        "csvRow": 95,
+        "name": "柳英姑娘",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "天象管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "柳英姑娘_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "95",
       "number": 95,
       "name": "哭神",
-      "department": "民生生活服务部",
+      "department": "健康生育服务部",
       "source": "功能需求诞生型",
-      "position": "家庭运营专员",
+      "position": "儿童啼哭祈愿联络员",
       "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 5
+      "service": "儿童昼夜啼哭相关的民俗禳解诉求；不因“哭”字推定丧葬职能。",
+      "color": "#A8ACDA",
+      "jmaCount": 5,
+      "rawRecordId": "95",
+      "rawRecord": {
+        "order": 95,
+        "csvRow": 96,
+        "name": "哭神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "哭神_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "儿童啼哭相关的负面神灵与禳解诉求",
+      "evidenceIds": [
+        "R8",
+        "R7"
+      ],
+      "reviewNote": "研究指出其负面神灵属性；公司的服务是解释人的祈愿需求，不是断言其本来为医疗守护神。"
     },
     {
       "id": "96",
@@ -1195,19 +4107,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 8
+      "jmaCount": 8,
+      "rawRecordId": "96",
+      "rawRecord": {
+        "order": 96,
+        "csvRow": 97,
+        "name": "血神之神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "8"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 8
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "血神之神_8.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "97",
       "number": 97,
       "name": "血湖",
-      "department": "民生生活服务部",
+      "department": "社会秩序管理部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
+      "position": "生命礼俗叙事联络员",
       "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 3
+      "service": "与孕产死亡、血湖及超荐相关的民俗观念；不将亡者受难叙述视为现实事实。",
+      "color": "#B3C7D2",
+      "jmaCount": 3,
+      "rawRecordId": "97",
+      "rawRecord": {
+        "order": 97,
+        "csvRow": 98,
+        "name": "血湖",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "血湖_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "血湖主者与亡者超荐相关的图像线索",
+      "evidenceIds": [
+        "R8"
+      ],
+      "reviewNote": "仓库图像题“血湖主者”与原名“血湖”对应为本阶段图像核读；未取得原书地方仪式记述。"
     },
     {
       "id": "98",
@@ -1215,11 +4187,42 @@ window.NETWORK_DATA = {
       "name": "神灵鬼魂",
       "department": "民生生活服务部",
       "source": "禁忌灾害管理型",
-      "position": "生活资源管理员",
-      "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“祈祥禳灾儒释道”中的集合记录，保留33幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 33
+      "jmaCount": 33,
+      "rawRecordId": "98",
+      "rawRecord": {
+        "order": 98,
+        "csvRow": 99,
+        "name": "神灵鬼魂",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "33"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "禁忌灾害管理型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 33
+      },
+      "recordKind": "collection",
+      "imageFile": "神灵鬼魂_33.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     },
     {
       "id": "99",
@@ -1227,11 +4230,42 @@ window.NETWORK_DATA = {
       "name": "其他",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
-      "secondaryPosition": "生育保障顾问",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“祈祥禳灾儒释道”中的集合记录，保留48幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 64
+      "jmaCount": 48,
+      "rawRecordId": "99",
+      "rawRecord": {
+        "order": 99,
+        "csvRow": 100,
+        "name": "其他",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "48"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "生育保障顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 64
+      },
+      "recordKind": "collection",
+      "imageFile": "其他_48.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     },
     {
       "id": "100",
@@ -1243,7 +4277,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "100",
+      "rawRecord": {
+        "order": 100,
+        "csvRow": 101,
+        "name": "功曹",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "功曹_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "101",
@@ -1255,7 +4318,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "驱邪安全专员",
       "service": "负责地方治理、规则、生死秩序维护",
       "color": "#B3C7D2",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "101",
+      "rawRecord": {
+        "order": 101,
+        "csvRow": 102,
+        "name": "阴阳太岁",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "社会秩序管理部",
+        "source": "禁忌灾害管理型",
+        "position": "司法仲裁专员",
+        "secondaryPosition": "驱邪安全专员",
+        "service": "负责地方治理、规则、生死秩序维护",
+        "jmaCount": 1
+      },
+      "recordKind": "composite",
+      "imageFile": "阴阳太岁_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "102",
@@ -1267,7 +4359,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 12
+      "jmaCount": 12,
+      "rawRecordId": "102",
+      "rawRecord": {
+        "order": 102,
+        "csvRow": 103,
+        "name": "本命星君",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "12"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 12
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "本命星君_12.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "103",
@@ -1279,7 +4400,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "驱邪安全专员",
       "service": "负责灾害、危险、不确定事件应对",
       "color": "#585287",
-      "jmaCount": 17
+      "jmaCount": 17,
+      "rawRecordId": "103",
+      "rawRecord": {
+        "order": 103,
+        "csvRow": 104,
+        "name": "太岁",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "167238",
+        "jmaCount": "17"
+      },
+      "originalProfile": {
+        "department": "风险危机处理部",
+        "source": "禁忌灾害管理型",
+        "position": "厄运处理顾问",
+        "secondaryPosition": "驱邪安全专员",
+        "service": "负责灾害、危险、不确定事件应对",
+        "jmaCount": 17
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "太岁_17.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "104",
@@ -1291,7 +4441,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 27
+      "jmaCount": 27,
+      "rawRecordId": "104",
+      "rawRecord": {
+        "order": 104,
+        "csvRow": 105,
+        "name": "庙神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "27"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 27
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "庙神_27.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "105",
@@ -1303,7 +4482,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "家庭运营专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 56
+      "jmaCount": 56,
+      "rawRecordId": "105",
+      "rawRecord": {
+        "order": 105,
+        "csvRow": 106,
+        "name": "关科",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "56"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 56
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "关科_56.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "106",
@@ -1311,11 +4519,42 @@ window.NETWORK_DATA = {
       "name": "替身",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
-      "secondaryPosition": "仪式文化运营专员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "替身甲马在部分水域禳灾仪式中充当替代物；它不是一位负责居住安全的神明。",
       "color": "#EEBAC7",
-      "jmaCount": 8
+      "jmaCount": 8,
+      "rawRecordId": "106",
+      "rawRecord": {
+        "order": 106,
+        "csvRow": 107,
+        "name": "替身",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "8"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "仪式文化运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 8
+      },
+      "recordKind": "ritual_object",
+      "imageFile": "替身_8.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "水域禳灾中的替代献祭用品线索",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "仪式用品记录；不赋予人格神职，不据此直接确认本目录图像的全部用途。"
     },
     {
       "id": "107",
@@ -1323,11 +4562,42 @@ window.NETWORK_DATA = {
       "name": "丧葬诸神鬼",
       "department": "民生生活服务部",
       "source": "禁忌灾害管理型",
-      "position": "生活资源管理员",
-      "secondaryPosition": "地方行政管理员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“祈祥禳灾儒释道”中的集合记录，保留32幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 32
+      "jmaCount": 32,
+      "rawRecordId": "107",
+      "rawRecord": {
+        "order": 107,
+        "csvRow": 108,
+        "name": "丧葬诸神鬼",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "32"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "禁忌灾害管理型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "地方行政管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 32
+      },
+      "recordKind": "collection",
+      "imageFile": "丧葬诸神鬼_32.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     },
     {
       "id": "108",
@@ -1339,7 +4609,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "108",
+      "rawRecord": {
+        "order": 108,
+        "csvRow": 109,
+        "name": "匹公匹母",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "composite",
+      "imageFile": "匹公匹母_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "109",
@@ -1351,19 +4650,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生育保障顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "109",
+      "rawRecord": {
+        "order": 109,
+        "csvRow": 110,
+        "name": "小人子",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "生育保障顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "小人子_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "110",
       "number": 110,
       "name": "夜游神",
-      "department": "民生生活服务部",
+      "department": "健康生育服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
+      "position": "夜间安宁祈愿联络员",
       "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 5
+      "service": "噩梦、夜间不安相关的民俗祈愿语境；具体仪式和地方称谓待核。",
+      "color": "#A8ACDA",
+      "jmaCount": 5,
+      "rawRecordId": "110",
+      "rawRecord": {
+        "order": 110,
+        "csvRow": 111,
+        "name": "夜游神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "夜游神_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "噩梦相关的民俗禳解诉求",
+      "evidenceIds": [
+        "R7"
+      ],
+      "reviewNote": "转录明确列夜游神与噩梦；不把仪式诉求描述成医学疗效。"
     },
     {
       "id": "111",
@@ -1375,7 +4734,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "天象管理专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "111",
+      "rawRecord": {
+        "order": 111,
+        "csvRow": 112,
+        "name": "六贼神",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "天象管理专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "六贼神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "112",
@@ -1387,7 +4775,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责灾害、危险、不确定事件应对",
       "color": "#585287",
-      "jmaCount": 27
+      "jmaCount": 27,
+      "rawRecordId": "112",
+      "rawRecord": {
+        "order": 112,
+        "csvRow": 113,
+        "name": "解冤结",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "27"
+      },
+      "originalProfile": {
+        "department": "风险危机处理部",
+        "source": "功能需求诞生型",
+        "position": "厄运处理顾问",
+        "secondaryPosition": "无",
+        "service": "负责灾害、危险、不确定事件应对",
+        "jmaCount": 27
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "解冤结_27.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "113",
@@ -1399,7 +4816,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 21
+      "jmaCount": 21,
+      "rawRecordId": "113",
+      "rawRecord": {
+        "order": 113,
+        "csvRow": 114,
+        "name": "后宫娘娘",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "21"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "功能需求诞生型",
+        "position": "疾病治疗专员",
+        "secondaryPosition": "无",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 21
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "后宫娘娘_21.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "114",
@@ -1411,7 +4857,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "家庭运营专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 11
+      "jmaCount": 11,
+      "rawRecordId": "114",
+      "rawRecord": {
+        "order": 114,
+        "csvRow": 115,
+        "name": "蛊",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "11"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "家庭运营专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 11
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "蛊_11.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "115",
@@ -1423,7 +4898,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责疾病、生育、身体健康相关需求",
       "color": "#A8ACDA",
-      "jmaCount": 22
+      "jmaCount": 22,
+      "rawRecordId": "115",
+      "rawRecord": {
+        "order": 115,
+        "csvRow": 116,
+        "name": "病符",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "22"
+      },
+      "originalProfile": {
+        "department": "健康生育服务部",
+        "source": "禁忌灾害管理型",
+        "position": "生育保障顾问",
+        "secondaryPosition": "无",
+        "service": "负责疾病、生育、身体健康相关需求",
+        "jmaCount": 22
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "病符_22.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "生育岗位缺少直接证据；不得把病符一概当治疗神或致病神。"
     },
     {
       "id": "116",
@@ -1435,7 +4939,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责灾害、危险、不确定事件应对",
       "color": "#585287",
-      "jmaCount": 15
+      "jmaCount": 15,
+      "rawRecordId": "116",
+      "rawRecord": {
+        "order": 116,
+        "csvRow": 117,
+        "name": "五鬼",
+        "category": "祈祥禳灾儒释道",
+        "pageGroup": "239310",
+        "jmaCount": "15"
+      },
+      "originalProfile": {
+        "department": "风险危机处理部",
+        "source": "禁忌灾害管理型",
+        "position": "厄运处理顾问",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责灾害、危险、不确定事件应对",
+        "jmaCount": 15
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "五鬼_15.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "117",
@@ -1447,7 +4980,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 14
+      "jmaCount": 14,
+      "rawRecordId": "117",
+      "rawRecord": {
+        "order": 117,
+        "csvRow": 118,
+        "name": "圈神粪神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "14"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 14
+      },
+      "recordKind": "composite",
+      "imageFile": "圈神粪神_14.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "118",
@@ -1459,7 +5021,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "商业信用顾问，灾害应对专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 10
+      "jmaCount": 9,
+      "rawRecordId": "118",
+      "rawRecord": {
+        "order": 118,
+        "csvRow": 119,
+        "name": "猎神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "9"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "商业信用顾问，灾害应对专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 10
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "猎神_9.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "猎神同名于8但原目录生产生活、数量9；本条地方职能未核，不与8共用人物结论。"
     },
     {
       "id": "119",
@@ -1471,7 +5062,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "119",
+      "rawRecord": {
+        "order": 119,
+        "csvRow": 120,
+        "name": "山神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "天象管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "山神_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "120",
@@ -1483,7 +5103,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "财富增长顾问，生活资源管理员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "120",
+      "rawRecord": {
+        "order": 120,
+        "csvRow": 121,
+        "name": "岩神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "财富增长顾问，生活资源管理员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "岩神_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "121",
@@ -1495,19 +5144,79 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "121",
+      "rawRecord": {
+        "order": 121,
+        "csvRow": 122,
+        "name": "雷神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "雷神_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "122",
       "number": 122,
       "name": "虹神",
-      "department": "民生生活服务部",
+      "department": "健康生育服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
+      "position": "儿童言语祈愿联络员",
       "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
-      "color": "#EEBAC7",
-      "jmaCount": 2
+      "service": "儿童口吃相关的民俗祈愿；不能只按彩虹字面认定其专管天气。",
+      "color": "#A8ACDA",
+      "jmaCount": 2,
+      "rawRecordId": "122",
+      "rawRecord": {
+        "order": 122,
+        "csvRow": 123,
+        "name": "虹神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "虹神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "儿童口吃相关的民俗禳解诉求",
+      "evidenceIds": [
+        "R7"
+      ],
+      "reviewNote": "转录版本待核；不扩写为全体儿童疾病治疗神。"
     },
     {
       "id": "123",
@@ -1519,7 +5228,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 4
+      "jmaCount": 4,
+      "rawRecordId": "123",
+      "rawRecord": {
+        "order": 123,
+        "csvRow": 124,
+        "name": "风神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "4"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 4
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "风神_4.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "124",
@@ -1527,11 +5265,42 @@ window.NETWORK_DATA = {
       "name": "水神",
       "department": "自然环境管理部",
       "source": "自然生成型",
-      "position": "农业生态顾问",
+      "position": "水域平安事务联络员",
       "secondaryPosition": "生死档案管理员",
-      "service": "负责人与自然关系、天气、水域、山川等相关事务",
+      "service": "水域使用、水上作业及祈雨相关诉求；不同水域神灵的职能不完全相同。",
       "color": "#ADB97A",
-      "jmaCount": 5
+      "jmaCount": 5,
+      "rawRecordId": "124",
+      "rawRecord": {
+        "order": 124,
+        "csvRow": 125,
+        "name": "水神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "5"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "生死档案管理员",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 5
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "水神_5.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "水域平安、渔业与水上活动相关祈愿",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "水神为宽泛目录名，采用区域职能说明，不认定本图是某一有名水神。"
     },
     {
       "id": "125",
@@ -1539,11 +5308,42 @@ window.NETWORK_DATA = {
       "name": "龙神",
       "department": "自然环境管理部",
       "source": "自然生成型",
-      "position": "山川水域管理专员",
+      "position": "祈雨与水域事务联络员",
       "secondaryPosition": "无",
-      "service": "负责人与自然关系、天气、水域、山川等相关事务",
+      "service": "旱情祈雨、水域平安相关诉求；龙神的地方形态和范围须分别核查。",
       "color": "#ADB97A",
-      "jmaCount": 35
+      "jmaCount": 35,
+      "rawRecordId": "125",
+      "rawRecord": {
+        "order": 125,
+        "csvRow": 126,
+        "name": "龙神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "35"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "无",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 35
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "龙神_35.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "祈雨及特定水域平安相关祈愿",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "仅作神职领域映射，不断言全部龙神文化同源。"
     },
     {
       "id": "126",
@@ -1555,7 +5355,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "生育保障顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "126",
+      "rawRecord": {
+        "order": 126,
+        "csvRow": 127,
+        "name": "家宅祀揭地神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "生育保障顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "家宅祀揭地神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "127",
@@ -1567,7 +5396,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "疾病治疗专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 12
+      "jmaCount": 12,
+      "rawRecordId": "127",
+      "rawRecord": {
+        "order": 127,
+        "csvRow": 128,
+        "name": "土科",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "12"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "疾病治疗专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 12
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "土科_12.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "128",
@@ -1579,7 +5437,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 19
+      "jmaCount": 19,
+      "rawRecordId": "128",
+      "rawRecord": {
+        "order": 128,
+        "csvRow": 129,
+        "name": "张鲁二班",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "19"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 19
+      },
+      "recordKind": "composite",
+      "imageFile": "张鲁二班_19.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "129",
@@ -1591,7 +5478,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "职业发展顾问",
       "service": "负责人与自然关系、天气、水域、山川等相关事务",
       "color": "#ADB97A",
-      "jmaCount": 10
+      "jmaCount": 10,
+      "rawRecordId": "129",
+      "rawRecord": {
+        "order": 129,
+        "csvRow": 130,
+        "name": "树神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "10"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "功能需求诞生型",
+        "position": "农业生态顾问",
+        "secondaryPosition": "职业发展顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 10
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "树神_10.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "130",
@@ -1603,7 +5519,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "财富增长顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "130",
+      "rawRecord": {
+        "order": 130,
+        "csvRow": 131,
+        "name": "三木大王",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "财富增长顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "三木大王_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "131",
@@ -1615,7 +5560,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "灾害应对专员",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "131",
+      "rawRecord": {
+        "order": 131,
+        "csvRow": 132,
+        "name": "祭木神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "灾害应对专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "祭木神_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "132",
@@ -1623,11 +5597,42 @@ window.NETWORK_DATA = {
       "name": "桥路二神",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "居住安全顾问",
+      "position": "桥路通行祈愿联络员",
       "secondaryPosition": "疾病治疗专员",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "service": "道路、桥梁出行相关的平安祈愿；旧疾病治疗兼任尚无依据。",
       "color": "#EEBAC7",
-      "jmaCount": 26
+      "jmaCount": 26,
+      "rawRecordId": "132",
+      "rawRecord": {
+        "order": 132,
+        "csvRow": 133,
+        "name": "桥路二神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "26"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "疾病治疗专员",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 26
+      },
+      "recordKind": "composite",
+      "imageFile": "桥路二神_26.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "道路与桥梁通行相关祈愿",
+      "evidenceIds": [
+        "R2"
+      ],
+      "reviewNote": "来源有同名甲马解释，不把道路桥梁祈愿等同现实交通保障。"
     },
     {
       "id": "133",
@@ -1639,7 +5644,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "居住安全顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 1
+      "jmaCount": 1,
+      "rawRecordId": "133",
+      "rawRecord": {
+        "order": 133,
+        "csvRow": 134,
+        "name": "醋神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "1"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "居住安全顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 1
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "醋神_1.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "134",
@@ -1651,7 +5685,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "134",
+      "rawRecord": {
+        "order": 134,
+        "csvRow": 135,
+        "name": "放羊哥",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "放羊哥_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "135",
@@ -1663,7 +5726,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "135",
+      "rawRecord": {
+        "order": 135,
+        "csvRow": 136,
+        "name": "羊玺王",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "羊玺王_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "136",
@@ -1675,7 +5767,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "身体保护顾问",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 2
+      "jmaCount": 2,
+      "rawRecordId": "136",
+      "rawRecord": {
+        "order": 136,
+        "csvRow": 137,
+        "name": "鸡羊之神",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "2"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "居住安全顾问",
+        "secondaryPosition": "身体保护顾问",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 2
+      },
+      "recordKind": "composite",
+      "imageFile": "鸡羊之神_2.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "137",
@@ -1687,7 +5808,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 3
+      "jmaCount": 3,
+      "rawRecordId": "137",
+      "rawRecord": {
+        "order": 137,
+        "csvRow": 138,
+        "name": "虫王",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "3"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "家庭运营专员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 3
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "虫王_3.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "138",
@@ -1699,7 +5849,36 @@ window.NETWORK_DATA = {
       "secondaryPosition": "无",
       "service": "负责家庭、饮食、居住等日常生活需求",
       "color": "#EEBAC7",
-      "jmaCount": 28
+      "jmaCount": 28,
+      "rawRecordId": "138",
+      "rawRecord": {
+        "order": 138,
+        "csvRow": 139,
+        "name": "五谷六畜",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "28"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 28
+      },
+      "recordKind": "composite",
+      "imageFile": "五谷六畜_28.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_unverified",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "needs_evidence",
+      "confidence": "未确定",
+      "traditionalFunction": "不确定，待核查",
+      "evidenceIds": [],
+      "reviewNote": "未取得能定位到本条目地方版本的可靠职能材料；保留旧值，不把目录类别直接等同具体职能。"
     },
     {
       "id": "139",
@@ -1707,11 +5886,42 @@ window.NETWORK_DATA = {
       "name": "水草大王",
       "department": "自然环境管理部",
       "source": "自然生成型",
-      "position": "山川水域管理专员",
+      "position": "水上出行祈愿联络员",
       "secondaryPosition": "厄运处理顾问",
-      "service": "负责人与自然关系、天气、水域、山川等相关事务",
+      "service": "船只首次下水、水上出行及水域平安相关祈愿；地方版本仍需原书复核。",
       "color": "#ADB97A",
-      "jmaCount": 6
+      "jmaCount": 6,
+      "rawRecordId": "139",
+      "rawRecord": {
+        "order": 139,
+        "csvRow": 140,
+        "name": "水草大王",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "6"
+      },
+      "originalProfile": {
+        "department": "自然环境管理部",
+        "source": "自然生成型",
+        "position": "山川水域管理专员",
+        "secondaryPosition": "厄运处理顾问",
+        "service": "负责人与自然关系、天气、水域、山川等相关事务",
+        "jmaCount": 6
+      },
+      "recordKind": "catalog_record",
+      "imageFile": "水草大王_6.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "design_metaphor_from_function",
+      "secondaryPositionReviewStatus": "unverified_legacy",
+      "departmentBasis": "design_allocation_from_function",
+      "reviewStatus": "source_supported_scope_limited",
+      "confidence": "中",
+      "traditionalFunction": "水上出行与船只下水相关祈愿",
+      "evidenceIds": [
+        "R1"
+      ],
+      "reviewNote": "论文直接列水草大王，但未逐幅核对仓库图像。"
     },
     {
       "id": "140",
@@ -1719,3773 +5929,498 @@ window.NETWORK_DATA = {
       "name": "其他",
       "department": "民生生活服务部",
       "source": "功能需求诞生型",
-      "position": "生活资源管理员",
-      "secondaryPosition": "无",
-      "service": "负责家庭、饮食、居住等日常生活需求",
+      "position": "",
+      "secondaryPosition": "",
+      "service": "原目录“生产生活”中的集合记录，保留11幅甲马的记录数量；未据此虚构单一神明或具体神职。",
       "color": "#EEBAC7",
-      "jmaCount": 64
+      "jmaCount": 11,
+      "rawRecordId": "140",
+      "rawRecord": {
+        "order": 140,
+        "csvRow": 141,
+        "name": "其他",
+        "category": "生产生活",
+        "pageGroup": "311384",
+        "jmaCount": "11"
+      },
+      "originalProfile": {
+        "department": "民生生活服务部",
+        "source": "功能需求诞生型",
+        "position": "生活资源管理员",
+        "secondaryPosition": "无",
+        "service": "负责家庭、饮食、居住等日常生活需求",
+        "jmaCount": 64
+      },
+      "recordKind": "collection",
+      "imageFile": "其他_11.png",
+      "imageReviewStatus": "filename_matches_raw_record",
+      "sourceReviewStatus": "unverified_origin",
+      "positionBasis": "not_a_single_deity",
+      "secondaryPositionReviewStatus": "not_applicable",
+      "departmentBasis": "legacy_design_pending_review",
+      "reviewStatus": "collection_record",
+      "confidence": "高（仅目录识别）",
+      "traditionalFunction": "集合记录，不指派单一神职",
+      "evidenceIds": [
+        "R0"
+      ],
+      "reviewNote": "原花名册的岗位、服务及入职来源保存在旧档案中，不能据集合标题编造神职。"
     }
   ],
   "edges": [
     {
-      "id": "2-9-business",
-      "source": "2",
-      "target": "9",
-      "sourceName": "井神",
-      "targetName": "雪山太子",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "2-13-supply",
-      "source": "2",
-      "target": "13",
-      "sourceName": "井神",
-      "targetName": "三崇大帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "2-15-culture",
-      "source": "2",
-      "target": "15",
-      "sourceName": "井神",
-      "targetName": "洱河灵帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "3-10-business",
-      "source": "3",
-      "target": "10",
-      "sourceName": "天地日月",
-      "targetName": "赤子三爷",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "3-14-supply",
-      "source": "3",
-      "target": "14",
-      "sourceName": "天地日月",
-      "targetName": "得道龙王之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "3-16-culture",
-      "source": "3",
-      "target": "16",
-      "sourceName": "天地日月",
-      "targetName": "东海灵源",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "4-11-business",
-      "source": "4",
-      "target": "11",
-      "sourceName": "掌兵太子",
-      "targetName": "马三爷",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "4-15-supply",
-      "source": "4",
-      "target": "15",
-      "sourceName": "掌兵太子",
-      "targetName": "洱河灵帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "4-17-culture",
-      "source": "4",
-      "target": "17",
-      "sourceName": "掌兵太子",
-      "targetName": "神牛大老爷",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "5-12-business",
-      "source": "5",
-      "target": "12",
-      "sourceName": "白马将军",
-      "targetName": "东山安民富境灵帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "5-16-supply",
-      "source": "5",
-      "target": "16",
-      "sourceName": "白马将军",
-      "targetName": "东海灵源",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "5-18-culture",
-      "source": "5",
-      "target": "18",
-      "sourceName": "白马将军",
-      "targetName": "小黄龙",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "6-13-business",
-      "source": "6",
-      "target": "13",
-      "sourceName": "老太之神",
-      "targetName": "三崇大帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "6-17-supply",
-      "source": "6",
-      "target": "17",
-      "sourceName": "老太之神",
-      "targetName": "神牛大老爷",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "6-19-culture",
-      "source": "6",
-      "target": "19",
-      "sourceName": "老太之神",
-      "targetName": "红山本主",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "7-14-business",
-      "source": "7",
-      "target": "14",
-      "sourceName": "柏洁夫人",
-      "targetName": "得道龙王之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "7-18-supply",
-      "source": "7",
-      "target": "18",
-      "sourceName": "柏洁夫人",
-      "targetName": "小黄龙",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "7-20-culture",
-      "source": "7",
-      "target": "20",
-      "sourceName": "柏洁夫人",
-      "targetName": "田公地母",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "8-19-supply",
-      "source": "8",
-      "target": "19",
-      "sourceName": "猎神",
-      "targetName": "红山本主",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "8-21-culture",
-      "source": "8",
-      "target": "21",
-      "sourceName": "猎神",
-      "targetName": "铁柱三郎",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "9-16-business",
-      "source": "9",
-      "target": "16",
-      "sourceName": "雪山太子",
-      "targetName": "东海灵源",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "9-20-supply",
-      "source": "9",
-      "target": "20",
-      "sourceName": "雪山太子",
-      "targetName": "田公地母",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "9-22-culture",
-      "source": "9",
-      "target": "22",
-      "sourceName": "雪山太子",
-      "targetName": "西山皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "10-17-business",
-      "source": "10",
-      "target": "17",
-      "sourceName": "赤子三爷",
-      "targetName": "神牛大老爷",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "10-21-supply",
-      "source": "10",
-      "target": "21",
-      "sourceName": "赤子三爷",
-      "targetName": "铁柱三郎",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "10-23-culture",
-      "source": "10",
-      "target": "23",
-      "sourceName": "赤子三爷",
-      "targetName": "石头本主",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "11-18-business",
-      "source": "11",
-      "target": "18",
-      "sourceName": "马三爷",
-      "targetName": "小黄龙",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "11-22-supply",
-      "source": "11",
-      "target": "22",
-      "sourceName": "马三爷",
-      "targetName": "西山皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "11-24-culture",
-      "source": "11",
-      "target": "24",
-      "sourceName": "马三爷",
-      "targetName": "太阳之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "12-19-business",
-      "source": "12",
-      "target": "19",
-      "sourceName": "东山安民富境灵帝",
-      "targetName": "红山本主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "12-25-culture",
-      "source": "12",
-      "target": "25",
-      "sourceName": "东山安民富境灵帝",
-      "targetName": "本主",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "13-20-business",
-      "source": "13",
-      "target": "20",
-      "sourceName": "三崇大帝",
-      "targetName": "田公地母",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "13-24-supply",
-      "source": "13",
-      "target": "24",
-      "sourceName": "三崇大帝",
-      "targetName": "太阳之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "13-26-culture",
-      "source": "13",
-      "target": "26",
-      "sourceName": "三崇大帝",
-      "targetName": "火神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "14-21-business",
-      "source": "14",
-      "target": "21",
-      "sourceName": "得道龙王之神",
-      "targetName": "铁柱三郎",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "14-25-supply",
-      "source": "14",
-      "target": "25",
-      "sourceName": "得道龙王之神",
-      "targetName": "本主",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "15-26-supply",
-      "source": "15",
-      "target": "26",
-      "sourceName": "洱河灵帝",
-      "targetName": "火神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "15-28-culture",
-      "source": "15",
-      "target": "28",
-      "sourceName": "洱河灵帝",
-      "targetName": "送圣马子",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "16-23-business",
-      "source": "16",
-      "target": "23",
-      "sourceName": "东海灵源",
-      "targetName": "石头本主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "16-27-supply",
-      "source": "16",
-      "target": "27",
-      "sourceName": "东海灵源",
-      "targetName": "白龙苍龙财龙",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "16-29-culture",
-      "source": "16",
-      "target": "29",
-      "sourceName": "东海灵源",
-      "targetName": "利市招财",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "17-24-business",
-      "source": "17",
-      "target": "24",
-      "sourceName": "神牛大老爷",
-      "targetName": "太阳之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "17-28-supply",
-      "source": "17",
-      "target": "28",
-      "sourceName": "神牛大老爷",
-      "targetName": "送圣马子",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "17-30-culture",
-      "source": "17",
-      "target": "30",
-      "sourceName": "神牛大老爷",
-      "targetName": "家神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "18-25-business",
-      "source": "18",
-      "target": "25",
-      "sourceName": "小黄龙",
-      "targetName": "本主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "18-29-supply",
-      "source": "18",
-      "target": "29",
-      "sourceName": "小黄龙",
-      "targetName": "利市招财",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "18-31-culture",
-      "source": "18",
-      "target": "31",
-      "sourceName": "小黄龙",
-      "targetName": "平安大吉",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "19-26-business",
-      "source": "19",
-      "target": "26",
-      "sourceName": "红山本主",
-      "targetName": "火神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "19-30-supply",
-      "source": "19",
-      "target": "30",
-      "sourceName": "红山本主",
-      "targetName": "家神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "19-32-culture",
-      "source": "19",
-      "target": "32",
-      "sourceName": "红山本主",
-      "targetName": "火塘神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "20-27-business",
-      "source": "20",
-      "target": "27",
-      "sourceName": "田公地母",
-      "targetName": "白龙苍龙财龙",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "20-31-supply",
-      "source": "20",
-      "target": "31",
-      "sourceName": "田公地母",
-      "targetName": "平安大吉",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "20-33-culture",
-      "source": "20",
-      "target": "33",
-      "sourceName": "田公地母",
-      "targetName": "山神土地",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "21-28-business",
-      "source": "21",
-      "target": "28",
-      "sourceName": "铁柱三郎",
-      "targetName": "送圣马子",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "21-32-supply",
-      "source": "21",
-      "target": "32",
-      "sourceName": "铁柱三郎",
-      "targetName": "火塘神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "21-34-culture",
-      "source": "21",
-      "target": "34",
-      "sourceName": "铁柱三郎",
-      "targetName": "城隍",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "22-33-supply",
-      "source": "22",
-      "target": "33",
-      "sourceName": "西山皇帝",
-      "targetName": "山神土地",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "22-35-culture",
-      "source": "22",
-      "target": "35",
-      "sourceName": "西山皇帝",
-      "targetName": "土皇神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "23-30-business",
-      "source": "23",
-      "target": "30",
-      "sourceName": "石头本主",
-      "targetName": "家神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "23-36-culture",
-      "source": "23",
-      "target": "36",
-      "sourceName": "石头本主",
-      "targetName": "朱雀玄武",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "24-31-business",
-      "source": "24",
-      "target": "31",
-      "sourceName": "太阳之神",
-      "targetName": "平安大吉",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "24-35-supply",
-      "source": "24",
-      "target": "35",
-      "sourceName": "太阳之神",
-      "targetName": "土皇神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "24-37-culture",
-      "source": "24",
-      "target": "37",
-      "sourceName": "太阳之神",
-      "targetName": "草甲",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "25-32-business",
-      "source": "25",
-      "target": "32",
-      "sourceName": "本主",
-      "targetName": "火塘神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "25-36-supply",
-      "source": "25",
-      "target": "36",
-      "sourceName": "本主",
-      "targetName": "朱雀玄武",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "25-38-culture",
-      "source": "25",
-      "target": "38",
-      "sourceName": "本主",
-      "targetName": "青龙白虎",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "26-33-business",
-      "source": "26",
-      "target": "33",
-      "sourceName": "火神",
-      "targetName": "山神土地",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "26-37-supply",
-      "source": "26",
-      "target": "37",
-      "sourceName": "火神",
-      "targetName": "草甲",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "26-39-culture",
-      "source": "26",
-      "target": "39",
-      "sourceName": "火神",
-      "targetName": "财神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "27-34-business",
-      "source": "27",
-      "target": "34",
-      "sourceName": "白龙苍龙财龙",
-      "targetName": "城隍",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "27-38-supply",
-      "source": "27",
-      "target": "38",
-      "sourceName": "白龙苍龙财龙",
-      "targetName": "青龙白虎",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "28-35-business",
-      "source": "28",
-      "target": "35",
-      "sourceName": "送圣马子",
-      "targetName": "土皇神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "28-39-supply",
-      "source": "28",
-      "target": "39",
-      "sourceName": "送圣马子",
-      "targetName": "财神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "28-41-culture",
-      "source": "28",
-      "target": "41",
-      "sourceName": "送圣马子",
-      "targetName": "地藏王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "29-40-supply",
-      "source": "29",
-      "target": "40",
-      "sourceName": "利市招财",
-      "targetName": "其他",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "29-42-culture",
-      "source": "29",
-      "target": "42",
-      "sourceName": "利市招财",
-      "targetName": "观音",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "30-37-business",
-      "source": "30",
-      "target": "37",
-      "sourceName": "家神",
-      "targetName": "草甲",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "30-41-supply",
-      "source": "30",
-      "target": "41",
-      "sourceName": "家神",
-      "targetName": "地藏王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "30-43-culture",
-      "source": "30",
-      "target": "43",
-      "sourceName": "家神",
-      "targetName": "魁星文昌",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "31-38-business",
-      "source": "31",
-      "target": "38",
-      "sourceName": "平安大吉",
-      "targetName": "青龙白虎",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "31-42-supply",
-      "source": "31",
-      "target": "42",
-      "sourceName": "平安大吉",
-      "targetName": "观音",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "31-44-culture",
-      "source": "31",
-      "target": "44",
-      "sourceName": "平安大吉",
-      "targetName": "提笔先师",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "32-39-business",
-      "source": "32",
-      "target": "39",
-      "sourceName": "火塘神",
-      "targetName": "财神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "32-43-supply",
-      "source": "32",
-      "target": "43",
-      "sourceName": "火塘神",
-      "targetName": "魁星文昌",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "32-45-culture",
-      "source": "32",
-      "target": "45",
-      "sourceName": "火塘神",
-      "targetName": "青故娘娘",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "33-40-business",
-      "source": "33",
-      "target": "40",
-      "sourceName": "山神土地",
-      "targetName": "其他",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "33-44-supply",
-      "source": "33",
-      "target": "44",
-      "sourceName": "山神土地",
-      "targetName": "提笔先师",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "33-46-culture",
-      "source": "33",
-      "target": "46",
-      "sourceName": "山神土地",
-      "targetName": "床公床母",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "34-41-business",
-      "source": "34",
-      "target": "41",
-      "sourceName": "城隍",
-      "targetName": "地藏王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "34-47-culture",
-      "source": "34",
-      "target": "47",
-      "sourceName": "城隍",
-      "targetName": "痘哥",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "35-42-business",
-      "source": "35",
-      "target": "42",
-      "sourceName": "土皇神",
-      "targetName": "观音",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "35-46-supply",
-      "source": "35",
-      "target": "46",
-      "sourceName": "土皇神",
-      "targetName": "床公床母",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "35-48-culture",
-      "source": "35",
-      "target": "48",
-      "sourceName": "土皇神",
-      "targetName": "送生娘娘",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "36-47-supply",
-      "source": "36",
-      "target": "47",
-      "sourceName": "朱雀玄武",
-      "targetName": "痘哥",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "36-49-culture",
-      "source": "36",
-      "target": "49",
-      "sourceName": "朱雀玄武",
-      "targetName": "周公桃花",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "37-44-business",
-      "source": "37",
-      "target": "44",
-      "sourceName": "草甲",
-      "targetName": "提笔先师",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "37-48-supply",
-      "source": "37",
-      "target": "48",
-      "sourceName": "草甲",
-      "targetName": "送生娘娘",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "37-50-culture",
-      "source": "37",
-      "target": "50",
-      "sourceName": "草甲",
-      "targetName": "喜神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "38-45-business",
-      "source": "38",
-      "target": "45",
-      "sourceName": "青龙白虎",
-      "targetName": "青故娘娘",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "38-49-supply",
-      "source": "38",
-      "target": "49",
-      "sourceName": "青龙白虎",
-      "targetName": "周公桃花",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "38-39-culture",
-      "source": "38",
-      "target": "39",
-      "sourceName": "青龙白虎",
-      "targetName": "财神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "39-46-business",
-      "source": "39",
-      "target": "46",
-      "sourceName": "财神",
-      "targetName": "床公床母",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "39-50-supply",
-      "source": "39",
-      "target": "50",
-      "sourceName": "财神",
-      "targetName": "喜神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "39-52-culture",
-      "source": "39",
-      "target": "52",
-      "sourceName": "财神",
-      "targetName": "二郎景帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "40-47-business",
-      "source": "40",
-      "target": "47",
-      "sourceName": "其他",
-      "targetName": "痘哥",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "40-39-supply",
-      "source": "40",
-      "target": "39",
-      "sourceName": "其他",
-      "targetName": "财神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "41-48-business",
-      "source": "41",
-      "target": "48",
-      "sourceName": "地藏王",
-      "targetName": "送生娘娘",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "41-52-supply",
-      "source": "41",
-      "target": "52",
-      "sourceName": "地藏王",
-      "targetName": "二郎景帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "41-54-culture",
-      "source": "41",
-      "target": "54",
-      "sourceName": "地藏王",
-      "targetName": "玉皇上帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "42-49-business",
-      "source": "42",
-      "target": "49",
-      "sourceName": "观音",
-      "targetName": "周公桃花",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "42-53-supply",
-      "source": "42",
-      "target": "53",
-      "sourceName": "观音",
-      "targetName": "城隍土主",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "42-55-culture",
-      "source": "42",
-      "target": "55",
-      "sourceName": "观音",
-      "targetName": "观音老祖",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "43-54-supply",
-      "source": "43",
-      "target": "54",
-      "sourceName": "魁星文昌",
-      "targetName": "玉皇上帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "43-56-culture",
-      "source": "43",
-      "target": "56",
-      "sourceName": "魁星文昌",
-      "targetName": "北方天王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "44-39-business",
-      "source": "44",
-      "target": "39",
-      "sourceName": "提笔先师",
-      "targetName": "财神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "44-55-supply",
-      "source": "44",
-      "target": "55",
-      "sourceName": "提笔先师",
-      "targetName": "观音老祖",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "44-57-culture",
-      "source": "44",
-      "target": "57",
-      "sourceName": "提笔先师",
-      "targetName": "西方景帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "45-52-business",
-      "source": "45",
-      "target": "52",
-      "sourceName": "青故娘娘",
-      "targetName": "二郎景帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "45-58-culture",
-      "source": "45",
-      "target": "58",
-      "sourceName": "青故娘娘",
-      "targetName": "大黑天神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "46-53-business",
-      "source": "46",
-      "target": "53",
-      "sourceName": "床公床母",
-      "targetName": "城隍土主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "46-57-supply",
-      "source": "46",
-      "target": "57",
-      "sourceName": "床公床母",
-      "targetName": "西方景帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "46-59-culture",
-      "source": "46",
-      "target": "59",
-      "sourceName": "床公床母",
-      "targetName": "杨四将军",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "47-54-business",
-      "source": "47",
-      "target": "54",
-      "sourceName": "痘哥",
-      "targetName": "玉皇上帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "47-58-supply",
-      "source": "47",
-      "target": "58",
-      "sourceName": "痘哥",
-      "targetName": "大黑天神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "47-60-culture",
-      "source": "47",
-      "target": "60",
-      "sourceName": "痘哥",
-      "targetName": "独角五郎",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "48-55-business",
-      "source": "48",
-      "target": "55",
-      "sourceName": "送生娘娘",
-      "targetName": "观音老祖",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "48-59-supply",
-      "source": "48",
-      "target": "59",
-      "sourceName": "送生娘娘",
-      "targetName": "杨四将军",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "48-61-culture",
-      "source": "48",
-      "target": "61",
-      "sourceName": "送生娘娘",
-      "targetName": "九坛神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "49-56-business",
-      "source": "49",
-      "target": "56",
-      "sourceName": "周公桃花",
-      "targetName": "北方天王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "49-60-supply",
-      "source": "49",
-      "target": "60",
-      "sourceName": "周公桃花",
-      "targetName": "独角五郎",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "49-62-culture",
-      "source": "49",
-      "target": "62",
-      "sourceName": "周公桃花",
-      "targetName": "武侯神君",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "50-61-supply",
-      "source": "50",
-      "target": "61",
-      "sourceName": "喜神",
-      "targetName": "九坛神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "50-63-culture",
-      "source": "50",
-      "target": "63",
-      "sourceName": "喜神",
-      "targetName": "大爷之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "51-58-business",
-      "source": "51",
-      "target": "58",
-      "sourceName": "财神",
-      "targetName": "大黑天神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "51-62-supply",
-      "source": "51",
-      "target": "62",
-      "sourceName": "财神",
-      "targetName": "武侯神君",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "51-64-culture",
-      "source": "51",
-      "target": "64",
-      "sourceName": "财神",
-      "targetName": "大庄天王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "52-59-business",
-      "source": "52",
-      "target": "59",
-      "sourceName": "二郎景帝",
-      "targetName": "杨四将军",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "52-63-supply",
-      "source": "52",
-      "target": "63",
-      "sourceName": "二郎景帝",
-      "targetName": "大爷之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "52-65-culture",
-      "source": "52",
-      "target": "65",
-      "sourceName": "二郎景帝",
-      "targetName": "品甸大王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "53-60-business",
-      "source": "53",
-      "target": "60",
-      "sourceName": "城隍土主",
-      "targetName": "独角五郎",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "53-64-supply",
-      "source": "53",
-      "target": "64",
-      "sourceName": "城隍土主",
-      "targetName": "大庄天王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "54-61-business",
-      "source": "54",
-      "target": "61",
-      "sourceName": "玉皇上帝",
-      "targetName": "九坛神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "54-65-supply",
-      "source": "54",
-      "target": "65",
-      "sourceName": "玉皇上帝",
-      "targetName": "品甸大王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "54-67-culture",
-      "source": "54",
-      "target": "67",
-      "sourceName": "玉皇上帝",
-      "targetName": "惠康皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "55-62-business",
-      "source": "55",
-      "target": "62",
-      "sourceName": "观音老祖",
-      "targetName": "武侯神君",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "55-66-supply",
-      "source": "55",
-      "target": "66",
-      "sourceName": "观音老祖",
-      "targetName": "天子景帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "55-68-culture",
-      "source": "55",
-      "target": "68",
-      "sourceName": "观音老祖",
-      "targetName": "五官本主",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "56-63-business",
-      "source": "56",
-      "target": "63",
-      "sourceName": "北方天王",
-      "targetName": "大爷之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "56-69-culture",
-      "source": "56",
-      "target": "69",
-      "sourceName": "北方天王",
-      "targetName": "清官本主",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "57-68-supply",
-      "source": "57",
-      "target": "68",
-      "sourceName": "西方景帝",
-      "targetName": "五官本主",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "57-70-culture",
-      "source": "57",
-      "target": "70",
-      "sourceName": "西方景帝",
-      "targetName": "匡圣皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "58-65-business",
-      "source": "58",
-      "target": "65",
-      "sourceName": "大黑天神",
-      "targetName": "品甸大王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "58-69-supply",
-      "source": "58",
-      "target": "69",
-      "sourceName": "大黑天神",
-      "targetName": "清官本主",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "58-71-culture",
-      "source": "58",
-      "target": "71",
-      "sourceName": "大黑天神",
-      "targetName": "国光皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "59-66-business",
-      "source": "59",
-      "target": "66",
-      "sourceName": "杨四将军",
-      "targetName": "天子景帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "59-70-supply",
-      "source": "59",
-      "target": "70",
-      "sourceName": "杨四将军",
-      "targetName": "匡圣皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "59-72-culture",
-      "source": "59",
-      "target": "72",
-      "sourceName": "杨四将军",
-      "targetName": "福民景帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "60-67-business",
-      "source": "60",
-      "target": "67",
-      "sourceName": "独角五郎",
-      "targetName": "惠康皇帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "60-71-supply",
-      "source": "60",
-      "target": "71",
-      "sourceName": "独角五郎",
-      "targetName": "国光皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "60-73-culture",
-      "source": "60",
-      "target": "73",
-      "sourceName": "独角五郎",
-      "targetName": "武宜皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "61-68-business",
-      "source": "61",
-      "target": "68",
-      "sourceName": "九坛神",
-      "targetName": "五官本主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "61-72-supply",
-      "source": "61",
-      "target": "72",
-      "sourceName": "九坛神",
-      "targetName": "福民景帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "61-74-culture",
-      "source": "61",
-      "target": "74",
-      "sourceName": "九坛神",
-      "targetName": "景庄皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "62-69-business",
-      "source": "62",
-      "target": "69",
-      "sourceName": "武侯神君",
-      "targetName": "清官本主",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "62-73-supply",
-      "source": "62",
-      "target": "73",
-      "sourceName": "武侯神君",
-      "targetName": "武宜皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "62-75-culture",
-      "source": "62",
-      "target": "75",
-      "sourceName": "武侯神君",
-      "targetName": "大圣建国皇帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "63-70-business",
-      "source": "63",
-      "target": "70",
-      "sourceName": "大爷之神",
-      "targetName": "匡圣皇帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "63-74-supply",
-      "source": "63",
-      "target": "74",
-      "sourceName": "大爷之神",
-      "targetName": "景庄皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "63-76-culture",
-      "source": "63",
-      "target": "76",
-      "sourceName": "大爷之神",
-      "targetName": "金花银花",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "64-75-supply",
-      "source": "64",
-      "target": "75",
-      "sourceName": "大庄天王",
-      "targetName": "大圣建国皇帝",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "64-77-culture",
-      "source": "64",
-      "target": "77",
-      "sourceName": "大庄天王",
-      "targetName": "刀兵",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "65-72-business",
-      "source": "65",
-      "target": "72",
-      "sourceName": "品甸大王",
-      "targetName": "福民景帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "65-76-supply",
-      "source": "65",
-      "target": "76",
-      "sourceName": "品甸大王",
-      "targetName": "金花银花",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "65-78-culture",
-      "source": "65",
-      "target": "78",
-      "sourceName": "品甸大王",
-      "targetName": "众神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "66-73-business",
-      "source": "66",
-      "target": "73",
-      "sourceName": "天子景帝",
-      "targetName": "武宜皇帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "66-77-supply",
-      "source": "66",
-      "target": "77",
-      "sourceName": "天子景帝",
-      "targetName": "刀兵",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "67-74-business",
-      "source": "67",
-      "target": "74",
-      "sourceName": "惠康皇帝",
-      "targetName": "景庄皇帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "67-80-culture",
-      "source": "67",
-      "target": "80",
-      "sourceName": "惠康皇帝",
-      "targetName": "弥址三姐",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "68-75-business",
-      "source": "68",
-      "target": "75",
-      "sourceName": "五官本主",
-      "targetName": "大圣建国皇帝",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "68-79-supply",
-      "source": "68",
-      "target": "79",
-      "sourceName": "五官本主",
-      "targetName": "天狗之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "68-81-culture",
-      "source": "68",
-      "target": "81",
-      "sourceName": "五官本主",
-      "targetName": "提巴",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "69-76-business",
-      "source": "69",
-      "target": "76",
-      "sourceName": "清官本主",
-      "targetName": "金花银花",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "69-80-supply",
-      "source": "69",
-      "target": "80",
-      "sourceName": "清官本主",
-      "targetName": "弥址三姐",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "69-82-culture",
-      "source": "69",
-      "target": "82",
-      "sourceName": "清官本主",
-      "targetName": "罗昌阁大王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "70-77-business",
-      "source": "70",
-      "target": "77",
-      "sourceName": "匡圣皇帝",
-      "targetName": "刀兵",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "70-81-supply",
-      "source": "70",
-      "target": "81",
-      "sourceName": "匡圣皇帝",
-      "targetName": "提巴",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "70-83-culture",
-      "source": "70",
-      "target": "83",
-      "sourceName": "匡圣皇帝",
-      "targetName": "将军洞之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "71-82-supply",
-      "source": "71",
-      "target": "82",
-      "sourceName": "国光皇帝",
-      "targetName": "罗昌阁大王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "71-84-culture",
-      "source": "71",
-      "target": "84",
-      "sourceName": "国光皇帝",
-      "targetName": "白莺太子",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "72-79-business",
-      "source": "72",
-      "target": "79",
-      "sourceName": "福民景帝",
-      "targetName": "天狗之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "72-83-supply",
-      "source": "72",
-      "target": "83",
-      "sourceName": "福民景帝",
-      "targetName": "将军洞之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "72-85-culture",
-      "source": "72",
-      "target": "85",
-      "sourceName": "福民景帝",
-      "targetName": "都司王相公",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "73-80-business",
-      "source": "73",
-      "target": "80",
-      "sourceName": "武宜皇帝",
-      "targetName": "弥址三姐",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "73-84-supply",
-      "source": "73",
-      "target": "84",
-      "sourceName": "武宜皇帝",
-      "targetName": "白莺太子",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "73-86-culture",
-      "source": "73",
-      "target": "86",
-      "sourceName": "武宜皇帝",
-      "targetName": "三位姑娘",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "74-81-business",
-      "source": "74",
-      "target": "81",
-      "sourceName": "景庄皇帝",
-      "targetName": "提巴",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "74-85-supply",
-      "source": "74",
-      "target": "85",
-      "sourceName": "景庄皇帝",
-      "targetName": "都司王相公",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "74-87-culture",
-      "source": "74",
-      "target": "87",
-      "sourceName": "景庄皇帝",
-      "targetName": "青山祖公祖太",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "75-82-business",
-      "source": "75",
-      "target": "82",
-      "sourceName": "大圣建国皇帝",
-      "targetName": "罗昌阁大王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "75-86-supply",
-      "source": "75",
-      "target": "86",
-      "sourceName": "大圣建国皇帝",
-      "targetName": "三位姑娘",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "75-88-culture",
-      "source": "75",
-      "target": "88",
-      "sourceName": "大圣建国皇帝",
-      "targetName": "青山老祖",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "76-83-business",
-      "source": "76",
-      "target": "83",
-      "sourceName": "金花银花",
-      "targetName": "将军洞之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "76-87-supply",
-      "source": "76",
-      "target": "87",
-      "sourceName": "金花银花",
-      "targetName": "青山祖公祖太",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "76-89-culture",
-      "source": "76",
-      "target": "89",
-      "sourceName": "金花银花",
-      "targetName": "姑奶之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "77-84-business",
-      "source": "77",
-      "target": "84",
-      "sourceName": "刀兵",
-      "targetName": "白莺太子",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "77-88-supply",
-      "source": "77",
-      "target": "88",
-      "sourceName": "刀兵",
-      "targetName": "青山老祖",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "77-90-culture",
-      "source": "77",
-      "target": "90",
-      "sourceName": "刀兵",
-      "targetName": "阿娝老太",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "78-91-culture",
-      "source": "78",
-      "target": "91",
-      "sourceName": "众神",
-      "targetName": "仙家老太",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "79-86-business",
-      "source": "79",
-      "target": "86",
-      "sourceName": "天狗之神",
-      "targetName": "三位姑娘",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "79-90-supply",
-      "source": "79",
-      "target": "90",
-      "sourceName": "天狗之神",
-      "targetName": "阿娝老太",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "80-87-business",
-      "source": "80",
-      "target": "87",
-      "sourceName": "弥址三姐",
-      "targetName": "青山祖公祖太",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "80-91-supply",
-      "source": "80",
-      "target": "91",
-      "sourceName": "弥址三姐",
-      "targetName": "仙家老太",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "80-93-culture",
-      "source": "80",
-      "target": "93",
-      "sourceName": "弥址三姐",
-      "targetName": "枭神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "81-88-business",
-      "source": "81",
-      "target": "88",
-      "sourceName": "提巴",
-      "targetName": "青山老祖",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "81-92-supply",
-      "source": "81",
-      "target": "92",
-      "sourceName": "提巴",
-      "targetName": "虚空过往之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "81-94-culture",
-      "source": "81",
-      "target": "94",
-      "sourceName": "提巴",
-      "targetName": "柳英姑娘",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "82-89-business",
-      "source": "82",
-      "target": "89",
-      "sourceName": "罗昌阁大王",
-      "targetName": "姑奶之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "82-93-supply",
-      "source": "82",
-      "target": "93",
-      "sourceName": "罗昌阁大王",
-      "targetName": "枭神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "82-95-culture",
-      "source": "82",
-      "target": "95",
-      "sourceName": "罗昌阁大王",
-      "targetName": "哭神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "83-90-business",
-      "source": "83",
-      "target": "90",
-      "sourceName": "将军洞之神",
-      "targetName": "阿娝老太",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "83-94-supply",
-      "source": "83",
-      "target": "94",
-      "sourceName": "将军洞之神",
-      "targetName": "柳英姑娘",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "83-96-culture",
-      "source": "83",
-      "target": "96",
-      "sourceName": "将军洞之神",
-      "targetName": "血神之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "84-91-business",
-      "source": "84",
-      "target": "91",
-      "sourceName": "白莺太子",
-      "targetName": "仙家老太",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "84-95-supply",
-      "source": "84",
-      "target": "95",
-      "sourceName": "白莺太子",
-      "targetName": "哭神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "84-97-culture",
-      "source": "84",
-      "target": "97",
-      "sourceName": "白莺太子",
-      "targetName": "血湖",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "85-96-supply",
-      "source": "85",
-      "target": "96",
-      "sourceName": "都司王相公",
-      "targetName": "血神之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "85-98-culture",
-      "source": "85",
-      "target": "98",
-      "sourceName": "都司王相公",
-      "targetName": "神灵鬼魂",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "86-93-business",
-      "source": "86",
-      "target": "93",
-      "sourceName": "三位姑娘",
-      "targetName": "枭神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "86-97-supply",
-      "source": "86",
-      "target": "97",
-      "sourceName": "三位姑娘",
-      "targetName": "血湖",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "86-40-culture",
-      "source": "86",
-      "target": "40",
-      "sourceName": "三位姑娘",
-      "targetName": "其他",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "87-94-business",
-      "source": "87",
-      "target": "94",
-      "sourceName": "青山祖公祖太",
-      "targetName": "柳英姑娘",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "87-98-supply",
-      "source": "87",
-      "target": "98",
-      "sourceName": "青山祖公祖太",
-      "targetName": "神灵鬼魂",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "87-100-culture",
-      "source": "87",
-      "target": "100",
-      "sourceName": "青山祖公祖太",
-      "targetName": "功曹",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "88-95-business",
-      "source": "88",
-      "target": "95",
-      "sourceName": "青山老祖",
-      "targetName": "哭神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "88-40-supply",
-      "source": "88",
-      "target": "40",
-      "sourceName": "青山老祖",
-      "targetName": "其他",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "88-101-culture",
-      "source": "88",
-      "target": "101",
-      "sourceName": "青山老祖",
-      "targetName": "阴阳太岁",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "89-96-business",
-      "source": "89",
-      "target": "96",
-      "sourceName": "姑奶之神",
-      "targetName": "血神之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "89-102-culture",
-      "source": "89",
-      "target": "102",
-      "sourceName": "姑奶之神",
-      "targetName": "本命星君",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "90-97-business",
-      "source": "90",
-      "target": "97",
-      "sourceName": "阿娝老太",
-      "targetName": "血湖",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "90-101-supply",
-      "source": "90",
-      "target": "101",
-      "sourceName": "阿娝老太",
-      "targetName": "阴阳太岁",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "90-103-culture",
-      "source": "90",
-      "target": "103",
-      "sourceName": "阿娝老太",
-      "targetName": "太岁",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "91-98-business",
-      "source": "91",
-      "target": "98",
-      "sourceName": "仙家老太",
-      "targetName": "神灵鬼魂",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "91-102-supply",
-      "source": "91",
-      "target": "102",
-      "sourceName": "仙家老太",
-      "targetName": "本命星君",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "91-104-culture",
-      "source": "91",
-      "target": "104",
-      "sourceName": "仙家老太",
-      "targetName": "庙神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "92-103-supply",
-      "source": "92",
-      "target": "103",
-      "sourceName": "虚空过往之神",
-      "targetName": "太岁",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "93-100-business",
-      "source": "93",
-      "target": "100",
-      "sourceName": "枭神",
-      "targetName": "功曹",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "93-104-supply",
-      "source": "93",
-      "target": "104",
-      "sourceName": "枭神",
-      "targetName": "庙神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "93-106-culture",
-      "source": "93",
-      "target": "106",
-      "sourceName": "枭神",
-      "targetName": "替身",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "94-101-business",
-      "source": "94",
-      "target": "101",
-      "sourceName": "柳英姑娘",
-      "targetName": "阴阳太岁",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "94-105-supply",
-      "source": "94",
-      "target": "105",
-      "sourceName": "柳英姑娘",
-      "targetName": "关科",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "94-107-culture",
-      "source": "94",
-      "target": "107",
-      "sourceName": "柳英姑娘",
-      "targetName": "丧葬诸神鬼",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "95-102-business",
-      "source": "95",
-      "target": "102",
-      "sourceName": "哭神",
-      "targetName": "本命星君",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "95-106-supply",
-      "source": "95",
-      "target": "106",
-      "sourceName": "哭神",
-      "targetName": "替身",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "95-108-culture",
-      "source": "95",
-      "target": "108",
-      "sourceName": "哭神",
-      "targetName": "匹公匹母",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "96-103-business",
-      "source": "96",
-      "target": "103",
-      "sourceName": "血神之神",
-      "targetName": "太岁",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "96-107-supply",
-      "source": "96",
-      "target": "107",
-      "sourceName": "血神之神",
-      "targetName": "丧葬诸神鬼",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "96-109-culture",
-      "source": "96",
-      "target": "109",
-      "sourceName": "血神之神",
-      "targetName": "小人子",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "97-104-business",
-      "source": "97",
-      "target": "104",
-      "sourceName": "血湖",
-      "targetName": "庙神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "97-108-supply",
-      "source": "97",
-      "target": "108",
-      "sourceName": "血湖",
-      "targetName": "匹公匹母",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "97-110-culture",
-      "source": "97",
-      "target": "110",
-      "sourceName": "血湖",
-      "targetName": "夜游神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "98-105-business",
-      "source": "98",
-      "target": "105",
-      "sourceName": "神灵鬼魂",
-      "targetName": "关科",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "98-109-supply",
-      "source": "98",
-      "target": "109",
-      "sourceName": "神灵鬼魂",
-      "targetName": "小人子",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "98-111-culture",
-      "source": "98",
-      "target": "111",
-      "sourceName": "神灵鬼魂",
-      "targetName": "六贼神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "99-110-supply",
-      "source": "99",
-      "target": "110",
-      "sourceName": "其他",
-      "targetName": "夜游神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "99-112-culture",
-      "source": "99",
-      "target": "112",
-      "sourceName": "其他",
-      "targetName": "解冤结",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "100-107-business",
-      "source": "100",
-      "target": "107",
-      "sourceName": "功曹",
-      "targetName": "丧葬诸神鬼",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "100-113-culture",
-      "source": "100",
-      "target": "113",
-      "sourceName": "功曹",
-      "targetName": "后宫娘娘",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "101-108-business",
-      "source": "101",
-      "target": "108",
-      "sourceName": "阴阳太岁",
-      "targetName": "匹公匹母",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "101-112-supply",
-      "source": "101",
-      "target": "112",
-      "sourceName": "阴阳太岁",
-      "targetName": "解冤结",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "101-114-culture",
-      "source": "101",
-      "target": "114",
-      "sourceName": "阴阳太岁",
-      "targetName": "蛊",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "102-109-business",
-      "source": "102",
-      "target": "109",
-      "sourceName": "本命星君",
-      "targetName": "小人子",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "102-113-supply",
-      "source": "102",
-      "target": "113",
-      "sourceName": "本命星君",
-      "targetName": "后宫娘娘",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "102-115-culture",
-      "source": "102",
-      "target": "115",
-      "sourceName": "本命星君",
-      "targetName": "病符",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "103-110-business",
-      "source": "103",
-      "target": "110",
-      "sourceName": "太岁",
-      "targetName": "夜游神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "103-114-supply",
-      "source": "103",
-      "target": "114",
-      "sourceName": "太岁",
-      "targetName": "蛊",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "103-116-culture",
-      "source": "103",
-      "target": "116",
-      "sourceName": "太岁",
-      "targetName": "五鬼",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "104-111-business",
-      "source": "104",
-      "target": "111",
-      "sourceName": "庙神",
-      "targetName": "六贼神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "104-115-supply",
-      "source": "104",
-      "target": "115",
-      "sourceName": "庙神",
-      "targetName": "病符",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "104-117-culture",
-      "source": "104",
-      "target": "117",
-      "sourceName": "庙神",
-      "targetName": "圈神粪神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "105-112-business",
-      "source": "105",
-      "target": "112",
-      "sourceName": "关科",
-      "targetName": "解冤结",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "105-116-supply",
-      "source": "105",
-      "target": "116",
-      "sourceName": "关科",
-      "targetName": "五鬼",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "106-117-supply",
-      "source": "106",
-      "target": "117",
-      "sourceName": "替身",
-      "targetName": "圈神粪神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "106-119-culture",
-      "source": "106",
-      "target": "119",
-      "sourceName": "替身",
-      "targetName": "山神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "107-114-business",
-      "source": "107",
-      "target": "114",
-      "sourceName": "丧葬诸神鬼",
-      "targetName": "蛊",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "107-8-supply",
-      "source": "107",
-      "target": "8",
-      "sourceName": "丧葬诸神鬼",
-      "targetName": "猎神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "107-120-culture",
-      "source": "107",
-      "target": "120",
-      "sourceName": "丧葬诸神鬼",
-      "targetName": "岩神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "108-115-business",
-      "source": "108",
-      "target": "115",
-      "sourceName": "匹公匹母",
-      "targetName": "病符",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "108-119-supply",
-      "source": "108",
-      "target": "119",
-      "sourceName": "匹公匹母",
-      "targetName": "山神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "108-121-culture",
-      "source": "108",
-      "target": "121",
-      "sourceName": "匹公匹母",
-      "targetName": "雷神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "109-116-business",
-      "source": "109",
-      "target": "116",
-      "sourceName": "小人子",
-      "targetName": "五鬼",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "109-120-supply",
-      "source": "109",
-      "target": "120",
-      "sourceName": "小人子",
-      "targetName": "岩神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "109-122-culture",
-      "source": "109",
-      "target": "122",
-      "sourceName": "小人子",
-      "targetName": "虹神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "110-117-business",
-      "source": "110",
-      "target": "117",
-      "sourceName": "夜游神",
-      "targetName": "圈神粪神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "110-121-supply",
-      "source": "110",
-      "target": "121",
-      "sourceName": "夜游神",
-      "targetName": "雷神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "110-123-culture",
-      "source": "110",
-      "target": "123",
-      "sourceName": "夜游神",
-      "targetName": "风神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "111-8-business",
-      "source": "111",
-      "target": "8",
-      "sourceName": "六贼神",
-      "targetName": "猎神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "111-124-culture",
-      "source": "111",
-      "target": "124",
-      "sourceName": "六贼神",
-      "targetName": "水神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "112-119-business",
-      "source": "112",
-      "target": "119",
-      "sourceName": "解冤结",
-      "targetName": "山神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "112-123-supply",
-      "source": "112",
-      "target": "123",
-      "sourceName": "解冤结",
-      "targetName": "风神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "112-125-culture",
-      "source": "112",
-      "target": "125",
-      "sourceName": "解冤结",
-      "targetName": "龙神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "113-124-supply",
-      "source": "113",
-      "target": "124",
-      "sourceName": "后宫娘娘",
-      "targetName": "水神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "113-126-culture",
-      "source": "113",
-      "target": "126",
-      "sourceName": "后宫娘娘",
-      "targetName": "家宅祀揭地神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "114-121-business",
-      "source": "114",
-      "target": "121",
-      "sourceName": "蛊",
-      "targetName": "雷神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "114-125-supply",
-      "source": "114",
-      "target": "125",
-      "sourceName": "蛊",
-      "targetName": "龙神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "114-127-culture",
-      "source": "114",
-      "target": "127",
-      "sourceName": "蛊",
-      "targetName": "土科",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "115-122-business",
-      "source": "115",
-      "target": "122",
-      "sourceName": "病符",
-      "targetName": "虹神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "115-126-supply",
-      "source": "115",
-      "target": "126",
-      "sourceName": "病符",
-      "targetName": "家宅祀揭地神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "115-128-culture",
-      "source": "115",
-      "target": "128",
-      "sourceName": "病符",
-      "targetName": "张鲁二班",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "116-123-business",
-      "source": "116",
-      "target": "123",
-      "sourceName": "五鬼",
-      "targetName": "风神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "116-127-supply",
-      "source": "116",
-      "target": "127",
-      "sourceName": "五鬼",
-      "targetName": "土科",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "116-129-culture",
-      "source": "116",
-      "target": "129",
-      "sourceName": "五鬼",
-      "targetName": "树神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "117-124-business",
-      "source": "117",
-      "target": "124",
-      "sourceName": "圈神粪神",
-      "targetName": "水神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "117-128-supply",
-      "source": "117",
-      "target": "128",
-      "sourceName": "圈神粪神",
-      "targetName": "张鲁二班",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "117-130-culture",
-      "source": "117",
-      "target": "130",
-      "sourceName": "圈神粪神",
-      "targetName": "三木大王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "118-125-business",
-      "source": "118",
-      "target": "125",
-      "sourceName": "猎神",
-      "targetName": "龙神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "118-129-supply",
-      "source": "118",
-      "target": "129",
-      "sourceName": "猎神",
-      "targetName": "树神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "119-126-business",
-      "source": "119",
-      "target": "126",
-      "sourceName": "山神",
-      "targetName": "家宅祀揭地神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "119-130-supply",
-      "source": "119",
-      "target": "130",
-      "sourceName": "山神",
-      "targetName": "三木大王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "119-132-culture",
-      "source": "119",
-      "target": "132",
-      "sourceName": "山神",
-      "targetName": "桥路二神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "120-131-supply",
-      "source": "120",
-      "target": "131",
-      "sourceName": "岩神",
-      "targetName": "祭木神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "120-133-culture",
-      "source": "120",
-      "target": "133",
-      "sourceName": "岩神",
-      "targetName": "醋神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "121-128-business",
-      "source": "121",
-      "target": "128",
-      "sourceName": "雷神",
-      "targetName": "张鲁二班",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "121-132-supply",
-      "source": "121",
-      "target": "132",
-      "sourceName": "雷神",
-      "targetName": "桥路二神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "121-134-culture",
-      "source": "121",
-      "target": "134",
-      "sourceName": "雷神",
-      "targetName": "放羊哥",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "122-129-business",
-      "source": "122",
-      "target": "129",
-      "sourceName": "虹神",
-      "targetName": "树神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "122-135-culture",
-      "source": "122",
-      "target": "135",
-      "sourceName": "虹神",
-      "targetName": "羊玺王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "123-130-business",
-      "source": "123",
-      "target": "130",
-      "sourceName": "风神",
-      "targetName": "三木大王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "123-134-supply",
-      "source": "123",
-      "target": "134",
-      "sourceName": "风神",
-      "targetName": "放羊哥",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "123-136-culture",
-      "source": "123",
-      "target": "136",
-      "sourceName": "风神",
-      "targetName": "鸡羊之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "124-131-business",
-      "source": "124",
-      "target": "131",
-      "sourceName": "水神",
-      "targetName": "祭木神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "124-135-supply",
-      "source": "124",
-      "target": "135",
-      "sourceName": "水神",
-      "targetName": "羊玺王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "124-137-culture",
-      "source": "124",
-      "target": "137",
-      "sourceName": "水神",
-      "targetName": "虫王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "125-132-business",
-      "source": "125",
-      "target": "132",
-      "sourceName": "龙神",
-      "targetName": "桥路二神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "125-136-supply",
-      "source": "125",
-      "target": "136",
-      "sourceName": "龙神",
-      "targetName": "鸡羊之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "125-138-culture",
-      "source": "125",
-      "target": "138",
-      "sourceName": "龙神",
-      "targetName": "五谷六畜",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "126-133-business",
-      "source": "126",
-      "target": "133",
-      "sourceName": "家宅祀揭地神",
-      "targetName": "醋神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "126-137-supply",
-      "source": "126",
-      "target": "137",
-      "sourceName": "家宅祀揭地神",
-      "targetName": "虫王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "126-139-culture",
-      "source": "126",
-      "target": "139",
-      "sourceName": "家宅祀揭地神",
-      "targetName": "水草大王",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "127-138-supply",
-      "source": "127",
-      "target": "138",
-      "sourceName": "土科",
-      "targetName": "五谷六畜",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "127-40-culture",
-      "source": "127",
-      "target": "40",
-      "sourceName": "土科",
-      "targetName": "其他",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "128-135-business",
-      "source": "128",
-      "target": "135",
-      "sourceName": "张鲁二班",
-      "targetName": "羊玺王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "128-139-supply",
-      "source": "128",
-      "target": "139",
-      "sourceName": "张鲁二班",
-      "targetName": "水草大王",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "128-1-culture",
-      "source": "128",
-      "target": "1",
-      "sourceName": "张鲁二班",
-      "targetName": "送灶神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "129-136-business",
-      "source": "129",
-      "target": "136",
-      "sourceName": "树神",
-      "targetName": "鸡羊之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "129-40-supply",
-      "source": "129",
-      "target": "40",
-      "sourceName": "树神",
-      "targetName": "其他",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "129-2-culture",
-      "source": "129",
+      "id": "1-2-business",
+      "source": "1",
       "target": "2",
-      "sourceName": "树神",
+      "sourceName": "送灶神",
       "targetName": "井神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "130-137-business",
-      "source": "130",
-      "target": "137",
-      "sourceName": "三木大王",
-      "targetName": "虫王",
       "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
+      "label": "家庭炊事的水与火",
+      "style": "solid",
+      "reason": "将炊事需要的灶火和井水并列为家庭生活需求，非历史协作。",
+      "scenario": "以井水煮食的家庭节日炊事",
+      "sourceRole": "灶火、送灶祈愿",
+      "targetRole": "井水使用祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R3"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
     },
     {
-      "id": "130-1-supply",
-      "source": "130",
+      "id": "124-132-business",
+      "source": "124",
+      "target": "132",
+      "sourceName": "水神",
+      "targetName": "桥路二神",
+      "type": "business",
+      "label": "跨河出行",
+      "style": "solid",
+      "reason": "跨河行程同时涉及水域风险与桥路通行，按两个明确服务领域设计协作。",
+      "scenario": "跨桥经过水域的日常出行",
+      "sourceRole": "水域平安诉求",
+      "targetRole": "桥路通行诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "33-132-business",
+      "source": "33",
+      "target": "132",
+      "sourceName": "山神土地",
+      "targetName": "桥路二神",
+      "type": "business",
+      "label": "山地道路通行",
+      "style": "solid",
+      "reason": "山地地方空间和桥路通行共同构成该次山地行程的需求。",
+      "scenario": "村民沿山路跨桥访亲",
+      "sourceRole": "山地与地方空间祈愿",
+      "targetRole": "道路桥梁通行祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "43-132-business",
+      "source": "43",
+      "target": "132",
+      "sourceName": "魁星文昌",
+      "targetName": "桥路二神",
+      "type": "business",
+      "label": "赴学出行",
+      "style": "solid",
+      "reason": "求学目标与到校行程为同一次生活活动的两个需求，非传统神明联署事实。",
+      "scenario": "学生沿桥路外出求学",
+      "sourceRole": "文昌部分的求学祈愿",
+      "targetRole": "赴学路线平安祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "124-139-business",
+      "source": "124",
+      "target": "139",
+      "sourceName": "水神",
+      "targetName": "水草大王",
+      "type": "business",
+      "label": "水上作业平安",
+      "style": "solid",
+      "reason": "一般水域需求与船只使用情境并列，未设定神明等级或同源关系。",
+      "scenario": "渔船首次下水和近岸水上作业",
+      "sourceRole": "水域使用相关祈愿",
+      "targetRole": "船只下水与水上出行祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "2-125-business",
+      "source": "2",
+      "target": "125",
+      "sourceName": "井神",
+      "targetName": "龙神",
+      "type": "business",
+      "label": "旱情下的生活用水",
+      "style": "solid",
+      "reason": "资料区分井神局部水域与旱情扩大后的龙神祈雨，设计为同一需求下的协作。",
+      "scenario": "井水枯竭时的旱情祈愿",
+      "sourceRole": "局部井水使用诉求",
+      "targetRole": "扩大范围的祈雨诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "124-125-business",
+      "source": "124",
+      "target": "125",
+      "sourceName": "水神",
+      "targetName": "龙神",
+      "type": "business",
+      "label": "农业季节的水域与祈雨",
+      "style": "solid",
+      "reason": "以种植季用水为明确场景，分别表述水域使用与祈雨诉求，不将同一部门当理由。",
+      "scenario": "种植季面对缺水和水域作业需求",
+      "sourceRole": "用水及水域平安祈愿",
+      "targetRole": "祈雨相关诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "139-132-business",
+      "source": "139",
+      "target": "132",
+      "sourceName": "水草大王",
+      "targetName": "桥路二神",
+      "type": "business",
+      "label": "水陆接驳出行",
+      "style": "solid",
+      "reason": "一段水陆接驳行程含不同交通阶段，只据各自职能设计协作，不声称共同历史祭仪。",
+      "scenario": "村民乘船后经桥路到达村落",
+      "sourceRole": "乘船、水上行程祈愿",
+      "targetRole": "上岸后的道路桥梁行程祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "1-26-business",
+      "source": "1",
+      "target": "26",
+      "sourceName": "送灶神",
+      "targetName": "火神",
+      "type": "business",
+      "label": "家庭灶火与火灾风险",
+      "style": "solid",
+      "reason": "同一家庭用火活动兼有使用灶火与规避火灾的需要，负面神灵不被描述成实际消防员。",
+      "scenario": "节日使用灶火时的火灾担忧",
+      "sourceRole": "灶火相关祈愿",
+      "targetRole": "火灾风险禳解诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R3",
+        "R7"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "26-132-business",
+      "source": "26",
+      "target": "132",
+      "sourceName": "火神",
+      "targetName": "桥路二神",
+      "type": "business",
+      "label": "火灾时的撤离路线",
+      "style": "solid",
+      "reason": "把火灾担忧与撤离路线列为同一生活危机场景中的并列需求；这是当代设计情境。",
+      "scenario": "村落火灾担忧与沿桥路撤离的情境",
+      "sourceRole": "火灾风险禳解诉求",
+      "targetRole": "撤离路径通行祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R7",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "82-43-business",
+      "source": "82",
+      "target": "43",
+      "sourceName": "罗昌阁大王",
+      "targetName": "魁星文昌",
+      "type": "business",
+      "label": "阅读学习的眼部与文教诉求",
+      "style": "solid",
+      "reason": "阅读是明确场景，分别对应眼部不适担忧与学业愿望，不声称祈愿可以治疗疾病。",
+      "scenario": "学子阅读时的眼部不适担忧和求学愿望",
+      "sourceRole": "眼疾相关祈愿",
+      "targetRole": "文昌部分的文学求学祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R7",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "95-110-business",
+      "source": "95",
+      "target": "110",
+      "sourceName": "哭神",
+      "targetName": "夜游神",
+      "type": "business",
+      "label": "儿童夜间安宁",
+      "style": "solid",
+      "reason": "儿童夜间照护会面对啼哭与噩梦两类不安，二者的设计协作不等于民俗同源。",
+      "scenario": "家庭面对儿童夜啼及噩梦担忧",
+      "sourceRole": "儿童啼哭禳解诉求",
+      "targetRole": "噩梦相关禳解诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R8",
+        "R7"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "122-43-business",
+      "source": "122",
+      "target": "43",
+      "sourceName": "虹神",
+      "targetName": "魁星文昌",
+      "type": "business",
+      "label": "儿童求学与口语表达",
+      "style": "solid",
+      "reason": "在入学表达这一具体场景并列口语与求学诉求；并未将口吃当成神灵造成的事实。",
+      "scenario": "入学儿童的言语不畅担忧及学习愿望",
+      "sourceRole": "儿童口吃相关祈愿",
+      "targetRole": "文昌部分的求学祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R7",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "110-43-business",
+      "source": "110",
+      "target": "43",
+      "sourceName": "夜游神",
+      "targetName": "魁星文昌",
+      "type": "business",
+      "label": "求学期间的睡眠与学业愿望",
+      "style": "solid",
+      "reason": "把求学生活中的夜间安宁与学业愿望作为设计性并列需求，不推导因果或疗效。",
+      "scenario": "学子因噩梦担忧影响夜间休息的情境",
+      "sourceRole": "噩梦相关祈愿",
+      "targetRole": "文昌部分的求学祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R7",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "139-43-business",
+      "source": "139",
+      "target": "43",
+      "sourceName": "水草大王",
+      "targetName": "魁星文昌",
+      "type": "business",
+      "label": "跨水域赴学",
+      "style": "solid",
+      "reason": "求学行程若包括乘船，水上出行和求学愿望构成同一场景的两端。",
+      "scenario": "需要乘船出行的学子外出求学",
+      "sourceRole": "水上行程祈愿",
+      "targetRole": "文昌部分的求学祈愿",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R2"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "2-26-business",
+      "source": "2",
+      "target": "26",
+      "sourceName": "井神",
+      "targetName": "火神",
+      "type": "business",
+      "label": "家庭用水与用火风险",
+      "style": "solid",
+      "reason": "家庭生活同时涉及水源使用和火灾担忧；只作需求协作，不断言井神提供灭火技术。",
+      "scenario": "有井水水源的家庭面对火灾担忧",
+      "sourceRole": "井水日常使用祈愿",
+      "targetRole": "火灾风险禳解诉求",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R7"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "undirected",
+      "upstreamProvides": "",
+      "downstreamResponsibility": "",
+      "dependencyReason": "",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
+    },
+    {
+      "id": "2-1-supply",
+      "source": "2",
       "target": "1",
-      "sourceName": "三木大王",
+      "sourceName": "井神",
       "targetName": "送灶神",
       "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "130-3-culture",
-      "source": "130",
-      "target": "3",
-      "sourceName": "三木大王",
-      "targetName": "天地日月",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "131-138-business",
-      "source": "131",
-      "target": "138",
-      "sourceName": "祭木神",
-      "targetName": "五谷六畜",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "131-2-supply",
-      "source": "131",
-      "target": "2",
-      "sourceName": "祭木神",
-      "targetName": "井神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "132-139-business",
-      "source": "132",
-      "target": "139",
-      "sourceName": "桥路二神",
-      "targetName": "水草大王",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "132-3-supply",
-      "source": "132",
-      "target": "3",
-      "sourceName": "桥路二神",
-      "targetName": "天地日月",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "132-5-culture",
-      "source": "132",
-      "target": "5",
-      "sourceName": "桥路二神",
-      "targetName": "白马将军",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "133-40-business",
-      "source": "133",
-      "target": "40",
-      "sourceName": "醋神",
-      "targetName": "其他",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "133-6-culture",
-      "source": "133",
-      "target": "6",
-      "sourceName": "醋神",
-      "targetName": "老太之神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "134-5-supply",
-      "source": "134",
-      "target": "5",
-      "sourceName": "放羊哥",
-      "targetName": "白马将军",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "134-7-culture",
-      "source": "134",
-      "target": "7",
-      "sourceName": "放羊哥",
-      "targetName": "柏洁夫人",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "135-2-business",
-      "source": "135",
-      "target": "2",
-      "sourceName": "羊玺王",
-      "targetName": "井神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "135-6-supply",
-      "source": "135",
-      "target": "6",
-      "sourceName": "羊玺王",
-      "targetName": "老太之神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "135-8-culture",
-      "source": "135",
-      "target": "8",
-      "sourceName": "羊玺王",
-      "targetName": "猎神",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "136-3-business",
-      "source": "136",
-      "target": "3",
-      "sourceName": "鸡羊之神",
-      "targetName": "天地日月",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "136-7-supply",
-      "source": "136",
-      "target": "7",
-      "sourceName": "鸡羊之神",
-      "targetName": "柏洁夫人",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "136-9-culture",
-      "source": "136",
-      "target": "9",
-      "sourceName": "鸡羊之神",
-      "targetName": "雪山太子",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "137-4-business",
-      "source": "137",
-      "target": "4",
-      "sourceName": "虫王",
-      "targetName": "掌兵太子",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "137-8-supply",
-      "source": "137",
-      "target": "8",
-      "sourceName": "虫王",
-      "targetName": "猎神",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "137-10-culture",
-      "source": "137",
-      "target": "10",
-      "sourceName": "虫王",
-      "targetName": "赤子三爷",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "138-5-business",
-      "source": "138",
-      "target": "5",
-      "sourceName": "五谷六畜",
-      "targetName": "白马将军",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "138-9-supply",
-      "source": "138",
-      "target": "9",
-      "sourceName": "五谷六畜",
-      "targetName": "雪山太子",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "138-11-culture",
-      "source": "138",
-      "target": "11",
-      "sourceName": "五谷六畜",
-      "targetName": "马三爷",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "139-6-business",
-      "source": "139",
-      "target": "6",
-      "sourceName": "水草大王",
-      "targetName": "老太之神",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "139-10-supply",
-      "source": "139",
-      "target": "10",
-      "sourceName": "水草大王",
-      "targetName": "赤子三爷",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "139-12-culture",
-      "source": "139",
-      "target": "12",
-      "sourceName": "水草大王",
-      "targetName": "东山安民富境灵帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
-    },
-    {
-      "id": "140-7-business",
-      "source": "140",
-      "target": "7",
-      "sourceName": "其他",
-      "targetName": "柏洁夫人",
-      "type": "business",
-      "label": "业务协作关联",
-      "style": "solid"
-    },
-    {
-      "id": "140-11-supply",
-      "source": "140",
-      "target": "11",
-      "sourceName": "其他",
-      "targetName": "马三爷",
-      "type": "supply",
-      "label": "服务供应关联",
-      "style": "dash"
-    },
-    {
-      "id": "140-13-culture",
-      "source": "140",
-      "target": "13",
-      "sourceName": "其他",
-      "targetName": "三崇大帝",
-      "type": "culture",
-      "label": "文化演变关联",
-      "style": "dot"
+      "label": "井水输入到家庭炊事",
+      "style": "dash",
+      "reason": "该次煮食需要先取得用水，再在灶上完成炊事；水与灶职能分别映射到企业流程，不代表神明有供应合同。",
+      "scenario": "限定以井水为水源的一次家庭煮食",
+      "sourceRole": "场景中的井水输入",
+      "targetRole": "场景中的灶火炊事",
+      "evidenceType": "design_simulation",
+      "evidenceIds": [
+        "R1",
+        "R3"
+      ],
+      "confidence": "中",
+      "reviewStatus": "design_proposal_pending_human_review",
+      "direction": "source_to_target",
+      "upstreamProvides": "该次炊事所需的井水（场景输入）",
+      "downstreamResponsibility": "使用该水进行灶火炊事的需求",
+      "dependencyReason": "仅对以井水煮食的限定场景成立；未取到水则该次流程缺少必要输入。祈愿本身不等同实际供水。",
+      "limitations": "支撑职能的资料不等于记载此协作；具体地方图像仍有核查边界。设计仅表达祈愿需求，不承诺现实效能。",
+      "aiRole": "AI依据有来源的职能线索提出设计场景；未人工签核"
     }
   ]
 };

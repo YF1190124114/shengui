@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "branch": "working",
+  "head": "27bddafd5adbb35abe16d0a269a6f1dca021d674",
+  "main_ref": "3fa5a19ccefd29b06fd5cf1a9d084c40486b62bd",
+  "files": [
+    {
+      "path": "network-data.js",
+      "sha256": "6d1237a0cc4ce25b0fe905362438d20aeed6bb066e508bee9ef56fe73cffa258"
+    },
+    {
+      "path": "app.js",
+      "sha256": "60d5da051a09acf9f64d1d949063cc39a468549b607892f745402defb7f59fda"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "f4bdf95225b637cca6e8d74c2454105b8d0b5ec6a119b4a61f199a399d4596be"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1473a6d69a5eae82b546a4f77c043050b42dc82a43b1a0733f322a6be3ad7150"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c01e9535105d15deea16dde847fcbc9d5fdf6cbb4f0d4e329b34f8532038411c"
+    },
+    {
+      "path": "onboarding.js",
+      "sha256": "3233523c6129d745a15639ba53c8a86e22d791f2ec9fec3f71cd9b7d0e439bea"
+    },
+    {
+      "path": "research_data/先填数据 39b5957a5465803a91a5f06899f1ed27.csv",
+      "sha256": "174ef9d11ad6f1998d99d0ea5625b412b20a28e5a5e7c88c2398f9a7d767c3fc"
+    },
+    {
+      "path": "research_data/新公司花名册.csv",
+      "sha256": "cdceb140e1f3148b1944c95deae64194f2278e42644f2a2acb14b02817c504f6"
+    }
+  ]
+}

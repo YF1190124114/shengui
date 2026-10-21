@@ -756,15 +756,39 @@ function referenceHTML(ids) {
     if (!ref) return `<p>来源 ${escapeHTML(id)}：未提供</p>`;
     const href = /^https:\/\//.test(ref.url || "") ? ref.url : "";
     const title = href ? `<a href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(ref.title)}</a>` : escapeHTML(ref.title);
-    return `<div class="reference-entry"><div>${escapeHTML(id)} · ${title}</div><div>${escapeHTML(ref.author)}</div><div>${escapeHTML(ref.publication)}</div><div>定位：${escapeHTML(ref.location)}</div><div>范围：${escapeHTML(ref.scope)}</div></div>`;
+    return `<div class="reference-entry"><div>${escapeHTML(id)} · ${title}</div><div>${escapeHTML(ref.author)}</div><div>${escapeHTML(ref.publication)}</div><div>定位：${escapeHTML(ref.location)}</div><div>范围：${escapeHTML(ref.scope)}</div><div>查阅状态：${escapeHTML(ref.accessStatus || "未记录")}</div></div>`;
   }).join("");
 }
 
+// Drawer navigation is presentation state only; network records remain untouched.
+let detailView = { nodeId: null, mode: "identity" };
+
 function refreshSelectedDetail() {
-  if (state.selected && dossier.classList.contains("open")) renderDetail(state.selected);
+  if (state.selected && dossier.classList.contains("open")) {
+    renderDetail(state.selected, { preserveView: true });
+  }
 }
 
-function renderDetail(node) {
+function identityResponsibility(node) {
+  if (node.recordKind === "collection") return "集合记录的查阅与关联入口，不指派个人神职。";
+  if (node.recordKind === "ritual_object") return "保存与查阅本条仪式用品的相关记录。";
+  // A short display excerpt; the unchanged complete service is in the archive.
+  return String(node.service || "岗位职责见研究档案。")
+    .split(/[；;。]/)[0].replace(/[，,]$/, "") + "。";
+}
+
+function archiveSection(number, english, title, content) {
+  return `<section class="research-section" aria-labelledby="research-section-${number}">
+    <header class="research-section-heading"><span class="research-section-number">${number}</span><div><span class="research-section-english">${english}</span><h3 id="research-section-${number}">${title}</h3></div></header>
+    <div class="research-section-content">${content}</div>
+  </section>`;
+}
+
+function renderDetail(node, options = {}) {
+  const mode = options.preserveView && detailView.nodeId === node.id
+    ? detailView.mode : options.mode === "research" ? "research" : "identity";
+  const oldScroll = options.preserveView ? dossierContent.scrollTop : 0;
+  detailView = { nodeId: node.id, mode };
   const graph = getVisibleGraph();
   const allRelated = edges.filter((edge) => edge.source === node.id || edge.target === node.id);
   const related = graph.visibleEdges.filter((edge) => edge.source === node.id || edge.target === node.id);
@@ -774,7 +798,7 @@ function renderDetail(node) {
   const recordKind = data.meta.recordKinds?.[node.recordKind] || "目录记录";
   const status = isCollection ? "集合记录 · 不指派单一神职" : supported ? "有职能资料线索 · 地方版本待核" : "具体职能不确定 · 待核查";
   const imgSrc = `${IMAGE_FOLDER}${encodeURIComponent(node.imageFile || `${node.name}_${node.jmaCount}.png`)}`;
-  const relatedHTML = related.length ? related.map((edge) => {
+  const relatedHTML = allRelated.length ? allRelated.map((edge) => {
     const otherId = edge.source === node.id ? edge.target : edge.source;
     const other = nodeById.get(otherId);
     const typeLabel = data.meta.relationTypes[edge.type]?.label || edge.type;
@@ -796,35 +820,76 @@ function renderDetail(node) {
     </details>`;
   }).join("") : `<div class="empty-relations">${allRelated.length ? "当前筛选下无可见关系。可恢复部门、关系层或搜索条件后查看。" : "尚无符合证据与场景门槛的关系，保留孤立记录。"}</div>`;
 
-  folderTab.className = "folder-tab " + getDepartmentClass(node.department);
-  dossierContent.innerHTML = `
-    <div class="dossier-header">
-      <div class="portrait-frame"><img src="${imgSrc}" alt="${escapeHTML(node.name)} · 原目录甲马图像"></div>
-      <div class="header-info"><div class="entity-name">${escapeHTML(node.name)}</div><div class="entity-division">${escapeHTML(node.department)}</div><div class="entity-number">MSC-${node.number} · ${escapeHTML(recordKind)}</div><button class="text-button dossier-close" type="button">[关闭档案]</button></div>
+  const compactRelations = related.map((edge) => {
+    const otherId = edge.source === node.id ? edge.target : edge.source;
+    const other = nodeById.get(otherId);
+    const type = edge.type === "supply"
+      ? (edge.source === node.id ? "服务下游 →" : "← 服务上游")
+      : edge.type === "culture" ? "文化关联" : "业务协作";
+    return `<button class="identity-relation related-node-button" data-node-id="${escapeHTML(otherId)}" data-edge-id="${escapeHTML(edge.id)}" type="button">
+      <span class="identity-relation-top"><strong>${escapeHTML(other.name)}</strong><span class="identity-relation-type">${type}</span></span>
+      <span class="identity-relation-bottom"><span>MSC-${escapeHTML(otherId)}</span><span>${escapeHTML(edge.label)}</span></span>
+    </button>`;
+  }).join("");
+  const position = isCollection ? "集合档案 · 不设个人岗位" : isObject ? "仪式用品档案" : node.position || "未设定公司职位";
+  const closeButton = '<button class="detail-close dossier-close" type="button" aria-label="关闭节点详情">[×]</button>';
+  const identityHTML = `<article class="dossier-view identity-view" aria-label="员工工牌">
+    <header class="detail-toolbar"><div><p class="detail-eyebrow">PERSONNEL / MSC-${node.number}</p><h2 class="detail-view-title" tabindex="-1">EMPLOYEE IDENTITY CARD</h2></div>${closeButton}</header>
+    <div class="identity-hero">
+      <div class="portrait-frame"><img src="${imgSrc}" alt="${escapeHTML(node.name)} · 甲马图像"></div>
+      <div class="identity-nameblock"><span class="identity-card-caption">${isCollection || isObject ? escapeHTML(recordKind) : "员工工牌"}</span><div class="identity-name${node.name.length > 5 ? ' identity-name-long' : ''}">${escapeHTML(node.name)}</div><div class="identity-number">MSC-${node.number}</div><div class="identity-department">${escapeHTML(node.department)}</div></div>
     </div>
-    <div class="dossier-section"><div class="section-header"><span class="section-label">Archive Status / 核查状态</span></div><div class="section-content review-status"><p>${escapeHTML(status)}</p><p>${escapeHTML(node.reviewNote)}</p><p>${graph.visibleIds.has(node.id) ? "本档案在当前筛选内" : "本档案在当前筛选外；记录仍可访问"}</p></div></div>
-    <div class="dossier-section"><div class="section-header"><span class="section-label">Traditional Function / 传统神职线索</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.traditionalFunction || "不确定，待核查")}</div>${node.evidenceIds?.length ? `<details class="profile-evidence"><summary>资料来源与适用范围</summary>${referenceHTML(node.evidenceIds)}</details>` : ""}</div></div>
-    ${!isCollection && !isObject ? `<div class="dossier-section"><div class="section-header"><span class="section-label">Company Position / 公司职位（设计）</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.position || "未设定")}</div><p class="review-caption">${supported ? "基于职能线索的设计岗位，不是传统称谓。" : "保留旧版AI职位，尚未核实对应神职。"}</p>${node.secondaryPosition ? `<p class="review-caption">旧兼任（待核查）：${escapeHTML(node.secondaryPosition)}</p>` : ""}<p class="review-caption">部门为企业隐喻分类${node.departmentBasis === "legacy_design_pending_review" ? "，沿用旧分类待核" : "，依据当前职能线索设计"}。</p></div></div>` : ""}
-    <div class="dossier-section"><div class="section-header"><span class="section-label">Service / ${supported ? "有来源的服务说明" : isCollection ? "集合目录说明" : "旧服务字段（待核查）"}</span></div><div class="section-content"><div class="section-value small">${escapeHTML(node.service)}</div>${!supported && !isCollection ? '<p class="review-caption">旧字段不是已核实的民俗事实。</p>' : ""}</div></div>
-    <div class="dossier-section"><div class="section-header"><span class="section-label">Original Record / 原始目录</span></div><div class="section-content archive-facts"><p>记录ID：${node.id} · 原顺序：${node.rawRecord?.order ?? node.number}</p><p>目录类别：${escapeHTML(node.rawRecord?.category)}</p><p>原页码组：${escapeHTML(node.rawRecord?.pageGroup)}（非精确引文页码）</p><p>甲马数量：${node.jmaCount}</p><p>入职来源：${isCollection || isObject ? "不认定单一神格起源" : escapeHTML(node.source)}${!isCollection && !isObject ? "（旧AI分类，历史依据待核查）" : ""}</p>${node.imageReviewStatus === "legacy_mapping_pending_book_check" ? '<p>图像沿用旧版ID关联，具体书图对应待核；图片后缀不是原数量。</p>' : ""}<details class="legacy-profile"><summary>旧花名册原值（未核实，保留溯源）</summary>${Object.entries(node.originalProfile || {}).map(([key,value]) => `<p>${escapeHTML(({department:"部门",source:"入职来源",position:"职位",secondaryPosition:"兼任",service:"服务",jmaCount:"旧网页数量"})[key] || key)}：${escapeHTML(value)}</p>`).join("")}</details></div></div>
-    <div class="dossier-section"><div class="section-header"><span class="section-label">Relations / 当前可见 ${related.length} · 全部 ${allRelated.length}</span></div><div class="related-list">${relatedHTML}</div></div>
-    <div class="dossier-footer"><div class="employee-id-section"><div class="id-label">CATALOG RECORD / AI ASSISTED REVIEW</div><div class="id-value">MSC-${node.number} · 待研究者签核</div></div></div>`;
+    <section class="identity-position"><p class="detail-eyebrow">${isCollection || isObject ? "ARCHIVE ROLE / 档案类别" : "COMPANY POSITION / 公司职位"}</p><h3>${escapeHTML(position)}</h3></section>
+    <section class="identity-duties"><h3 class="identity-section-title">01 / ${isCollection || isObject ? "档案说明" : "岗位职责"}</h3><p>${escapeHTML(identityResponsibility(node))}</p></section>
+    <section class="identity-connections"><div class="identity-section-heading"><h3 class="identity-section-title">02 / 业务关系</h3><span>${related.length}${related.length === allRelated.length ? "" : ` / ${allRelated.length}`}</span></div>
+      <div class="identity-relation-list">${compactRelations || `<p class="identity-no-relations">${allRelated.length ? "当前筛选下暂无关联对象。" : "暂无关联对象。"}</p>`}</div>
+    </section>
+    <footer class="identity-actions"><button class="view-research detail-primary-button" data-detail-view="research" type="button"><span>查看完整研究档案</span><span aria-hidden="true">→</span></button><p>RESEARCH ARCHIVE / MSC-${node.number}</p></footer>
+  </article>`;
+
+  const originalFields = `<dl class="archive-record-grid">
+    <div><dt>记录编号</dt><dd>MSC-${node.number}</dd></div><div><dt>记录类型</dt><dd>${escapeHTML(recordKind)}</dd></div>
+    <div><dt>原始名称</dt><dd>${escapeHTML(node.rawRecord?.name || node.name)}</dd></div><div><dt>原始顺序</dt><dd>${node.rawRecord?.order ?? node.number}</dd></div>
+    <div><dt>目录类别</dt><dd>${escapeHTML(node.rawRecord?.category)}</dd></div><div><dt>原页码组</dt><dd>${escapeHTML(node.rawRecord?.pageGroup)}<small>非精确引文页码</small></dd></div>
+    <div><dt>甲马数量</dt><dd>${node.jmaCount}</dd></div><div><dt>CSV行号</dt><dd>${node.rawRecord?.csvRow ?? "未记录"}</dd></div>
+  </dl>`;
+  const legacy = `<details class="archive-fold legacy-profile"><summary>旧花名册原值（保留溯源）</summary><div>${Object.entries(node.originalProfile || {}).map(([key,value]) => `<p><strong>${escapeHTML(({department:"部门",source:"入职来源",position:"职位",secondaryPosition:"兼任",service:"服务",jmaCount:"旧网页数量"})[key] || key)}：</strong>${escapeHTML(value)}</p>`).join("")}</div></details>`;
+  const researchHTML = `<article class="dossier-view research-view" aria-label="研究档案">
+    <header class="detail-toolbar research-toolbar"><button class="return-identity" data-detail-view="identity" type="button">← 返回员工工牌</button>${closeButton}</header>
+    <div class="research-masthead"><p class="detail-eyebrow">RESEARCH ARCHIVE / MSC-${node.number}</p><h2 class="detail-view-title" tabindex="-1">研究档案</h2><p>${escapeHTML(node.name)} <span>/ ${escapeHTML(node.department)}</span></p></div>
+    ${archiveSection("01", "FUNCTION & CULTURE", "传统神职与文化背景", `<p class="archive-function">${escapeHTML(node.traditionalFunction || "不确定，待核查")}</p><details class="archive-fold profile-evidence"><summary>神职资料与文化背景说明</summary><div>${node.evidenceIds?.length ? referenceHTML(node.evidenceIds) : '<p>尚无可定位到本条目地方版本的职能资料。</p>'}</div></details><details class="archive-fold"><summary>完整服务说明</summary><div><p>${escapeHTML(node.service)}</p>${!supported && !isCollection ? '<p class="review-caption">保留的旧服务字段不是已核实的民俗事实。</p>' : ''}</div></details>`)}
+    ${archiveSection("02", "ORIGINAL CATALOG", "原始甲马目录记录", originalFields + legacy)}
+    ${archiveSection("03", "INTERPRETATION & REVIEW", "数据解释与核验状态", `<p class="archive-status">${escapeHTML(status)}</p><p>${escapeHTML(node.reviewNote)}</p><details class="archive-fold"><summary>公司设定、来源分类与核验说明</summary><div><p>公司职位：${escapeHTML(node.position || "未指派个人职位")}（组织隐喻）</p>${!isCollection && !isObject ? `<p>${supported ? "基于职能线索的设计岗位，不是传统称谓。" : "保留旧版AI职位，尚未核实对应神职。"}</p>` : ""}<p>兼任职位：${escapeHTML(node.secondaryPosition || "未指派")}（旧字段如有保留，仍待核查）</p><p>部门：${escapeHTML(node.department)}；${node.departmentBasis === "legacy_design_pending_review" ? "沿用旧设计分类待核" : "依据当前职能线索的设计归部"}。</p><p>入职来源：${escapeHTML(node.source)}（旧AI分类，历史依据待核查）</p>${isCollection || isObject ? "<p>此记录不认定单一神格起源。</p>" : ""}<p>可信度：${escapeHTML(node.confidence || "未确定")}；尚待研究者签核。</p>${node.imageReviewStatus === "legacy_mapping_pending_book_check" ? '<p>图像沿用旧版ID关联，具体书图对应待核；图片后缀不是原数量。</p>' : ""}<p>${graph.visibleIds.has(node.id) ? "本档案在当前筛选内。" : "本档案在当前筛选外；记录仍可访问。"}</p><p>${escapeHTML(data.meta.aiDisclosure || "AI辅助整理，研究者尚未签核。")}</p></div></details>`)}
+    ${archiveSection("04", "RELATIONS & REFERENCES", "关系依据及参考资料", `<p class="archive-relation-count">全部 ${allRelated.length} 条关系 · 当前筛选可见 ${related.length} 条</p><div class="related-list">${relatedHTML}</div>`)}
+    <footer class="research-endnote">END OF ARCHIVE / MSC-${node.number}</footer>
+  </article>`;
+
+  folderTab.className = "folder-tab " + getDepartmentClass(node.department);
+  folderTab.textContent = mode === "research" ? "RESEARCH ARCHIVE" : "EMPLOYEE IDENTITY CARD";
+  dossierContent.dataset.detailView = mode;
+  dossierContent.innerHTML = mode === "research" ? researchHTML : identityHTML;
   dossierContent.querySelector('.dossier-close').addEventListener('click', () => { dossier.classList.remove('open'); });
-  dossierContent.querySelector('.portrait-frame img').addEventListener('error', (event) => {
+  dossierContent.querySelectorAll('[data-detail-view]').forEach((button) => button.addEventListener('click', () => {
+    renderDetail(node, { mode: button.dataset.detailView, focus: true });
+  }));
+  dossierContent.querySelector('.portrait-frame img')?.addEventListener('error', (event) => {
     event.target.replaceWith(Object.assign(document.createElement('span'), {textContent: "图像暂不可用"}));
   }, {once:true});
   dossierContent.querySelectorAll('.related-node-button').forEach((item) => item.addEventListener('click', () => {
     const target = nodeById.get(item.dataset.nodeId);
     if (!target) return;
     state.selected = target;
-    renderDetail(target);
+    renderDetail(target, { focus: true });
     state.transform.x = state.width / 2 - target.x * state.transform.scale;
     state.transform.y = state.height / 2 - target.y * state.transform.scale;
   }));
-  dossierContent.scrollTop = 0;
+  dossierContent.scrollTop = oldScroll;
   state.hovered = null;
   tooltip.hidden = true;
   dossier.classList.add('open');
+  if (options.focus) {
+    dossierContent.querySelector(mode === "research" ? '.return-identity' : '.detail-view-title')?.focus({ preventScroll: true });
+  }
 }
 
 function resetView() {
